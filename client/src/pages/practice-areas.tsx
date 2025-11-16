@@ -40,14 +40,16 @@ export default function PracticeAreas() {
   return (
     <>
       <SEO
-        title="Practice Areas | Legal Services in Rohtak - Criminal, Civil & Family Law"
-        description="Comprehensive legal services in Rohtak including criminal defense, matrimonial cases, property disputes, cheque bounce cases, bail matters, and civil litigation."
+        title="Rohtak Lawyer Services | Practice Areas - Criminal, Civil & Family Law Expert"
+        description="Comprehensive legal services by best advocate in Rohtak. Expert in criminal defense, matrimonial cases, property disputes, cheque bounce cases, bail matters, civil litigation. SCBA: A-01417. Call +91 90502 25555."
         keywords={[
           'legal services rohtak',
+          'rohtak lawyer services',
           'practice areas rohtak lawyer',
           'criminal lawyer rohtak',
           'civil lawyer rohtak',
           'family lawyer rohtak',
+          'best advocate in rohtak',
         ]}
         canonical="/practice-areas"
         schema={schema}
@@ -59,10 +61,10 @@ export default function PracticeAreas() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="max-w-3xl">
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                Practice Areas
+                Rohtak Lawyer Services - Practice Areas
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Comprehensive legal services across multiple areas of law, providing expert representation in Rohtak District Courts and beyond.
+                Expert legal services in Rohtak across multiple areas of law. As one of the best advocates in Rohtak, we provide comprehensive representation in Rohtak District Courts, Sessions Court, and High Court.
               </p>
             </div>
           </div>
