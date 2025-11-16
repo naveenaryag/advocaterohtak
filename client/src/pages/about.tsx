@@ -136,6 +136,8 @@ export default function About() {
                     src={supremeCourtImage}
                     alt="Advocate Naveen Arya at Supreme Court of India - SCBA Registration A-01417, COP P1700/2014"
                     className="w-full h-auto object-cover"
+                    width="600"
+                    height="800"
                     loading="lazy"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary to-transparent p-6 text-primary-foreground">
@@ -259,6 +261,8 @@ export default function About() {
                       src={awardImage1}
                       alt="Advocate Naveen Arya receiving Moot Court Judge Certification from MDU - Best advocate in Rohtak"
                       className="w-full h-64 object-cover object-[50%_35%]"
+                      width="400"
+                      height="256"
                       style={{ filter: 'brightness(1.15) contrast(1.1) saturate(1.1)' }}
                       loading="lazy"
                     />
@@ -271,6 +275,8 @@ export default function About() {
                       src={awardImage2}
                       alt="Advocate Naveen Arya receiving award from International Lawyers Association"
                       className="w-full h-64 object-cover object-[50%_15%]"
+                      width="400"
+                      height="256"
                       loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
@@ -282,6 +288,8 @@ export default function About() {
                       src={awardImage3}
                       alt="Advocate Naveen Arya presenting award to District Judge Rohtak Sh. H.S. Narang"
                       className="w-full h-64 object-cover object-[50%_15%]"
+                      width="400"
+                      height="256"
                       loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
