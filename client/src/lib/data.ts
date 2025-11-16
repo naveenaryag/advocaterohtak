@@ -177,7 +177,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Advocate Naveen Arya',
     publishedDate: '2024-01-15',
     readTime: '8 min read',
-    image: '/blog-bail-rights.jpg',
+    image: 'attached_assets/stock_images/courtroom_judge_gave_f4141f3f.jpg',
     keywords: ['bail rights india', 'rohtak advocate', 'criminal lawyer rohtak', 'anticipatory bail', 'bail application'],
   },
   {
@@ -250,7 +250,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Advocate Naveen Arya',
     publishedDate: '2024-02-10',
     readTime: '10 min read',
-    image: '/blog-cheque-bounce.jpg',
+    image: 'attached_assets/stock_images/financial_documents__d768546d.jpg',
     keywords: ['cheque bounce', 'section 138', 'ni act', 'rohtak advocate', 'best lawyer rohtak', 'financial disputes'],
   },
   {
@@ -350,7 +350,7 @@ export const blogPosts: BlogPost[] = [
     author: 'Advocate Naveen Arya',
     publishedDate: '2024-03-01',
     readTime: '12 min read',
-    image: '/blog-property-dispute.jpg',
+    image: 'attached_assets/stock_images/real_estate_property_0b567b7c.jpg',
     keywords: ['property dispute', 'partition suit', 'rohtak advocate', 'property lawyer', 'title verification', 'land dispute'],
   },
 ];

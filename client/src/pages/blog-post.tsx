@@ -135,6 +135,16 @@ export default function BlogPost() {
               </Link>
 
               <header className="mb-10">
+                <div className="relative w-full h-64 sm:h-96 rounded-xl overflow-hidden shadow-xl border-2 border-primary/10 mb-8">
+                  <img
+                    src={post.image}
+                    alt={`${post.title} - Expert legal article by Advocate Naveen Arya, best lawyer in Rohtak`}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                    data-testid="img-post-header"
+                  />
+                </div>
+
                 <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-6 leading-tight">
                   {post.title}
                 </h1>
@@ -210,7 +220,7 @@ export default function BlogPost() {
                       Schedule Consultation
                     </Button>
                   </Link>
-                  <a href="tel:+919876543210" data-testid="button-call">
+                  <a href="tel:+919050225555" data-testid="button-call">
                     <Button variant="outline">Call Now</Button>
                   </a>
                 </div>
@@ -222,12 +232,14 @@ export default function BlogPost() {
                   <div className="grid sm:grid-cols-2 gap-6">
                     {relatedPosts.map((relatedPost) => (
                       <Card key={relatedPost.id} className="overflow-hidden hover-elevate transition-all" data-testid={`card-related-${relatedPost.id}`}>
-                        <div className="bg-muted h-32 flex items-center justify-center">
-                          <div className="text-center p-4">
-                            <div className="inline-flex p-3 rounded-full bg-primary/10 text-primary">
-                              <User className="h-6 w-6" />
-                            </div>
-                          </div>
+                        <div className="relative h-32 overflow-hidden">
+                          <img
+                            src={relatedPost.image}
+                            alt={`${relatedPost.title} - Related legal article`}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                            data-testid={`img-related-${relatedPost.id}`}
+                          />
                         </div>
                         <div className="p-6">
                           <h4 className="font-serif text-lg font-bold text-foreground mb-2 leading-tight line-clamp-2">

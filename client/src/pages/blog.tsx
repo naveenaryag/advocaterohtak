@@ -68,13 +68,14 @@ export default function Blog() {
               </div>
               <Card className="overflow-hidden hover-elevate transition-all" data-testid="card-featured-post">
                 <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="bg-muted h-64 lg:h-auto flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="inline-flex p-6 rounded-full bg-primary/10 text-primary mb-4">
-                        <User className="h-12 w-12" />
-                      </div>
-                      <p className="text-sm text-muted-foreground">Featured Post Image</p>
-                    </div>
+                  <div className="relative h-64 lg:h-auto overflow-hidden">
+                    <img
+                      src={featuredPost.image}
+                      alt={`${featuredPost.title} - Legal article by Advocate Naveen Arya in Rohtak`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      data-testid="img-featured-post"
+                    />
                   </div>
                   <div className="p-8 lg:p-10 flex flex-col justify-center">
                     <div className="flex flex-wrap items-center gap-3 mb-4 text-sm text-muted-foreground">
@@ -115,13 +116,14 @@ export default function Blog() {
             <div className="grid md:grid-cols-2 gap-8">
               {blogPosts.map((post) => (
                 <Card key={post.id} className="overflow-hidden hover-elevate transition-all" data-testid={`card-post-${post.id}`}>
-                  <div className="bg-muted h-48 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <div className="inline-flex p-4 rounded-full bg-primary/10 text-primary mb-2">
-                        <User className="h-8 w-8" />
-                      </div>
-                      <p className="text-xs text-muted-foreground">Article Image</p>
-                    </div>
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={`${post.title} - Legal guide by best advocate in Rohtak`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      data-testid={`img-post-${post.id}`}
+                    />
                   </div>
                   <div className="p-6">
                     <div className="flex flex-wrap items-center gap-3 mb-3 text-sm text-muted-foreground">
