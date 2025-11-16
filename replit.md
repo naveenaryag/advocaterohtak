@@ -29,10 +29,21 @@ Preferred communication style: Simple, everyday language.
 
 **SEO Strategy**:
 - Custom SEO component for meta tags, OpenGraph, and structured data
-- Schema.org markup for LocalBusiness, LegalService, Attorney, BlogPosting
+- Schema.org markup for LocalBusiness, LegalService, Attorney, BlogPosting, FAQPage
 - Dynamic sitemap generation at `/sitemap.xml`
-- Target keywords: "advocate rohtak", "best criminal lawyer in rohtak", "rohtak advocate list"
-- Core Web Vitals optimization with static generation preference
+- **Primary Keywords**: "advocate rohtak", "best advocate in rohtak"
+- **Secondary Keywords**: 
+  - "best criminal lawyer in rohtak"
+  - "list of advocates in rohtak court"
+  - "rohtak advocate list"
+  - "rohtak advocate directory"
+  - "rohtak court advocate list"
+  - "best lawyer in rohtak"
+  - "top advocates in rohtak"
+  - "advocate in rohtak"
+- Google 2025 E-E-A-T compliance with comprehensive credentials and awards
+- Core Web Vitals optimization with lazy loading (home hero uses eager loading for LCP)
+- WhatsApp floating widget for improved user engagement
 
 ## Backend Architecture
 
@@ -151,9 +162,30 @@ contact_inquiries:
 - Google Fonts: Inter, Playfair Display (loaded via CDN in index.html)
 
 **Third-Party Integrations**:
-- None currently active (no analytics, CRM, payment processors, or email services)
-- WhatsApp and phone call CTAs use direct tel: and wa.me: links
+- WhatsApp floating widget at bottom-right with bounce animation
+- Phone call CTAs use direct tel: links (+91 90502 25555)
+- WhatsApp links use wa.me: links (+91 90502 25555)
 - Social media links present but point to placeholder URLs
+
+**Contact Information** (NAP Consistency):
+- Phone: +91 90502 25555
+- Email: naveen@advocaterohtak.com
+- Office: District Court Complex, Rohtak, Haryana - 124001
+
+**Professional Credentials**:
+- SCBA Registration: A-01417
+- Punjab & Haryana High Court COP: P1700/2014
+- District Bar Association, Rohtak: Enrolled 2014
+
+**Qualifications & Awards**:
+- Bachelor of Laws (B.L.) with Honors - 2014
+- Master of Laws (M.L.) - 2016
+- National Eligibility Test (NET) Qualified - 2014
+- Outstanding Lawyer Award - 2019
+- International Legal Conference Chairperson - 2019
+- Moot Court Judge Certification - 2024
+- Mr. Talent Award - Excellence in Legal Practice
+- 15+ Research Papers Published in National & International Journals
 
 **Potential Integrations** (mentioned in design docs but not implemented):
 - Email service for contact form submissions

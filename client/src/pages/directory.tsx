@@ -24,7 +24,7 @@ export default function Directory() {
           postalCode: '124001',
           addressCountry: 'IN',
         },
-        telephone: '+919050225555',
+        telephone: '+91 90502 25555',
         email: 'naveen@advocaterohtak.com',
       },
     ],

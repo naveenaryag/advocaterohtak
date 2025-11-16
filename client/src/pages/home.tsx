@@ -17,7 +17,7 @@ export default function Home() {
     image: heroImage,
     '@id': 'https://advocatenaveenary.com',
     url: 'https://advocatenaveenary.com',
-    telephone: '+919050225555',
+    telephone: '+91 90502 25555',
     priceRange: '₹₹',
     address: {
       '@type': 'PostalAddress',

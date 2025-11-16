@@ -78,7 +78,7 @@ export default function Contact() {
     mainEntity: {
       '@type': 'Attorney',
       name: 'Advocate Naveen Arya',
-      telephone: '+919050225555',
+      telephone: '+91 90502 25555',
       email: 'naveen@advocaterohtak.com',
       address: {
         '@type': 'PostalAddress',
