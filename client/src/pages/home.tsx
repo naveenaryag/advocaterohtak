@@ -102,8 +102,8 @@ export default function Home() {
         <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5 overflow-hidden" data-testid="section-hero">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utb3BhY2l0eT0iLjA1Ii8+PC9nPjwvc3ZnPg==')] opacity-40" />
           
-          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-full">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
               <div className="space-y-8">
                 <div className="space-y-4">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20" data-testid="badge-scba">
@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative hidden lg:block">
+              <div className="relative w-full max-w-full overflow-hidden">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                   <img
                     src={heroImage}
@@ -180,12 +180,12 @@ export default function Home() {
                     loading="eager"
                   />
                 </div>
-                <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
+                <div className="absolute -bottom-6 left-4 sm:-left-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-lg">
                   <div className="flex items-center gap-3">
-                    <Scale className="h-8 w-8" />
+                    <Scale className="h-6 w-6 sm:h-8 sm:w-8" />
                     <div>
-                      <p className="text-sm opacity-90">Practicing Since</p>
-                      <p className="text-2xl font-bold">2014</p>
+                      <p className="text-xs sm:text-sm opacity-90">Practicing Since</p>
+                      <p className="text-xl sm:text-2xl font-bold">2014</p>
                     </div>
                   </div>
                 </div>
