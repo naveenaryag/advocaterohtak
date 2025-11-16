@@ -1,0 +1,261 @@
+I want you to build a fully SEO-optimized, mobile-first, blazing-fast website for a lawyer in Rohtak.
+Follow Google’s 2025 Algorithm Requirements, including:
+
+EEAT (Experience, Expertise, Authority, Trust)
+
+Helpful Content Update
+
+March 2024 Spam Update
+
+July 2024 Site Reputation Abuse Update
+
+Core Web Vitals (LCP < 2.5s, CLS < 0.1, INP < 200ms)
+
+Semantic SEO + schema
+
+Full topical authority on “Advocate in Rohtak”
+
+1. WEBSITE PURPOSE
+
+Create a professional lawyer website for ranking on the following keywords:
+
+advocate rohtak
+best advocate in rohtak
+best criminal lawyer in rohtak
+best lawyer in rohtak
+list of advocates in rohtak court
+rohtak advocate
+rohtak advocate directory
+rohtak advocate list
+rohtak court advocate list
+top advocates in rohtak
+rohtak lawyer
+
+2. WEBSITE STYLE & TECH STACK
+
+Use:
+
+Next.js or React + Vite
+
+TailwindCSS
+
+ShadCN UI components
+
+TypeScript
+
+SEO-friendly file structure
+
+Static generation (SSG preferred) for fastest page speed
+
+Add clean, modern, premium lawyer branding
+
+3. MUST-HAVE SEO FEATURES
+
+Implement:
+
+✔ Technical SEO
+
+XML Sitemap
+
+Robots.txt
+
+Canonical tags
+
+Optimized meta titles/descriptions
+
+H1–H6 hierarchy
+
+JSON-LD Schema for:
+
+LocalBusiness
+
+Attorney
+
+FAQ
+
+Breadcrumb
+
+Review snippets
+
+✔ EEAT
+
+Add advocate profile
+
+Show real case experience
+
+Clear contact & office address
+
+Google Maps embed
+
+Bar registration number, courts practiced in (dummy placeholder text ok)
+
+✔ On-Page SEO
+
+Semantic content using sections:
+
+Overview
+
+Why choose us
+
+Practice areas
+
+Criminal law expertise
+
+Experience in Rohtak Courts
+
+Client reviews
+
+FAQs
+
+✔ Speed Optimization
+
+Compress all images
+
+Use next/image or lazy loading
+
+No unused JS
+
+No oversized libs
+
+Avoid blocking scripts
+
+4. PAGES TO GENERATE
+Home Page
+
+Target keywords:
+
+advocate rohtak
+
+best advocate in rohtak
+
+rohtak lawyer
+
+rohtak advocate
+
+Criminal Lawyer in Rohtak (Landing Page)
+
+Target:
+
+best criminal lawyer in rohtak
+
+top advocates in rohtak
+
+Advocate Directory Page (SEO page)
+
+Target:
+
+list of advocates in rohtak court
+
+rohtak advocate directory
+
+rohtak advocate list
+
+rohtak court advocate list
+
+About Advocate
+
+Show EEAT details.
+
+Practice Areas
+
+Criminal Law
+
+Matrimonial Cases
+
+Cheque bounce (S.138 NI Act)
+
+Civil disputes
+
+Bail matters
+
+Property matters
+
+Contact Page
+
+WhatsApp button
+
+Call button
+
+Google map
+
+Appointment form
+
+Blog Section
+
+Publish articles around “Lawyer in Rohtak” to build topical authority.
+Create 3 sample blog pages with keywords inserted naturally.
+
+5. CONTENT REQUIREMENTS
+Tone
+
+Authoritative
+
+Trust-building
+
+Local language familiarity (optional Hindi mix)
+
+Professional lawyer tone
+
+SEO Content Style (Very Important)
+
+100% unique
+
+Long-form
+
+Keyword density: 1–1.5%
+
+LSI + semantic keywords
+
+Entity-based SEO
+
+Human-friendly helpful content
+
+6. BRAND SECTIONS TO INCLUDE
+
+Advocate Naveen Arya (use placeholder if needed)
+
+SCBA number / Bar registration (placeholder)
+
+10+ years of experience (placeholder)
+
+Cases handled (dummy numbers)
+
+Awards (dummy)
+
+Rohtak District Court experience
+
+7. ADD INTERNAL LINKING
+
+Automatically interlink:
+
+Home → Criminal Lawyer
+
+Criminal Lawyer → Directory
+
+Directory → Contact
+
+Blog → All major pages
+
+8. OUTPUT FORMAT
+
+Deliver the output as:
+
+Complete source code (React/Next.js + Tailwind + ShadCN UI)
+
+SEO-optimized content included
+
+Perfect folder structure
+
+Pages + components
+
+JSON-LD schema
+
+Sitemap + robots.txt
+
+All metadata tags
+
+Responsive layout
+
+Fast loading (Lighthouse score 95+)
+
+PROMPT END
