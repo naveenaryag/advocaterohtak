@@ -259,6 +259,7 @@ export default function About() {
                       src={awardImage1}
                       alt="Advocate Naveen Arya receiving Moot Court Judge Certification from MDU - Best advocate in Rohtak"
                       className="w-full h-64 object-cover object-[50%_35%]"
+                      style={{ filter: 'brightness(1.15) contrast(1.1) saturate(1.1)' }}
                       loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
