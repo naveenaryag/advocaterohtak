@@ -17,7 +17,7 @@ export default function Home() {
     image: heroImage,
     '@id': 'https://advocatenaveenary.com',
     url: 'https://advocatenaveenary.com',
-    telephone: '+919876543210',
+    telephone: '+919050225555',
     priceRange: '₹₹',
     address: {
       '@type': 'PostalAddress',
@@ -75,17 +75,20 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Advocate Naveen Arya - Best Lawyer in Rohtak | Criminal & Civil Law Expert"
-        description="Top advocate in Rohtak with 10+ years experience. Expert in criminal law, matrimonial cases, property disputes, bail matters. SCBA registered. Call now for free consultation."
+        title="Best Advocate in Rohtak | Advocate Naveen Arya - Top Criminal Lawyer"
+        description="Best advocate in Rohtak with 10+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90502 25555 for free consultation."
         keywords={[
           'advocate rohtak',
           'best advocate in rohtak',
           'best criminal lawyer in rohtak',
           'best lawyer in rohtak',
+          'list of advocates in rohtak court',
           'rohtak advocate',
-          'rohtak lawyer',
+          'rohtak advocate directory',
+          'rohtak advocate list',
+          'rohtak court advocate list',
           'top advocates in rohtak',
-          'advocate in rohtak',
+          'rohtak lawyer',
         ]}
         canonical="/"
         schema={combinedSchema}
@@ -105,25 +108,25 @@ export default function Home() {
                     <span className="text-sm font-medium text-primary">SCBA Registered</span>
                   </div>
                   <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                    Advocate Naveen Arya
+                    Best Advocate in Rohtak - Advocate Naveen Arya
                   </h1>
                   <p className="text-xl sm:text-2xl text-muted-foreground font-medium">
-                    Expert Legal Representation in Rohtak
+                    Top Criminal Lawyer & Legal Expert in Rohtak
                   </p>
                   <p className="text-base sm:text-lg text-muted-foreground max-w-xl">
-                    Specializing in Criminal Law, Matrimonial Cases, Property Disputes, and Civil Litigation with over 10 years of dedicated service in Rohtak District Courts.
+                    Looking for the best advocate in Rohtak? With over 10 years of exceptional legal service, Advocate Naveen Arya is recognized as one of the top advocates in Rohtak, specializing in criminal law, matrimonial cases, property disputes, and civil litigation across Rohtak District Courts.
                   </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+919876543210" data-testid="button-hero-call">
+                  <a href="tel:+919050225555" data-testid="button-hero-call">
                     <Button size="lg" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2">
                       <Phone className="h-5 w-5" />
                       Call Now
                     </Button>
                   </a>
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919050225555"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid="button-hero-whatsapp"
