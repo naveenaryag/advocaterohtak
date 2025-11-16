@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative w-full max-w-full overflow-hidden">
+              <div className="relative w-full max-w-full overflow-visible pb-8 sm:pb-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                   <img
                     src={heroImage}
@@ -180,11 +180,11 @@ export default function Home() {
                     loading="eager"
                   />
                 </div>
-                <div className="absolute -bottom-6 left-4 sm:-left-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-lg">
+                <div className="absolute bottom-4 left-4 sm:bottom-auto sm:-bottom-6 sm:left-auto sm:-left-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-lg max-w-[calc(100%-2rem)]">
                   <div className="flex items-center gap-3">
                     <Scale className="h-6 w-6 sm:h-8 sm:w-8" />
                     <div>
-                      <p className="text-xs sm:text-sm opacity-90">Practicing Since</p>
+                      <p className="text-xs sm:text-sm opacity-90 whitespace-nowrap">Practicing Since</p>
                       <p className="text-xl sm:text-2xl font-bold">2014</p>
                     </div>
                   </div>
@@ -254,20 +254,20 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {practiceAreas.map((area) => (
-                <Card key={area.id} className="p-6 hover-elevate transition-all group" data-testid={`card-practice-${area.id}`}>
+                <Card key={area.id} className="p-6 hover-elevate transition-all group max-w-full" data-testid={`card-practice-${area.id}`}>
                   <div className="mb-4">
                     <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary">
                       <Scale className="h-6 w-6" />
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors break-words">
                     {area.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">{area.description}</p>
+                  <p className="text-muted-foreground mb-4 break-words">{area.description}</p>
                   <Link href="/practice-areas">
-                    <Button variant="ghost" className="p-0 h-auto font-medium gap-1" data-testid={`link-learn-more-${area.id}`}>
-                      Learn More About {area.title}
-                      <ChevronRight className="h-4 w-4" />
+                    <Button variant="ghost" className="p-0 h-auto font-medium gap-1 flex-wrap" data-testid={`link-learn-more-${area.id}`}>
+                      <span className="break-words">Learn More About {area.title}</span>
+                      <ChevronRight className="h-4 w-4 flex-shrink-0" />
                     </Button>
                   </Link>
                 </Card>
