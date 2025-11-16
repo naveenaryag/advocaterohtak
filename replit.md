@@ -2,6 +2,16 @@
 
 This is a professional lawyer website for Advocate Naveen Arya, a legal practitioner in Rohtak, Haryana. The website is designed to rank for local legal service keywords and provide comprehensive information about legal services, practice areas, and contact options. It's built as a full-stack application with SEO optimization, mobile-first design, and modern web standards compliance.
 
+# Recent Changes (Latest Session)
+
+- Added professional stock images to all 3 blog articles:
+  - "Understanding Bail Rights" - courtroom/gavel image
+  - "Cheque Bounce Cases" - financial documents image  
+  - "Property Disputes" - real estate/house keys image
+- Implemented proper loading strategy: eager for above-the-fold (featured post on /blog, article headers), lazy for below-the-fold (article cards, related articles)
+- All blog images include SEO-optimized alt tags with legal keywords and "Rohtak" references
+- Images properly sourced from attached_assets/stock_images with no broken links
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
