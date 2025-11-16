@@ -73,7 +73,7 @@ export default function Blog() {
                       src={featuredPost.image}
                       alt={`${featuredPost.title} - Legal article by Advocate Naveen Arya in Rohtak`}
                       className="w-full h-full object-cover"
-                      loading="lazy"
+                      loading="eager"
                       data-testid="img-featured-post"
                     />
                   </div>
