@@ -254,7 +254,7 @@ export default function About() {
               <div className="space-y-6 pt-2.5">
                 <h3 className="font-serif text-2xl font-bold text-foreground text-center">Award Ceremonies & Recognition</h3>
                 <div className="grid md:grid-cols-3 gap-6">
-                  <div className="relative rounded-xl overflow-hidden shadow-lg border-2 border-primary/10 hover-elevate transition-all pt-2.5">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg border-2 border-primary/10 hover-elevate transition-all">
                     <img
                       src={awardImage1}
                       alt="Advocate Naveen Arya receiving Moot Court Judge Certification from MDU - Best advocate in Rohtak"
