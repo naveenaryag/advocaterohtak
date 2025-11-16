@@ -7,8 +7,17 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { blogPosts } from '@/lib/data';
+import bailRightsImage from '@assets/stock_images/courtroom_judge_gave_f4141f3f.jpg';
+import chequeBounceImage from '@assets/stock_images/financial_documents__d768546d.jpg';
+import propertyDisputeImage from '@assets/stock_images/real_estate_property_0b567b7c.jpg';
 
 export default function Blog() {
+  const blogImages: Record<string, string> = {
+    '1': bailRightsImage,
+    '2': chequeBounceImage,
+    '3': propertyDisputeImage,
+  };
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
@@ -70,7 +79,7 @@ export default function Blog() {
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="relative h-64 lg:h-auto overflow-hidden">
                     <img
-                      src={featuredPost.image}
+                      src={blogImages[featuredPost.id]}
                       alt={`${featuredPost.title} - Legal article by Advocate Naveen Arya in Rohtak`}
                       className="w-full h-full object-cover"
                       loading="eager"
@@ -118,7 +127,7 @@ export default function Blog() {
                 <Card key={post.id} className="overflow-hidden hover-elevate transition-all" data-testid={`card-post-${post.id}`}>
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src={post.image}
+                      src={blogImages[post.id]}
                       alt={`${post.title} - Legal guide by best advocate in Rohtak`}
                       className="w-full h-full object-cover"
                       loading="lazy"

@@ -8,8 +8,17 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { blogPosts } from '@/lib/data';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
+import bailRightsImage from '@assets/stock_images/courtroom_judge_gave_f4141f3f.jpg';
+import chequeBounceImage from '@assets/stock_images/financial_documents__d768546d.jpg';
+import propertyDisputeImage from '@assets/stock_images/real_estate_property_0b567b7c.jpg';
 
 export default function BlogPost() {
+  const blogImages: Record<string, string> = {
+    '1': bailRightsImage,
+    '2': chequeBounceImage,
+    '3': propertyDisputeImage,
+  };
+
   const [, params] = useRoute('/blog/:slug');
   const post = blogPosts.find((p) => p.slug === params?.slug);
 
@@ -137,7 +146,7 @@ export default function BlogPost() {
               <header className="mb-10">
                 <div className="relative w-full h-64 sm:h-96 rounded-xl overflow-hidden shadow-xl border-2 border-primary/10 mb-8">
                   <img
-                    src={post.image}
+                    src={blogImages[post.id]}
                     alt={`${post.title} - Expert legal article by Advocate Naveen Arya, best lawyer in Rohtak`}
                     className="w-full h-full object-cover"
                     loading="eager"
@@ -234,7 +243,7 @@ export default function BlogPost() {
                       <Card key={relatedPost.id} className="overflow-hidden hover-elevate transition-all" data-testid={`card-related-${relatedPost.id}`}>
                         <div className="relative h-32 overflow-hidden">
                           <img
-                            src={relatedPost.image}
+                            src={blogImages[relatedPost.id]}
                             alt={`${relatedPost.title} - Related legal article`}
                             className="w-full h-full object-cover"
                             loading="lazy"
