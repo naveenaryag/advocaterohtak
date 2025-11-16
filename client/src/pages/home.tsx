@@ -264,10 +264,10 @@ export default function Home() {
                     {area.title}
                   </h3>
                   <p className="text-muted-foreground mb-4 break-words">{area.description}</p>
-                  <Link href="/practice-areas">
-                    <Button variant="ghost" className="p-0 h-auto font-medium gap-1 flex-wrap" data-testid={`link-learn-more-${area.id}`}>
-                      <span className="break-words">Learn More About {area.title}</span>
-                      <ChevronRight className="h-4 w-4 flex-shrink-0" />
+                  <Link href="/practice-areas" className="block">
+                    <Button variant="ghost" className="p-0 h-auto font-medium text-left w-full justify-start" data-testid={`link-learn-more-${area.id}`}>
+                      <span className="break-words inline">Learn More About {area.title}</span>
+                      <ChevronRight className="h-4 w-4 flex-shrink-0 inline ml-1" />
                     </Button>
                   </Link>
                 </Card>
