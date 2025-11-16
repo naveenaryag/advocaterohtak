@@ -38,19 +38,42 @@ export default function About() {
   ];
 
   const credentials = [
-    { icon: GraduationCap, title: 'Legal Education', value: 'LLB (Bachelor of Laws)' },
-    { icon: Scale, title: 'Bar Registration', value: 'SCBA No. 12345/2014' },
+    { icon: GraduationCap, title: 'Legal Education', value: 'B.L. (Honors), M.L.' },
+    { icon: Scale, title: 'SCBA Registration', value: 'No. A-01417' },
+    { icon: Scale, title: 'COP Registration', value: 'P1700/2014' },
     { icon: Briefcase, title: 'Experience', value: '10+ Years in Practice' },
     { icon: TrendingUp, title: 'Success Rate', value: '95% Case Success' },
     { icon: Users, title: 'Clients Served', value: '1000+ Happy Clients' },
-    { icon: Award, title: 'Specialization', value: 'Criminal & Civil Law' },
   ];
 
   const awards = [
-    'Best Criminal Lawyer Award - Rohtak Bar Association (2022)',
-    'Excellence in Legal Service - District Court Recognition (2020)',
-    'Outstanding Advocate Award - State Bar Council (2019)',
-    'Young Achiever in Law - Regional Recognition (2017)',
+    'Bachelor of Laws (B.L.) with Honors - 2014',
+    'Certificate of Practice (COP) - P1700/2014',
+    'Master of Laws (M.L.) - 2016',
+    'National Eligibility Test (NET) Qualified - 2014',
+    'Outstanding Lawyer Award - 2019',
+    'International Legal Conference - Chairperson - 2019',
+    'Moot Court Judge Certification - 2024',
+    'Mr. Talent Award - Excellence in Legal Practice',
+    '15+ Research Papers Published in National & International Journals',
+  ];
+
+  const memberships = [
+    {
+      title: 'Supreme Court Bar Association',
+      registration: 'Registration No. A-01417',
+      description: 'Active member with Supreme Court practice rights'
+    },
+    {
+      title: 'Punjab & Haryana High Court',
+      registration: 'Certificate of Practice: P1700/2014',
+      description: 'Authorized to practice before High Court'
+    },
+    {
+      title: 'District Bar Association, Rohtak',
+      registration: 'Enrolled Member Since 2014',
+      description: 'Active participant in district bar activities'
+    },
   ];
 
   return (
@@ -124,7 +147,7 @@ export default function About() {
                       Schedule Consultation
                     </Button>
                   </Link>
-                  <a href="tel:+919876543210" data-testid="button-call-now">
+                  <a href="tel:+919050225555" data-testid="button-call-now">
                     <Button variant="outline" size="lg">
                       Call Now
                     </Button>
@@ -195,15 +218,49 @@ export default function About() {
                   Awards & Recognition
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Honored for excellence in legal practice
+                  Academic excellence and professional achievements
                 </p>
               </div>
 
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 {awards.map((award, index) => (
-                  <Card key={index} className="p-6 flex items-start gap-4" data-testid={`card-award-${index}`}>
+                  <Card key={index} className="p-6 flex items-start gap-4 hover-elevate transition-all" data-testid={`card-award-${index}`}>
                     <Award className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
-                    <p className="text-lg text-foreground">{award}</p>
+                    <p className="text-base text-foreground">{award}</p>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20" data-testid="section-memberships">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                  Professional Memberships
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Registered with leading bar associations
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {memberships.map((membership, index) => (
+                  <Card key={index} className="p-6 hover-elevate transition-all" data-testid={`card-membership-${index}`}>
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                          <Scale className="h-6 w-6 text-primary" />
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{membership.title}</h3>
+                        <p className="text-sm font-medium text-primary mb-2">{membership.registration}</p>
+                        <p className="text-muted-foreground">{membership.description}</p>
+                      </div>
+                    </div>
                   </Card>
                 ))}
               </div>
