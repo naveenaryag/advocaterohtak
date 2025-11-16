@@ -78,8 +78,8 @@ export default function Contact() {
     mainEntity: {
       '@type': 'Attorney',
       name: 'Advocate Naveen Arya',
-      telephone: '+919876543210',
-      email: 'naveen.arya@lawfirm.com',
+      telephone: '+919050225555',
+      email: 'naveen@advocaterohtak.com',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'District Court Complex',
@@ -95,7 +95,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Advocate Naveen Arya | Best Lawyer in Rohtak - Free Consultation"
-        description="Contact top advocate in Rohtak for legal consultation. Call +91 98765 43210 or WhatsApp for immediate response. Office at District Court Complex, Rohtak."
+        description="Contact top advocate in Rohtak for legal consultation. Call +91 90502 25555 or WhatsApp for immediate response. Office at District Court Complex, Rohtak."
         keywords={[
           'contact advocate rohtak',
           'lawyer consultation rohtak',
@@ -129,8 +129,8 @@ export default function Contact() {
                   <Phone className="h-8 w-8" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Call Us</h3>
-                <a href="tel:+919876543210" className="text-primary hover:underline font-medium">
-                  +91 98765 43210
+                <a href="tel:+919050225555" className="text-primary hover:underline font-medium">
+                  +91 90502 25555
                 </a>
                 <p className="text-sm text-muted-foreground mt-2">Available 24/7</p>
               </Card>
@@ -140,8 +140,8 @@ export default function Contact() {
                   <Mail className="h-8 w-8" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Email Us</h3>
-                <a href="mailto:naveen.arya@lawfirm.com" className="text-primary hover:underline font-medium break-all">
-                  naveen.arya@lawfirm.com
+                <a href="mailto:naveen@advocaterohtak.com" className="text-primary hover:underline font-medium break-all">
+                  naveen@advocaterohtak.com
                 </a>
                 <p className="text-sm text-muted-foreground mt-2">Response within 24 hours</p>
               </Card>
@@ -152,7 +152,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919050225555"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium"
@@ -203,7 +203,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="+91 98765 43210" {...field} disabled={contactMutation.isPending} data-testid="input-phone" />
+                            <Input type="tel" placeholder="+91 90502 25555" {...field} disabled={contactMutation.isPending} data-testid="input-phone" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

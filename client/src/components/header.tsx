@@ -63,7 +63,7 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <a href="tel:+919876543210" className="hidden sm:inline-flex" data-testid="link-call-header">
+            <a href="tel:+919050225555" className="hidden sm:inline-flex" data-testid="link-call-header">
               <Button variant="default" size="default" className="gap-2">
                 <Phone className="h-4 w-4" />
                 <span className="hidden md:inline">Call Now</span>
@@ -90,14 +90,14 @@ export function Header() {
                     </Link>
                   ))}
                   <div className="mt-4 pt-4 border-t">
-                    <a href="tel:+919876543210" className="block" data-testid="link-call-mobile">
+                    <a href="tel:+919050225555" className="block" data-testid="link-call-mobile">
                       <Button variant="default" className="w-full gap-2">
                         <Phone className="h-4 w-4" />
                         Call Now
                       </Button>
                     </a>
                     <a
-                      href="https://wa.me/919876543210"
+                      href="https://wa.me/919050225555"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block mt-2"

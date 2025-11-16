@@ -110,14 +110,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0 text-primary" />
-                <a href="tel:+919876543210" className="hover:text-primary transition-colors" data-testid="link-footer-phone">
-                  +91 98765 43210
+                <a href="tel:+919050225555" className="hover:text-primary transition-colors" data-testid="link-footer-phone">
+                  +91 90502 25555
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0 text-primary" />
-                <a href="mailto:naveen.arya@lawfirm.com" className="hover:text-primary transition-colors" data-testid="link-footer-email">
-                  naveen.arya@lawfirm.com
+                <a href="mailto:naveen@advocaterohtak.com" className="hover:text-primary transition-colors" data-testid="link-footer-email">
+                  naveen@advocaterohtak.com
                 </a>
               </li>
             </ul>
@@ -127,7 +127,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} Advocate Naveen Arya. All rights reserved.</p>
           <p className="mt-2">
-            SCBA Registration: 12345/2014 | Bar Council of Haryana
+            SCBA Registration: A-01417 | COP: P1700/2014 | Bar Council of India
           </p>
         </div>
       </div>
