@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative w-full max-w-full overflow-visible pb-8 sm:pb-0">
+              <div className="relative w-full max-w-full mb-16 sm:mb-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                   <img
                     src={heroImage}
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-card" data-testid="section-why-choose">
+        <section className="py-12 sm:py-20 bg-card" data-testid="section-why-choose">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
@@ -252,9 +252,9 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {practiceAreas.map((area) => (
-                <Card key={area.id} className="p-6 hover-elevate transition-all group max-w-full" data-testid={`card-practice-${area.id}`}>
+                <Card key={area.id} className="p-6 hover-elevate transition-all group w-full" data-testid={`card-practice-${area.id}`}>
                   <div className="mb-4">
                     <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary">
                       <Scale className="h-6 w-6" />
