@@ -251,7 +251,7 @@ export default function About() {
                 ))}
               </div>
 
-              <div className="space-y-6 pt-8">
+              <div className="space-y-6 pt-2.5">
                 <h3 className="font-serif text-2xl font-bold text-foreground text-center">Award Ceremonies & Recognition</h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="relative rounded-xl overflow-hidden shadow-lg border-2 border-primary/10 hover-elevate transition-all">
