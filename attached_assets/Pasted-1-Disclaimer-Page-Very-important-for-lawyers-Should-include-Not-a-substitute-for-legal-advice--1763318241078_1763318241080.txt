@@ -1,0 +1,203 @@
+1. Disclaimer Page
+
+Very important for lawyers.
+Should include:
+
+Not a substitute for legal advice
+
+No attorney–client relationship unless formally agreed
+
+Website content is for information only
+
+Jurisdiction applicability
+
+No guarantee of case results
+
+Google reads disclaimers for trust signals.
+
+2. Privacy Policy
+
+Must disclose:
+
+What data you collect (forms, Cookies, Analytics, etc.)
+
+How you store client data
+
+Third-party tools
+
+Data protection compliance
+
+Contact email for grievances
+
+Google expects this on all business websites.
+
+3. Terms & Conditions
+
+Should include:
+
+Conditions for using the website
+
+Intellectual property rights
+
+Limitations of liability
+
+User responsibilities
+
+Governing law (Haryana jurisdiction)
+
+Shows legal maturity & professionalism.
+
+4. Refund & Cancellation Policy (Optional for Lawyers)
+
+If you allow online consultation booking, add this.
+
+Even if you don’t, add a line saying:
+
+“Legal consultation fees are non-refundable once advice is provided.”
+
+5. Cookie Policy (If using Analytics or Meta Pixel)
+
+Required if:
+
+You use Google Analytics
+
+Facebook Pixel
+
+Hotjar
+
+Any tracking cookies
+
+6. “No Attorney–Client Relationship” Page (Separate Page or Part of Disclaimer)
+
+This is a required compliance page for law websites in many jurisdictions.
+
+Should clearly say:
+
+“Submitting a form or contacting us does not create an advocate–client relationship.”
+
+7. ‘Legal Services Compliance’ Page
+
+This is optional but highly boosts EEAT.
+
+Should include:
+
+Bar Council of India rules you follow
+
+Your Bar Enrollment Number
+
+Ethics compliance statement
+
+Types of cases you accept & do not accept
+
+Consumer protection disclaimers
+
+Huge trust booster.
+
+8. Grievance Redressal Contact
+
+Add a dedicated section (part of Privacy Policy or separate):
+
+Grievance Officer
+
+Email address
+
+Postal address
+
+Response time (like 48–72 hrs)
+
+Google considers this as part of "Trust".
+
+🏛️ Highly Recommended Pages (Help Ranking & EEAT)
+9. About the Advocate
+
+Include:
+
+Bar Council Enrollment number
+
+Years of experience
+
+Courts you practice in
+
+Awards, qualifications, achievements
+
+Publications
+
+Speaking engagements
+
+This is one of the strongest EEAT pages.
+
+10. Contact Page with Multiple Validations
+
+Must include:
+
+Mobile number
+
+Working WhatsApp number
+
+Office address
+
+Google Map embed
+
+Email
+
+Consultation form
+
+11. Client Testimonials (with Proof)
+
+Google values reviews on:
+
+Google My Business
+
+Client signed reviews (never use fake reviews)
+
+Make sure the page is:
+
+Short
+
+Authentic
+
+With initials (not full names) for confidentiality
+
+12. Case Results Page (Optional)
+
+You cannot list client names without consent.
+So write in this style:
+
+“Successfully obtained anticipatory bail for a client in a false FIR (2023).”
+
+“Helped a family settle a cheque bounce matter out of court (2024).”
+
+These generic success summaries do NOT violate ethics.
+
+⭐ Total Pages Google Loves on a Lawyer Website
+Required (Must-Have)
+
+Disclaimer
+
+Privacy Policy
+
+Terms & Conditions
+
+Cookie Policy
+
+No Attorney–Client Relationship Page
+
+Legal & Ethics Compliance Page
+
+Grievance Redressal Page/Section
+
+About Advocate
+
+Contact Page
+
+Recommended
+
+Testimonials
+
+Case Results
+
+Practice Areas Pages
+
+Blog / Articles section
+
+FAQ
