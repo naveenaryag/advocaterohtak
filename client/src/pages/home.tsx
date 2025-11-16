@@ -8,7 +8,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { practiceAreas, testimonials, faqs } from '@/lib/data';
 import heroImage from '@assets/advocate-rohtak_1763319067660.jpg';
-import newsImage from '@assets/lawyer-rohtak-news_1763319067663.jpg';
+import rohtakCourtImage from '@assets/rohtak-court_1763319002240.jpg';
 
 export default function Home() {
   const localBusinessSchema = {
@@ -345,44 +345,100 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-card" data-testid="section-media">
+        <section className="py-20 bg-card" data-testid="section-local-advocate">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
-                Media Coverage & Recognition
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Featured in leading newspapers and legal publications across Rohtak
-              </p>
-            </div>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Why Choose a Local Rohtak Advocate?
+                </h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  When facing legal challenges in Rohtak, hiring a local advocate who understands the nuances of Rohtak District Courts makes all the difference. As an experienced Rohtak advocate, I offer distinct advantages that out-of-town lawyers simply cannot match.
+                </p>
+                
+                <div className="space-y-6">
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Scale className="h-5 w-5 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Deep Knowledge of Rohtak Courts</h3>
+                      <p className="text-muted-foreground">
+                        Over 10 years of daily practice in Rohtak District Courts means I know every procedure, every official, and every legal nuance specific to Rohtak. This local expertise translates to faster case resolution and better outcomes for my clients.
+                      </p>
+                    </div>
+                  </div>
 
-            <div className="max-w-4xl mx-auto">
-              <div className="relative rounded-xl overflow-hidden shadow-2xl border-2 border-primary/10">
-                <img
-                  src={newsImage}
-                  alt="Advocate Naveen Arya featured in Rohtak newspapers - Media coverage of best lawyer in Rohtak"
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
-                  <p className="text-white text-lg font-semibold mb-2">Media Recognition</p>
-                  <p className="text-white/80 text-sm">Advocate Naveen Arya has been featured in multiple local and regional news publications for outstanding legal work and community service</p>
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Users className="h-5 w-5 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Established Local Relationships</h3>
+                      <p className="text-muted-foreground">
+                        As a trusted advocate in Rohtak, I have built strong professional relationships with court staff, revenue officials, and local authorities. These connections ensure smooth processing of your legal matters without unnecessary delays.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                        <TrendingUp className="h-5 w-5 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Proven Success in Rohtak</h3>
+                      <p className="text-muted-foreground">
+                        With a 95% success rate in Rohtak courts and 500+ cases won, my track record speaks for itself. I understand what works in Rohtak's legal environment and apply this knowledge to maximize your chances of success.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Phone className="h-5 w-5 text-primary" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-2">Immediate Availability for Rohtak Residents</h3>
+                      <p className="text-muted-foreground">
+                        Being based in Rohtak means I'm always accessible when you need me. Whether it's an emergency bail application or urgent legal consultation, I can be at the Rohtak court within minutes, not hours.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
-              <div className="grid md:grid-cols-3 gap-6 mt-8">
-                <Card className="p-6 text-center hover-elevate">
-                  <div className="text-3xl font-bold text-primary mb-2">15+</div>
-                  <p className="text-sm text-muted-foreground">Publications Featured</p>
-                </Card>
-                <Card className="p-6 text-center hover-elevate">
-                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                  <p className="text-sm text-muted-foreground">Interviews Given</p>
-                </Card>
-                <Card className="p-6 text-center hover-elevate">
-                  <div className="text-3xl font-bold text-primary mb-2">100+</div>
-                  <p className="text-sm text-muted-foreground">Media Mentions</p>
-                </Card>
+
+              <div>
+                <div className="relative rounded-xl overflow-hidden shadow-2xl border-2 border-primary/10">
+                  <img
+                    src={rohtakCourtImage}
+                    alt="Rohtak District Court Complex - Where advocate Rohtak Naveen Arya practices law, best advocate in Rohtak serving local residents"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
+                    <p className="text-white text-lg font-semibold mb-2">Rohtak District Court Complex</p>
+                    <p className="text-white/80 text-sm">Serving justice in Rohtak for over 10 years with dedication and expertise</p>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4 mt-6">
+                  <Card className="p-4 text-center hover-elevate">
+                    <div className="text-2xl font-bold text-primary mb-1">10+</div>
+                    <p className="text-xs text-muted-foreground">Years in Rohtak Courts</p>
+                  </Card>
+                  <Card className="p-4 text-center hover-elevate">
+                    <div className="text-2xl font-bold text-primary mb-1">500+</div>
+                    <p className="text-xs text-muted-foreground">Rohtak Cases Won</p>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
