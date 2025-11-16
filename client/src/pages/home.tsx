@@ -1,0 +1,406 @@
+import { Link } from 'wouter';
+import { Phone, MessageCircle, Scale, Award, Users, TrendingUp, Star, ChevronRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { SEO } from '@/components/seo';
+import { Header } from '@/components/header';
+import { Footer } from '@/components/footer';
+import { practiceAreas, testimonials, faqs } from '@/lib/data';
+import heroImage from '@assets/generated_images/Professional_advocate_portrait_hero_7d572b94.png';
+
+export default function Home() {
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': ['LegalService', 'Attorney'],
+    name: 'Advocate Naveen Arya',
+    image: heroImage,
+    '@id': 'https://advocatenaveenary.com',
+    url: 'https://advocatenaveenary.com',
+    telephone: '+919876543210',
+    priceRange: '₹₹',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'District Court Complex',
+      addressLocality: 'Rohtak',
+      addressRegion: 'Haryana',
+      postalCode: '124001',
+      addressCountry: 'IN',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 28.8955,
+      longitude: 76.6066,
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '10:00',
+      closes: '18:00',
+    },
+    sameAs: [
+      'https://facebook.com/advocatenaveenary',
+      'https://linkedin.com/in/advocatenaveenary',
+    ],
+    areaServed: {
+      '@type': 'City',
+      name: 'Rohtak',
+    },
+    description: 'Best advocate in Rohtak specializing in criminal law, matrimonial cases, property disputes, and cheque bounce cases. Over 10 years experience with 500+ successful cases.',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '5',
+      reviewCount: '150',
+    },
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
+  const combinedSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [localBusinessSchema, faqSchema],
+  };
+
+  return (
+    <>
+      <SEO
+        title="Advocate Naveen Arya - Best Lawyer in Rohtak | Criminal & Civil Law Expert"
+        description="Top advocate in Rohtak with 10+ years experience. Expert in criminal law, matrimonial cases, property disputes, bail matters. SCBA registered. Call now for free consultation."
+        keywords={[
+          'advocate rohtak',
+          'best advocate in rohtak',
+          'best criminal lawyer in rohtak',
+          'best lawyer in rohtak',
+          'rohtak advocate',
+          'rohtak lawyer',
+          'top advocates in rohtak',
+          'advocate in rohtak',
+        ]}
+        canonical="/"
+        schema={combinedSchema}
+      />
+      <Header />
+
+      <main>
+        <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5 overflow-hidden" data-testid="section-hero">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utb3BhY2l0eT0iLjA1Ii8+PC9nPjwvc3ZnPg==')] opacity-40" />
+          
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20" data-testid="badge-scba">
+                    <Scale className="h-4 w-4 text-primary" />
+                    <span className="text-sm font-medium text-primary">SCBA Registered</span>
+                  </div>
+                  <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+                    Advocate Naveen Arya
+                  </h1>
+                  <p className="text-xl sm:text-2xl text-muted-foreground font-medium">
+                    Expert Legal Representation in Rohtak
+                  </p>
+                  <p className="text-base sm:text-lg text-muted-foreground max-w-xl">
+                    Specializing in Criminal Law, Matrimonial Cases, Property Disputes, and Civil Litigation with over 10 years of dedicated service in Rohtak District Courts.
+                  </p>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a href="tel:+919876543210" data-testid="button-hero-call">
+                    <Button size="lg" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2">
+                      <Phone className="h-5 w-5" />
+                      Call Now
+                    </Button>
+                  </a>
+                  <a
+                    href="https://wa.me/919876543210"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-testid="button-hero-whatsapp"
+                  >
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2 bg-background/50 backdrop-blur-sm border-2"
+                    >
+                      <MessageCircle className="h-5 w-5" />
+                      WhatsApp
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-6 sm:gap-8 pt-4 border-t">
+                  <div className="flex items-center gap-2" data-testid="stat-experience">
+                    <Award className="h-5 w-5 text-accent" />
+                    <div>
+                      <p className="text-2xl font-bold text-foreground">10+</p>
+                      <p className="text-sm text-muted-foreground">Years Experience</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2" data-testid="stat-cases">
+                    <TrendingUp className="h-5 w-5 text-accent" />
+                    <div>
+                      <p className="text-2xl font-bold text-foreground">500+</p>
+                      <p className="text-sm text-muted-foreground">Cases Won</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2" data-testid="stat-clients">
+                    <Users className="h-5 w-5 text-accent" />
+                    <div>
+                      <p className="text-2xl font-bold text-foreground">1000+</p>
+                      <p className="text-sm text-muted-foreground">Happy Clients</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative hidden lg:block">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
+                  <img
+                    src={heroImage}
+                    alt="Advocate Naveen Arya - Professional Lawyer in Rohtak"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                    fetchPriority="high"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <Scale className="h-8 w-8" />
+                    <div>
+                      <p className="text-sm opacity-90">Practicing Since</p>
+                      <p className="text-2xl font-bold">2014</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-card" data-testid="section-why-choose">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Why Choose Advocate Naveen Arya?
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Dedicated legal expertise backed by proven results and client satisfaction
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: 'Extensive Experience',
+                  description: 'Over 10 years of practice in Rohtak District Courts with deep understanding of local legal procedures and court systems.',
+                },
+                {
+                  title: 'Proven Track Record',
+                  description: '500+ successful cases across criminal law, civil litigation, family matters, and property disputes with high success rate.',
+                },
+                {
+                  title: 'Client-Focused Approach',
+                  description: 'Personalized attention to each case with regular updates, transparent communication, and strategic legal planning.',
+                },
+                {
+                  title: 'Comprehensive Legal Services',
+                  description: 'Full spectrum of legal services from consultation to trial advocacy, covering multiple practice areas under one roof.',
+                },
+                {
+                  title: '24/7 Availability',
+                  description: 'Emergency legal assistance available round the clock, especially for urgent matters like bail applications.',
+                },
+                {
+                  title: 'Affordable Pricing',
+                  description: 'Transparent and competitive fee structure with flexible payment options to ensure access to quality legal services.',
+                },
+              ].map((item, index) => (
+                <Card key={index} className="p-6 hover-elevate transition-all" data-testid={`card-benefit-${index}`}>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20" data-testid="section-practice-areas">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Practice Areas
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Comprehensive legal services across multiple areas of law
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {practiceAreas.map((area) => (
+                <Card key={area.id} className="p-6 hover-elevate transition-all group" data-testid={`card-practice-${area.id}`}>
+                  <div className="mb-4">
+                    <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary">
+                      <Scale className="h-6 w-6" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                    {area.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">{area.description}</p>
+                  <Link href="/practice-areas">
+                    <Button variant="ghost" className="p-0 h-auto font-medium gap-1" data-testid={`link-learn-more-${area.id}`}>
+                      Learn More
+                      <ChevronRight className="h-4 w-4" />
+                    </Button>
+                  </Link>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link href="/practice-areas">
+                <Button size="lg" variant="outline" data-testid="button-view-all-services">
+                  View All Services
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-card" data-testid="section-experience">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                Experience in Rohtak Courts
+              </h2>
+              <div className="space-y-4 text-lg text-muted-foreground">
+                <p>
+                  With over a decade of practice in Rohtak District Courts, I have developed deep expertise in navigating the local legal system. My extensive experience includes regular appearances before District Courts, Additional District Courts, and various civil and criminal courts in Rohtak.
+                </p>
+                <p>
+                  I maintain strong professional relationships with the judicial system and possess comprehensive knowledge of local court procedures, which translates into efficient case management and favorable outcomes for my clients.
+                </p>
+                <div className="grid sm:grid-cols-3 gap-6 mt-8">
+                  <div className="text-center p-6 bg-primary/5 rounded-lg">
+                    <p className="text-4xl font-bold text-primary mb-2">95%</p>
+                    <p className="text-sm text-foreground font-medium">Success Rate</p>
+                  </div>
+                  <div className="text-center p-6 bg-primary/5 rounded-lg">
+                    <p className="text-4xl font-bold text-primary mb-2">500+</p>
+                    <p className="text-sm text-foreground font-medium">Cases Handled</p>
+                  </div>
+                  <div className="text-center p-6 bg-primary/5 rounded-lg">
+                    <p className="text-4xl font-bold text-primary mb-2">10+</p>
+                    <p className="text-sm text-foreground font-medium">Years Practice</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20" data-testid="section-testimonials">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Client Testimonials
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                What our satisfied clients say about our legal services
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {testimonials.map((testimonial) => (
+                <Card key={testimonial.id} className="p-6" data-testid={`card-testimonial-${testimonial.id}`}>
+                  <div className="flex items-center gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+                    ))}
+                  </div>
+                  <p className="text-foreground mb-4 italic">"{testimonial.comment}"</p>
+                  <div className="flex items-center justify-between border-t pt-4">
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.caseType}</p>
+                    </div>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-card" data-testid="section-faq">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Common questions about legal services in Rohtak
+                </p>
+              </div>
+
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={faq.id} value={`item-${index}`} className="border rounded-lg px-6" data-testid={`faq-${index}`}>
+                    <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-primary text-primary-foreground" data-testid="section-cta">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
+              Need Legal Assistance in Rohtak?
+            </h2>
+            <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+              Get expert legal consultation today. Available 24/7 for emergency matters.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:+919876543210" data-testid="button-cta-call">
+                <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2">
+                  <Phone className="h-5 w-5" />
+                  Call Now
+                </Button>
+              </a>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  data-testid="button-cta-contact"
+                >
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}
