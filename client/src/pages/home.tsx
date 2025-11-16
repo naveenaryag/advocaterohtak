@@ -30,9 +30,10 @@ export default function Home() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 28.8955,
-      longitude: 76.6066,
+      latitude: 28.8935102,
+      longitude: 76.5940006,
     },
+    hasMap: 'https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z/data=!3m1!4b1!4m6!3m5!1s0x390d85a7e4fa23ed:0xa4af0adba6e2ec69!8m2!3d28.8935102!4d76.5940006!16s%2Fg%2F11b779dh2m',
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -40,8 +41,9 @@ export default function Home() {
       closes: '18:00',
     },
     sameAs: [
-      'https://facebook.com/advocatenaveenary',
-      'https://linkedin.com/in/advocatenaveenary',
+      'https://www.facebook.com/naveenaryapresident',
+      'https://www.linkedin.com/in/true-lawyer/',
+      'https://www.instagram.com/truelawyer2/',
     ],
     areaServed: {
       '@type': 'City',

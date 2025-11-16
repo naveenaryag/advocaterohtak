@@ -4,13 +4,23 @@ This is a professional lawyer website for Advocate Naveen Arya, a legal practiti
 
 # Recent Changes (Latest Session)
 
-- Added professional stock images to all 3 blog articles:
-  - "Understanding Bail Rights" - courtroom/gavel image
-  - "Cheque Bounce Cases" - financial documents image  
-  - "Property Disputes" - real estate/house keys image
-- Implemented proper loading strategy: eager for above-the-fold (featured post on /blog, article headers), lazy for below-the-fold (article cards, related articles)
-- All blog images include SEO-optimized alt tags with legal keywords and "Rohtak" references
-- Images properly sourced from attached_assets/stock_images with no broken links
+- **Social Media & Court Links Update**:
+  - Updated Footer with verified social profiles: Facebook (naveenaryapresident), LinkedIn (true-lawyer), Instagram (truelawyer2)
+  - Added Google Maps link to footer social icons and made office address clickable for direct navigation
+  - Removed Twitter link as requested
+  - Added "Court Links" section in footer with Rohtak District Court and Punjab & Haryana High Court links for local SEO authority
+  - Updated schema.org markup with verified social profiles, precise geo coordinates (28.8935102, 76.5940006), and hasMap property with Google Maps URL
+  
+- **Award Images Enhancement**:
+  - Adjusted Moot Court Judge Award image positioning (object-[50%_35%]) to show faces clearly
+  - Enhanced image brightness (1.15), contrast (1.1), and saturation (1.1) for better visibility
+  - Updated video section title from "Professional Video Profile" to "Expert Legal Insights on Matrimonial Matters" to accurately reflect divorce/marriage content
+
+- **SEO & Accessibility Improvements**:
+  - All interactive elements now meet 48x48px minimum touch target requirement
+  - Google Fonts optimized with preload and async loading (eliminated 1,220ms render-blocking delay)
+  - Practice area links use descriptive text ("Learn More About {area}")
+  - Blog images with professional stock photos and proper loading strategy (eager above-fold, lazy below-fold)
 
 # User Preferences
 

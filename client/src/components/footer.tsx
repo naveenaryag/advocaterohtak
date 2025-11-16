@@ -1,5 +1,6 @@
 import { Link } from 'wouter';
-import { Scale, Phone, Mail, MapPin, Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Scale, Phone, Mail, MapPin, Facebook, Linkedin, Map } from 'lucide-react';
+import { SiInstagram } from 'react-icons/si';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,9 +20,9 @@ export function Footer() {
             <p className="text-sm text-muted-foreground mb-4">
               Expert legal representation in Rohtak with over 10 years of experience in criminal law, civil litigation, and family matters.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-3 flex-wrap">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/naveenaryapresident"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
@@ -31,17 +32,7 @@ export function Footer() {
                 <Facebook className="h-5 w-5 text-muted-foreground" />
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
-                data-testid="link-twitter"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-muted-foreground" />
-              </a>
-              <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/true-lawyer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
@@ -49,6 +40,26 @@ export function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5 text-muted-foreground" />
+              </a>
+              <a
+                href="https://www.instagram.com/truelawyer2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
+                data-testid="link-instagram"
+                aria-label="Instagram"
+              >
+                <SiInstagram className="h-5 w-5 text-muted-foreground" />
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z/data=!3m1!4b1!4m6!3m5!1s0x390d85a7e4fa23ed:0xa4af0adba6e2ec69!8m2!3d28.8935102!4d76.5940006!16s%2Fg%2F11b779dh2m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
+                data-testid="link-google-maps"
+                aria-label="Find us on Google Maps"
+              >
+                <Map className="h-5 w-5 text-muted-foreground" />
               </a>
             </div>
           </div>
@@ -135,6 +146,19 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
+            <h3 className="font-semibold text-foreground mb-4 mt-6">Court Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="https://rohtak.dcourts.gov.in/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-district-court">
+                  Rohtak District Court
+                </a>
+              </li>
+              <li>
+                <a href="https://highcourtchd.gov.in/3_har/district/rohtak/clc_dist.php" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-high-court">
+                  Punjab & Haryana High Court
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>
@@ -142,7 +166,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                <span>District Court Complex, Rohtak, Haryana - 124001</span>
+                <a 
+                  href="https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z/data=!3m1!4b1!4m6!3m5!1s0x390d85a7e4fa23ed:0xa4af0adba6e2ec69!8m2!3d28.8935102!4d76.5940006!16s%2Fg%2F11b779dh2m"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                  data-testid="link-footer-address"
+                >
+                  District Court Complex, Rohtak, Haryana - 124001
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0 text-primary" />
