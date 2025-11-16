@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { Phone, MessageCircle, Scale, CheckCircle, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
@@ -49,18 +50,42 @@ export default function CriminalLawyer() {
     { step: '6', title: 'Case Resolution', description: 'Work towards favorable outcome through trial or settlement' },
   ];
 
+  const faqs = [
+    {
+      question: 'Who is the best criminal lawyer in Rohtak?',
+      answer: 'Advocate Naveen Arya is recognized as one of the best criminal lawyers in Rohtak with over 10 years of experience, a 95% bail success rate, and 300+ acquittals. He is registered with SCBA (A-01417) and Punjab & Haryana High Court (P1700/2014).',
+    },
+    {
+      question: 'What is the success rate for bail applications in Rohtak?',
+      answer: 'Our practice has achieved a 95% success rate in bail applications across Rohtak District Courts and Sessions Court. We handle both regular bail and anticipatory bail with extensive experience in complex criminal cases.',
+    },
+    {
+      question: 'How much does a criminal lawyer charge in Rohtak for bail?',
+      answer: 'Legal fees vary based on case complexity, court level, and urgency. We offer transparent pricing and free initial consultation. Contact us at +91 90502 25555 for detailed fee structure specific to your case.',
+    },
+    {
+      question: 'Is criminal lawyer available 24/7 for urgent bail matters?',
+      answer: 'Yes, Advocate Naveen Arya provides 24/7 availability for urgent criminal matters including immediate bail applications, anticipatory bail, and emergency consultations. Call or WhatsApp +91 90502 25555 anytime.',
+    },
+    {
+      question: 'What types of criminal cases are handled in Rohtak?',
+      answer: 'We handle all types of criminal cases including bail applications, criminal trials, NDPS cases, domestic violence, cyber crimes, economic offenses, quashing petitions, and anticipatory bail under Section 438 CrPC.',
+    },
+  ];
+
   return (
     <>
       <SEO
-        title="Best Criminal Lawyer in Rohtak | Expert Criminal Defense Advocate"
-        description="Top criminal lawyer in Rohtak for bail matters, criminal trials, anticipatory bail. 10+ years experience in Rohtak courts. Available 24/7 for urgent bail applications."
+        title="Best Criminal Lawyer in Rohtak | Advocate Naveen Arya - Criminal Defense Expert"
+        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 10+ years experience, 95% bail success rate. SCBA: A-01417. Call +91 90502 25555 for urgent consultation."
         keywords={[
           'best criminal lawyer in rohtak',
           'criminal advocate rohtak',
           'bail lawyer rohtak',
           'anticipatory bail rohtak',
-          'criminal defense lawyer',
+          'criminal defense lawyer rohtak',
           'rohtak criminal advocate',
+          'best lawyer for criminal cases in rohtak',
         ]}
         canonical="/criminal-lawyer"
         schema={schema}
@@ -73,19 +98,19 @@ export default function CriminalLawyer() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                  Expert Criminal Lawyer in Rohtak
+                  Best Criminal Lawyer in Rohtak
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  Aggressive defense strategies backed by 10+ years of experience in criminal law. Protecting your rights and freedom with unwavering dedication.
+                  Looking for the best criminal lawyer in Rohtak? Advocate Naveen Arya offers aggressive defense strategies backed by 10+ years of experience in criminal law. Protecting your rights and freedom with unwavering dedication.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <a href="tel:+919876543210" data-testid="button-hero-call">
+                  <a href="tel:+919050225555" data-testid="button-hero-call">
                     <Button size="lg" className="w-full sm:w-auto gap-2">
                       <Phone className="h-5 w-5" />
                       Urgent Consultation
                     </Button>
                   </a>
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                  <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                     <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                       <MessageCircle className="h-5 w-5" />
                       WhatsApp 24/7
@@ -200,6 +225,34 @@ export default function CriminalLawyer() {
           </div>
         </section>
 
+        <section className="py-20 bg-card" data-testid="section-faq">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-lg text-muted-foreground">
+                  Common questions about criminal defense services in Rohtak
+                </p>
+              </div>
+
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} data-testid={`faq-${index}`}>
+                    <AccordionTrigger className="text-left text-lg font-semibold">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-base text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 bg-primary text-primary-foreground" data-testid="section-cta">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
@@ -209,7 +262,7 @@ export default function CriminalLawyer() {
               Don't wait. Get immediate legal assistance from an experienced criminal lawyer in Rohtak.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210" data-testid="button-cta-call">
+              <a href="tel:+919050225555" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now - 24/7
