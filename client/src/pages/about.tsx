@@ -258,7 +258,7 @@ export default function About() {
                     <img
                       src={awardImage1}
                       alt="Advocate Naveen Arya receiving Moot Court Judge Certification from MDU - Best advocate in Rohtak"
-                      className="w-full h-64 object-cover object-[50%_8%]"
+                      className="w-full h-64 object-cover object-top"
                       loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
@@ -269,7 +269,7 @@ export default function About() {
                     <img
                       src={awardImage2}
                       alt="Advocate Naveen Arya receiving award from International Lawyers Association"
-                      className="w-full h-64 object-cover object-[50%_8%]"
+                      className="w-full h-64 object-cover object-top"
                       loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
@@ -280,7 +280,7 @@ export default function About() {
                     <img
                       src={awardImage3}
                       alt="Advocate Naveen Arya presenting award to District Judge Rohtak Sh. H.S. Narang"
-                      className="w-full h-64 object-cover object-[50%_8%]"
+                      className="w-full h-64 object-cover object-top"
                       loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
