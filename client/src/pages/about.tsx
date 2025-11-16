@@ -291,14 +291,14 @@ export default function About() {
                 </div>
 
                 <div className="mt-12 bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 border">
-                  <h3 className="font-serif text-2xl font-bold text-foreground mb-6 text-center">Professional Video Profile</h3>
+                  <h3 className="font-serif text-2xl font-bold text-foreground mb-6 text-center">Expert Legal Insights on Matrimonial Matters</h3>
                   <div className="max-w-3xl mx-auto">
                     <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
                       <iframe
                         width="100%"
                         height="100%"
                         src="https://www.youtube.com/embed/ctYOmrvVG1g"
-                        title="Advocate Naveen Arya - Best Lawyer in Rohtak | Professional Profile"
+                        title="Things To Know Before Getting Divorce | Marriage Signs - Advocate Naveen Arya"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -307,7 +307,7 @@ export default function About() {
                       />
                     </div>
                     <p className="text-center text-sm text-muted-foreground mt-4">
-                      Watch Advocate Naveen Arya discuss his legal practice, achievements, and commitment to justice in Rohtak
+                      Watch Advocate Naveen Arya explain important things to know before getting divorced and signs that indicate marriage dissolution
                     </p>
                   </div>
                 </div>
