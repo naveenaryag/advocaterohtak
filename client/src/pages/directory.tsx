@@ -24,8 +24,8 @@ export default function Directory() {
           postalCode: '124001',
           addressCountry: 'IN',
         },
-        telephone: '+919876543210',
-        email: 'naveen.arya@lawfirm.com',
+        telephone: '+919050225555',
+        email: 'naveen@advocaterohtak.com',
       },
     ],
   };
@@ -57,8 +57,8 @@ export default function Directory() {
   return (
     <>
       <SEO
-        title="Rohtak Advocate Directory | List of Advocates in Rohtak Court"
-        description="Complete directory of advocates practicing in Rohtak District Courts. Find the best lawyers in Rohtak for criminal, civil, and family law matters."
+        title="Rohtak Advocate List | Directory of Advocates in Rohtak Court 2025"
+        description="Complete list of advocates in Rohtak court. Find the best advocate in Rohtak directory for criminal, civil, family law. Top-rated lawyers practicing in Rohtak District Courts. SCBA: A-01417."
         keywords={[
           'list of advocates in rohtak court',
           'rohtak advocate directory',
@@ -66,6 +66,7 @@ export default function Directory() {
           'rohtak court advocate list',
           'advocate directory rohtak',
           'lawyers in rohtak',
+          'best advocate in rohtak',
         ]}
         canonical="/directory"
         schema={combinedSchema}
@@ -95,10 +96,10 @@ export default function Directory() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
-                Rohtak Advocate Directory
+                Rohtak Advocate List - Complete Directory
               </h1>
               <p className="text-xl text-muted-foreground">
-                Find experienced legal professionals practicing in Rohtak District Courts. Our directory features qualified advocates with expertise across various practice areas.
+                Looking for the list of advocates in Rohtak court? Our comprehensive Rohtak advocate directory features the best lawyers practicing in Rohtak District Courts with expertise across criminal, civil, and family law practice areas.
               </p>
             </div>
           </div>
@@ -122,7 +123,7 @@ export default function Directory() {
                   <div className="mb-6">
                     <Scale className="h-12 w-12 mb-4" />
                     <h3 className="font-serif text-2xl font-bold mb-2">Advocate Naveen Arya</h3>
-                    <p className="text-sm opacity-90">SCBA Registration: 12345/2014</p>
+                    <p className="text-sm opacity-90">SCBA: A-01417 | COP: P1700/2014</p>
                   </div>
                   
                   <div className="space-y-4">
@@ -173,8 +174,8 @@ export default function Directory() {
                       <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
                         <p className="text-sm font-medium text-foreground">Contact Number</p>
-                        <a href="tel:+919876543210" className="text-sm text-primary hover:underline">
-                          +91 98765 43210
+                        <a href="tel:+919050225555" className="text-sm text-primary hover:underline">
+                          +91 90502 25555
                         </a>
                       </div>
                     </div>
@@ -182,15 +183,15 @@ export default function Directory() {
                       <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
                         <p className="text-sm font-medium text-foreground">Email</p>
-                        <a href="mailto:naveen.arya@lawfirm.com" className="text-sm text-primary hover:underline">
-                          naveen.arya@lawfirm.com
+                        <a href="mailto:naveen@advocaterohtak.com" className="text-sm text-primary hover:underline">
+                          naveen@advocaterohtak.com
                         </a>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t">
-                    <a href="tel:+919876543210" data-testid="button-call-advocate">
+                    <a href="tel:+919050225555" data-testid="button-call-advocate">
                       <Button className="w-full sm:w-auto gap-2">
                         <Phone className="h-4 w-4" />
                         Call Now
