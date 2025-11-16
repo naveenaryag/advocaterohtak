@@ -12,6 +12,11 @@ import PracticeAreas from "@/pages/practice-areas";
 import Contact from "@/pages/contact";
 import Blog from "@/pages/blog";
 import BlogPost from "@/pages/blog-post";
+import Disclaimer from "@/pages/disclaimer";
+import PrivacyPolicy from "@/pages/privacy-policy";
+import Terms from "@/pages/terms";
+import CookiePolicy from "@/pages/cookie-policy";
+import LegalCompliance from "@/pages/legal-compliance";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -25,6 +30,11 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/disclaimer" component={Disclaimer} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms" component={Terms} />
+      <Route path="/cookie-policy" component={CookiePolicy} />
+      <Route path="/legal-compliance" component={LegalCompliance} />
       <Route component={NotFound} />
     </Switch>
   );

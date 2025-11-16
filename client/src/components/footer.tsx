@@ -7,8 +7,8 @@ export function Footer() {
   return (
     <footer className="bg-card border-t" data-testid="footer-main">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <Scale className="h-6 w-6 text-primary" />
               <div className="flex flex-col">
@@ -77,6 +77,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/directory" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-directory">
+                  Directory
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-blog">
                   Blog
                 </Link>
@@ -98,6 +103,37 @@ export function Footer() {
               <li>Civil Disputes</li>
               <li>Bail Matters</li>
               <li>Property Litigation</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-foreground mb-4">Legal</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/disclaimer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-disclaimer">
+                  Disclaimer
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-privacy">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-terms">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookie-policy" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-cookies">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/legal-compliance" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-compliance">
+                  Legal Compliance
+                </Link>
+              </li>
             </ul>
           </div>
 

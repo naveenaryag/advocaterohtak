@@ -35,6 +35,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       { url: "/blog/understanding-bail-rights-in-india", changefreq: "monthly", priority: "0.6" },
       { url: "/blog/cheque-bounce-cases-guide", changefreq: "monthly", priority: "0.6" },
       { url: "/blog/property-dispute-resolution", changefreq: "monthly", priority: "0.6" },
+      { url: "/disclaimer", changefreq: "yearly", priority: "0.5" },
+      { url: "/privacy-policy", changefreq: "yearly", priority: "0.5" },
+      { url: "/terms", changefreq: "yearly", priority: "0.5" },
+      { url: "/cookie-policy", changefreq: "yearly", priority: "0.5" },
+      { url: "/legal-compliance", changefreq: "yearly", priority: "0.6" },
     ];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
