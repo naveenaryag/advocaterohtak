@@ -120,8 +120,8 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+919050225555" data-testid="button-hero-call">
-                    <Button size="lg" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2">
+                  <a href="tel:+919050225555" data-testid="button-hero-call" className="inline-block">
+                    <Button size="lg" className="w-full sm:w-auto text-lg rounded-full gap-2">
                       <Phone className="h-5 w-5" />
                       Call Now
                     </Button>
@@ -131,11 +131,12 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid="button-hero-whatsapp"
+                    className="inline-block"
                   >
                     <Button
                       variant="outline"
                       size="lg"
-                      className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2 bg-background/50 backdrop-blur-sm border-2"
+                      className="w-full sm:w-auto text-lg rounded-full gap-2 bg-background/50 backdrop-blur-sm border-2"
                     >
                       <MessageCircle className="h-5 w-5" />
                       WhatsApp
@@ -263,7 +264,7 @@ export default function Home() {
                   <p className="text-muted-foreground mb-4">{area.description}</p>
                   <Link href="/practice-areas">
                     <Button variant="ghost" className="p-0 h-auto font-medium gap-1" data-testid={`link-learn-more-${area.id}`}>
-                      Learn More
+                      Learn More About {area.title}
                       <ChevronRight className="h-4 w-4" />
                     </Button>
                   </Link>

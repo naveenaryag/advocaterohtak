@@ -24,31 +24,31 @@ export function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-elevate p-2 rounded-md"
+                className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
                 data-testid="link-facebook"
                 aria-label="Facebook"
               >
-                <Facebook className="h-4 w-4 text-muted-foreground" />
+                <Facebook className="h-5 w-5 text-muted-foreground" />
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-elevate p-2 rounded-md"
+                className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
                 data-testid="link-twitter"
                 aria-label="Twitter"
               >
-                <Twitter className="h-4 w-4 text-muted-foreground" />
+                <Twitter className="h-5 w-5 text-muted-foreground" />
               </a>
               <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover-elevate p-2 rounded-md"
+                className="hover-elevate min-h-12 min-w-12 flex items-center justify-center rounded-md"
                 data-testid="link-linkedin"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-4 w-4 text-muted-foreground" />
+                <Linkedin className="h-5 w-5 text-muted-foreground" />
               </a>
             </div>
           </div>
