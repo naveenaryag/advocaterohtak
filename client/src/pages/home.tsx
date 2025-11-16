@@ -7,7 +7,8 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { practiceAreas, testimonials, faqs } from '@/lib/data';
-import heroImage from '@assets/generated_images/Professional_advocate_portrait_hero_7d572b94.png';
+import heroImage from '@assets/advocate-rohtak_1763319067660.jpg';
+import newsImage from '@assets/lawyer-rohtak-news_1763319067663.jpg';
 
 export default function Home() {
   const localBusinessSchema = {
@@ -171,10 +172,9 @@ export default function Home() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                   <img
                     src={heroImage}
-                    alt="Advocate Naveen Arya - Professional Lawyer in Rohtak"
+                    alt="Advocate Naveen Arya - Best Advocate in Rohtak addressing legal conference, SCBA A-01417"
                     className="w-full h-auto object-cover"
                     loading="eager"
-                    fetchPriority="high"
                   />
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-lg">
@@ -345,7 +345,50 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-card" data-testid="section-faq">
+        <section className="py-20 bg-card" data-testid="section-media">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Media Coverage & Recognition
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Featured in leading newspapers and legal publications across Rohtak
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="relative rounded-xl overflow-hidden shadow-2xl border-2 border-primary/10">
+                <img
+                  src={newsImage}
+                  alt="Advocate Naveen Arya featured in Rohtak newspapers - Media coverage of best lawyer in Rohtak"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
+                  <p className="text-white text-lg font-semibold mb-2">Media Recognition</p>
+                  <p className="text-white/80 text-sm">Advocate Naveen Arya has been featured in multiple local and regional news publications for outstanding legal work and community service</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6 mt-8">
+                <Card className="p-6 text-center hover-elevate">
+                  <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                  <p className="text-sm text-muted-foreground">Publications Featured</p>
+                </Card>
+                <Card className="p-6 text-center hover-elevate">
+                  <div className="text-3xl font-bold text-primary mb-2">50+</div>
+                  <p className="text-sm text-muted-foreground">Interviews Given</p>
+                </Card>
+                <Card className="p-6 text-center hover-elevate">
+                  <div className="text-3xl font-bold text-primary mb-2">100+</div>
+                  <p className="text-sm text-muted-foreground">Media Mentions</p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20" data-testid="section-faq">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
@@ -382,7 +425,7 @@ export default function Home() {
               Get expert legal consultation today. Available 24/7 for emergency matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210" data-testid="button-cta-call">
+              <a href="tel:+919050225555" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now

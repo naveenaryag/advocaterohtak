@@ -6,6 +6,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 import { Link } from 'wouter';
+import rohtakCourtImage from '@assets/rohtak-court_1763319002240.jpg';
 
 export default function Directory() {
   const schema = {
@@ -94,13 +95,27 @@ export default function Directory() {
 
         <section className="py-16" data-testid="section-hero">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl">
-              <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
-                Rohtak Advocate List - Complete Directory
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                Looking for the list of advocates in Rohtak court? Our comprehensive Rohtak advocate directory features the best lawyers practicing in Rohtak District Courts with expertise across criminal, civil, and family law practice areas.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-4">
+                  Rohtak Advocate List - Complete Directory
+                </h1>
+                <p className="text-xl text-muted-foreground mb-6">
+                  Looking for the list of advocates in Rohtak court? Our comprehensive Rohtak advocate directory features the best lawyers practicing in Rohtak District Courts with expertise across criminal, civil, and family law practice areas.
+                </p>
+              </div>
+              <div className="relative">
+                <img
+                  src={rohtakCourtImage}
+                  alt="Judicial Complex Rohtak - District Court where top advocates practice law"
+                  className="w-full rounded-2xl shadow-xl border-2 border-primary/10"
+                  loading="lazy"
+                />
+                <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-sm p-4 rounded-lg border">
+                  <p className="text-sm font-medium text-foreground">District Court Complex, Rohtak</p>
+                  <p className="text-xs text-muted-foreground">Haryana - 124001</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

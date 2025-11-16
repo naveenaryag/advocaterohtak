@@ -6,10 +6,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import criminalImage from '@assets/generated_images/Criminal_law_justice_symbols_7389161b.png';
+import criminalImage from '@assets/criminal-lawyer_1763319067660.jpg';
 
 export default function CriminalLawyer() {
-  const schema = {
+  const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: 'Criminal Law',
@@ -28,6 +28,23 @@ export default function CriminalLawyer() {
       name: 'Rohtak',
     },
     description: 'Expert criminal lawyer in Rohtak specializing in bail matters, criminal defense, anticipatory bail, and trial advocacy.',
+  };
+
+  const videoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Criminal Law Defense Services in Rohtak - Advocate Naveen Arya',
+    description: 'Watch Advocate Naveen Arya, the best criminal lawyer in Rohtak, discuss criminal defense strategies, bail applications, and client representation. 95% bail success rate.',
+    thumbnailUrl: 'https://img.youtube.com/vi/2DxSEk6fnNE/maxresdefault.jpg',
+    uploadDate: '2024-02-10T00:00:00Z',
+    contentUrl: 'https://www.youtube.com/watch?v=2DxSEk6fnNE',
+    embedUrl: 'https://www.youtube.com/embed/2DxSEk6fnNE',
+    duration: 'PT4M30S',
+  };
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [serviceSchema, videoSchema],
   };
 
   const caseTypes = [
@@ -137,7 +154,7 @@ export default function CriminalLawyer() {
               <div className="relative hidden lg:block">
                 <img
                   src={criminalImage}
-                  alt="Criminal Law Justice Symbols"
+                  alt="Best criminal lawyer in Rohtak - Professional legal representation and defense services"
                   className="w-full rounded-2xl shadow-2xl"
                   loading="lazy"
                 />
@@ -249,6 +266,28 @@ export default function CriminalLawyer() {
                   </AccordionItem>
                 ))}
               </Accordion>
+
+              <div className="mt-12 bg-gradient-to-br from-primary/5 to-accent/5 rounded-xl p-8 border">
+                <h3 className="font-serif text-2xl font-bold text-foreground mb-6 text-center">Criminal Law Defense Services Video</h3>
+                <div className="max-w-3xl mx-auto">
+                  <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/2DxSEk6fnNE"
+                      title="Criminal Law Defense Services in Rohtak - Advocate Naveen Arya"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                      data-testid="video-criminal-defense"
+                    />
+                  </div>
+                  <p className="text-center text-sm text-muted-foreground mt-4">
+                    Learn about criminal defense strategies and bail application procedures from Rohtak's leading criminal lawyer
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
