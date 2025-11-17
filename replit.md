@@ -4,6 +4,16 @@ This is a professional lawyer website for Advocate Naveen Arya, a legal practiti
 
 # Recent Changes (Latest Session)
 
+- **Supreme Court Advocate Landing Page** (November 17, 2025):
+  - Created `/supreme-court-advocate` silent landing page targeting "advocate supreme court india", "SLP lawyer", "supreme court lawyer" keywords
+  - SEO-focused page NOT added to navigation menu - accessible only via direct URL and search engines (sitemap priority 0.9)
+  - Comprehensive content: Hero with SCBA A-01417 badge, Why Choose SC Lawyer, About section, 6 practice areas (SLP, Criminal/Civil Appeals, Constitutional, Transfer, Review/Curative), 6-step process guide, Why Clients Prefer (6 benefits), 4 FAQs with Accordion
+  - Contact CTA section with phone/WhatsApp/email links
+  - SEO component with meta tags, OpenGraph, and Attorney schema.org markup for Supreme Court practice
+  - All interactive elements have data-testid attributes (AccordionTrigger, Button, links) for testing
+  - Clean, professional layout without flashy animations, matching overall site design
+  - Correct contact info: +91 90502 25555, naveen@advocaterohtak.com
+
 - **Performance Optimization - Responsive Images** (November 17, 2025):
   - Generated hero image variants at 5 sizes (400w, 640w, 960w, 1280w, 1600w) in both WebP and JPEG formats
   - Implemented `<picture>` element with srcset for responsive image delivery
