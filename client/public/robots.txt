@@ -1,0 +1,64 @@
+# robots.txt for AdvocateRohtak.com - Advocate Naveen Arya (Rohtak)
+# Updated: November 17, 2025
+# Purpose: Full indexing by search engines and AI crawlers for maximum SEO + LLM visibility.
+
+# --- AI and LLM Crawlers ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# --- Major Search Engine Crawlers ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# --- Fallback Rule ---
+User-agent: *
+Allow: /
+
+# --- Important Files to Allow ---
+Allow: /assets/
+Allow: /attached_assets/
+Allow: /fonts/
+Allow: /favicon.png
+Allow: /icon-192.png
+Allow: /icon-512.png
+Allow: /llm.txt
+Allow: /sitemap.xml
+
+# --- Sitemaps ---
+Sitemap: https://advocaterohtak.com/sitemap.xml
