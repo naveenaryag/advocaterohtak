@@ -34,15 +34,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
     
-    <!-- Google tag (gtag.js) - Analytics & Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW9VXZDE6X"></script>
+    <!-- Google Analytics & Ads - Deferred Loading for Performance -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-LW9VXZDE6X');
       gtag('config', 'AW-17706480763');
+      
+      // Defer gtag.js loading until after page is interactive
+      var gtagRequested = false;
+      function loadGtag() {
+        if (gtagRequested) return;
+        gtagRequested = true;
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LW9VXZDE6X';
+        document.head.appendChild(script);
+      }
+      
+      // Load after page is interactive (2 seconds delay or on first interaction)
+      if (window.requestIdleCallback) {
+        requestIdleCallback(loadGtag, { timeout: 2000 });
+      } else {
+        setTimeout(loadGtag, 2000);
+      }
+      
+      // Also load on first user interaction for faster tracking
+      ['scroll', 'click', 'touchstart'].forEach(function(event) {
+        window.addEventListener(event, loadGtag, { once: true, passive: true });
+      });
     </script>
   </head>
   <body>

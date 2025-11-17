@@ -189,12 +189,12 @@ export default function Home() {
                     <source
                       type="image/webp"
                       srcSet={`${heroImage400} 400w, ${heroImage640} 640w, ${heroImage960} 960w, ${heroImage1280} 1280w, ${heroImage1600} 1600w`}
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 55vw, 48vw"
                     />
                     <source
                       type="image/jpeg"
                       srcSet={`${heroImage400Jpg} 400w, ${heroImage640Jpg} 640w, ${heroImage960Jpg} 960w, ${heroImage1280Jpg} 1280w, ${heroImage1600Jpg} 1600w`}
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 55vw, 48vw"
                     />
                     <img
                       src={heroImage1280Jpg}
