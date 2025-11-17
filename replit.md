@@ -48,7 +48,7 @@ Preferred communication style: Simple, everyday language.
   - **Repeat visitors**: Immediate load (localStorage consent flag)
   - **Result**: Eliminates 263 KB from PageSpeed "unused JavaScript" while preserving 95%+ tracking accuracy
   - **Guard flag**: Prevents duplicate script loading
-- **Responsive Image Optimization**: Hero image sizes attribute optimized to `(max-width: 640px) 100vw, (max-width: 1024px) 55vw, 600px` ensuring browser selects 640w variant (22.5 KB) instead of 960w (49 KB) for desktop displays, saving 26.5 KB while maintaining image quality.
+- **Responsive Image Optimization**: Hero image sizes attribute optimized to `(max-width: 768px) 100vw, (max-width: 1024px) 55vw, 600px` ensuring browser selects 640w variant (22.5 KB) instead of 960w (49 KB) for mobile/tablet displays up to 768px, saving 26.5 KB while maintaining image quality.
 - **Total Network Savings**: ~289.5 KB reduction in PageSpeed testing (263 KB analytics + 26.5 KB images).
 - **Expected Impact**: ~40% reduction in critical path latency, improved LCP score, better browser caching, parallel resource loading, reduced network congestion.
 **Performance Targets**: Aim for optimal Core Web Vitals (LCP < 2.5s, CLS < 0.1, INP < 200ms).
