@@ -8,6 +8,7 @@ import { WhatsAppWidget } from "@/components/whatsapp-widget";
 import Home from "@/pages/home";
 
 const CriminalLawyer = lazy(() => import("@/pages/criminal-lawyer"));
+const SupremeCourtAdvocate = lazy(() => import("@/pages/supreme-court-advocate"));
 const Directory = lazy(() => import("@/pages/directory"));
 const About = lazy(() => import("@/pages/about"));
 const PracticeAreas = lazy(() => import("@/pages/practice-areas"));
@@ -27,6 +28,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/criminal-lawyer" component={CriminalLawyer} />
+        <Route path="/supreme-court-advocate" component={SupremeCourtAdvocate} />
         <Route path="/directory" component={Directory} />
         <Route path="/about" component={About} />
         <Route path="/practice-areas" component={PracticeAreas} />

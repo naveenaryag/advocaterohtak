@@ -27,6 +27,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
     const pages = [
       { url: "/", changefreq: "weekly", priority: "1.0" },
       { url: "/criminal-lawyer", changefreq: "weekly", priority: "0.9" },
+      { url: "/supreme-court-advocate", changefreq: "weekly", priority: "0.9" },
       { url: "/practice-areas", changefreq: "weekly", priority: "0.9" },
       { url: "/about", changefreq: "monthly", priority: "0.8" },
       { url: "/directory", changefreq: "monthly", priority: "0.8" },
