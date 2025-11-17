@@ -63,10 +63,56 @@ ${pages
     const protocol = req.protocol;
     const host = req.get('host');
     const baseUrl = `${protocol}://${host}`;
-    const robots = `User-agent: *
+    const robots = `# robots.txt for AdvocateRohtak.com - Advocate Naveen Arya
+# Updated: November 17, 2025
+# Purpose: Full indexing by search engines and AI crawlers for maximum SEO + LLM visibility
+
+# --- AI and Search Engine Crawlers ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# --- Fallback Rule ---
+User-agent: *
 Allow: /
 Disallow: /api/
 
+# --- Sitemaps ---
 Sitemap: ${baseUrl}/sitemap.xml`;
 
     res.header("Content-Type", "text/plain");
