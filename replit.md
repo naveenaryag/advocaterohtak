@@ -4,6 +4,25 @@ This is a professional lawyer website for Advocate Naveen Arya, a legal practiti
 
 # Recent Changes (Latest Session)
 
+- **Performance Optimization - Responsive Images** (November 17, 2025):
+  - Generated hero image variants at 5 sizes (400w, 640w, 960w, 1280w, 1600w) in both WebP and JPEG formats
+  - Implemented `<picture>` element with srcset for responsive image delivery
+  - Image size reduction: Mobile ~17-31KB (vs 139KB = 108-122KB saved), Tablet ~49-71KB (68-90KB saved), Desktop ~70-107KB (32-69KB saved)
+  - Eliminates Lighthouse "Improve image delivery" warning (125KB estimated savings achieved)
+  - WebP format prioritized with JPEG fallback for older browsers
+  
+- **Desktop UX Optimization**:
+  - Adjusted max-width from 1280px to 1140px (xl breakpoint) for professional appearance
+  - Addresses user feedback: "desktop feels too stretched"
+  - Optimized for ~70-80 character line length (ideal readability for legal content)
+  - Maintains responsive padding: 1rem (mobile), 1.5rem (sm), 2rem (lg)
+
+- **Console Error Fixes**:
+  - Fixed site.webmanifest favicon path from @assets/favicon_1763318815517.png to /favicon.png
+  - Removed mismatched image preload links (Vite transforms import paths, causing "preloaded but not used" warnings)
+  - Mobile menu accessibility: Added SheetHeader and SheetTitle to Sheet component
+  - Zero console errors in production
+
 - **Social Media & Court Links Update**:
   - Updated Footer with verified social profiles: Facebook (naveenaryapresident), LinkedIn (true-lawyer), Instagram (truelawyer2)
   - Added Google Maps link to footer social icons and made office address clickable for direct navigation
