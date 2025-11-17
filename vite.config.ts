@@ -1,11 +1,11 @@
-import type { UserConfig } from "vite";
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 const rootDir = path.resolve(import.meta.dirname, "client");
 
-export default async (): Promise<UserConfig> => {
+export default defineConfig(async ({ command }) => {
   const extraPlugins = [];
 
   // Only load Replit plugins in dev on Replit
@@ -60,4 +60,4 @@ export default async (): Promise<UserConfig> => {
       },
     },
   };
-};
+});
