@@ -8,6 +8,11 @@ import { WhatsAppWidget } from "@/components/whatsapp-widget";
 import Home from "@/pages/home";
 
 const CriminalLawyer = lazy(() => import("@/pages/criminal-lawyer"));
+const MatrimonialCases = lazy(() => import("@/pages/matrimonial-cases"));
+const ChequeBounce = lazy(() => import("@/pages/cheque-bounce-cases"));
+const CivilDisputes = lazy(() => import("@/pages/civil-disputes"));
+const BailMatters = lazy(() => import("@/pages/bail-matters"));
+const PropertyLitigation = lazy(() => import("@/pages/property-litigation"));
 const SupremeCourtAdvocate = lazy(() => import("@/pages/supreme-court-advocate"));
 const Directory = lazy(() => import("@/pages/directory"));
 const About = lazy(() => import("@/pages/about"));
@@ -28,6 +33,11 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/criminal-lawyer" component={CriminalLawyer} />
+        <Route path="/matrimonial-cases" component={MatrimonialCases} />
+        <Route path="/cheque-bounce-cases" component={ChequeBounce} />
+        <Route path="/civil-disputes" component={CivilDisputes} />
+        <Route path="/bail-matters" component={BailMatters} />
+        <Route path="/property-litigation" component={PropertyLitigation} />
         <Route path="/supreme-court-advocate" component={SupremeCourtAdvocate} />
         <Route path="/directory" component={Directory} />
         <Route path="/about" component={About} />

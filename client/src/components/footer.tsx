@@ -107,13 +107,37 @@ export function Footer() {
 
           <div>
             <h3 className="font-semibold text-foreground mb-4">Practice Areas</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Criminal Law</li>
-              <li>Matrimonial Cases</li>
-              <li>Cheque Bounce (S.138)</li>
-              <li>Civil Disputes</li>
-              <li>Bail Matters</li>
-              <li>Property Litigation</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/criminal-lawyer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-criminal-law">
+                  Criminal Law
+                </Link>
+              </li>
+              <li>
+                <Link href="/matrimonial-cases" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-matrimonial">
+                  Matrimonial Cases
+                </Link>
+              </li>
+              <li>
+                <Link href="/cheque-bounce-cases" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-cheque-bounce">
+                  Cheque Bounce (S.138)
+                </Link>
+              </li>
+              <li>
+                <Link href="/civil-disputes" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-civil">
+                  Civil Disputes
+                </Link>
+              </li>
+              <li>
+                <Link href="/bail-matters" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-bail">
+                  Bail Matters
+                </Link>
+              </li>
+              <li>
+                <Link href="/property-litigation" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-property">
+                  Property Litigation
+                </Link>
+              </li>
             </ul>
           </div>
 
