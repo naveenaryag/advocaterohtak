@@ -1,0 +1,186 @@
+Supreme Court Advocate in India – Naveen Arya
+
+Top Supreme Court Lawyer for SLPs, Appeals & Constitutional Matters
+
+If you are searching for the best Supreme Court advocate in India to represent you before the Hon’ble Supreme Court of India, Advocate Naveen Arya (SCBA Member – A-01417) provides expert legal representation in Special Leave Petitions (SLP), Criminal Appeals, Civil Appeals, Writs and important Constitutional matters.
+
+With over 10 years of litigation experience, extensive courtroom practice, and deep understanding of Supreme Court procedures, he offers strategic, result-oriented representation for clients across India and abroad.
+
+Why Choose a Supreme Court Lawyer?
+
+The Supreme Court of India is the highest constitutional court, and cases filed here require:
+
+Precise drafting
+
+Correct legal grounds
+
+Deep knowledge of precedents
+
+Strong court presentation
+
+Understanding of AOR (Advocate-on-Record) requirements
+
+Experienced counsel familiar with Supreme Court norms
+
+A Supreme Court case is never “routine” — it needs a lawyer who has both strategic experience and courtroom expertise.
+
+About Advocate Naveen Arya – Supreme Court Advocate
+
+Supreme Court Bar Association Member (SCBA)
+
+Practicing Since 2014
+
+Appears regularly before the Supreme Court in criminal, civil, and writ matters
+
+Expertise in SLPs against High Court orders
+
+Known for strong drafting, sharp arguments, and high success ratio in admissions
+
+Represents clients across Delhi, Haryana, Rajasthan, UP, Punjab, MP & all major states
+
+Practice Areas in Supreme Court
+✔ Special Leave Petitions (SLP – Civil / Criminal)
+
+Challenging High Court judgments before Supreme Court under Article 136.
+
+✔ Criminal Appeals & Bail Matters
+
+Quashing FIR
+
+Anticipatory bail matters
+
+Regular bail appeals
+
+Criminal leave petitions
+
+✔ Civil Appeals
+
+Against High Court, NCDRC, NCLAT, CAT, DRT, Consumer Commission orders.
+
+✔ Constitutional & Writ Matters
+
+Article 32 writ petitions
+
+Fundamental rights violations
+
+PIL drafting & filing
+
+✔ Transfer Petitions – Civil & Criminal
+
+For matrimonial, criminal or civil cases across High Courts and trial courts.
+
+✔ Review & Curative Petitions
+
+Specialized drafting following strict Supreme Court rules.
+
+How a Supreme Court Case Works – Step-by-Step
+
+Most people do not understand the actual Supreme Court process. Here is a clear guide:
+
+1. Case Evaluation & Legal Opinion
+
+We examine whether the matter is fit for the Supreme Court.
+
+2. Drafting of SLP / Appeal Petition
+
+Strong drafting = higher chances of admission.
+
+3. Filing Through an Advocate-on-Record (AOR)
+
+Every Supreme Court filing must be signed and filed by an AOR.
+
+4. Listing Before Supreme Court Bench
+
+Date is given through the automated listing system.
+
+5. Arguments on Admission
+
+Court decides whether to issue notice or dismiss.
+
+6. Final Hearings & Disposal
+
+Once admitted, case proceeds on merits.
+
+Why Clients Prefer Advocate Naveen Arya
+⭐ Strong Drafting & Legal Strategy
+
+Drafts are prepared with deep legal research + citations.
+
+⭐ Clear Communication & Transparency
+
+Clients are informed at every step.
+
+⭐ Experience Across Multiple States
+
+Handles matters arising from many High Courts.
+
+⭐ High Success Rate in Admissions
+
+Strategic grounds → better chances of notice.
+
+⭐ Affordable & Transparent Fee Structure
+
+No hidden charges.
+
+Client Testimonials
+
+(Add actual testimonials here for stronger EEAT signals)
+
+“Advocate Naveen Arya handled our Supreme Court matter with professionalism, clarity, and complete dedication. Highly recommended.”
+
+“Excellent drafting and brilliant arguments — our SLP was admitted in the first hearing.”
+
+Frequently Asked Questions
+Q. How much does it cost to file an SLP in Supreme Court?
+
+Cost depends on nature of matter, documentation, and AOR filing charges.
+
+Q. Can I directly hire a Supreme Court lawyer?
+
+Yes. Anyone from any state in India can approach a Supreme Court advocate.
+
+Q. Can the Supreme Court grant bail?
+
+Yes, in exceptional circumstances or when lower courts refuse relief.
+
+Q. How long does a Supreme Court case take?
+
+Admission hearing can happen within weeks; final disposal depends on the court.
+
+Contact – Consult a Supreme Court Advocate
+📞 Call Now: +91-XXXXXXXXXX
+💬 WhatsApp: +91-XXXXXXXXXX
+✉ Email: your-email@domain.com
+🌐 Website: advocaterohtak.com
+
+Available for urgent SLPs, appeals, and constitutional matters.
+
+✅ Next Step (Important): Add This Schema Markup
+
+Paste in <head> section:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Advocate Naveen Arya",
+  "url": "https://advocaterohtak.com/supreme-court-advocate",
+  "image": "https://advocaterohtak.com/images/naveen-arya.jpg",
+  "jobTitle": "Supreme Court Advocate",
+  "memberOf": "Supreme Court Bar Association",
+  "areaServed": "India",
+  "description": "Advocate Naveen Arya is a Supreme Court lawyer specializing in SLPs, Appeals, Criminal Matters, Civil Matters, and Constitutional Litigation.",
+  "sameAs": [
+    "https://www.facebook.com/advocaterohtak/",
+    "https://www.instagram.com/advocaterohtak/"
+  ]
+}
+</script>
+
+🎯 Want this as a separate page for your website?
+
+I can provide:
+✅ supreme-court-advocate.jsx page
+✅ Navigation link
+✅ Optimized URL slug
+✓ /supreme-court-advocate/
