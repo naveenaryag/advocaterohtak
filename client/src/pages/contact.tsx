@@ -82,7 +82,7 @@ export default function Contact() {
       email: 'naveen@advocaterohtak.com',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'District Court Complex',
+        streetAddress: 'Chamber No. 600, District Court Complex',
         addressLocality: 'Rohtak',
         addressRegion: 'Haryana',
         postalCode: '124001',
@@ -95,7 +95,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Advocate Naveen Arya | Best Lawyer in Rohtak - Free Consultation"
-        description="Contact top advocate in Rohtak for legal consultation. Call +91 90502 25555 or WhatsApp for immediate response. Office at District Court Complex, Rohtak."
+        description="Contact top advocate in Rohtak for legal consultation. Call +91 90502 25555 or WhatsApp for immediate response. Office at Chamber No. 600, District Court Complex, Rohtak."
         keywords={[
           'contact advocate rohtak',
           'lawyer consultation rohtak',
@@ -260,6 +260,7 @@ export default function Contact() {
                       <div>
                         <h4 className="font-semibold text-foreground mb-1">Office Address</h4>
                         <p className="text-muted-foreground">
+                          Chamber No. 600<br />
                           District Court Complex<br />
                           Rohtak, Haryana - 124001<br />
                           India

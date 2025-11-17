@@ -149,7 +149,7 @@ export default function SupremeCourtAdvocate() {
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'District Court Complex',
+      streetAddress: 'Chamber No. 600, District Court Complex',
       addressLocality: 'Rohtak',
       addressRegion: 'Haryana',
       postalCode: '124001',
@@ -569,7 +569,7 @@ export default function SupremeCourtAdvocate() {
                   data-testid="link-office-address"
                 >
                   <MapPin className="h-4 w-4" />
-                  <span>District Court Complex, Rohtak, Haryana - 124001</span>
+                  <span>Chamber No. 600, District Court Complex, Rohtak, Haryana - 124001</span>
                 </a>
               </div>
             </div>

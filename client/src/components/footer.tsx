@@ -183,7 +183,7 @@ export function Footer() {
                   className="hover:text-primary transition-colors"
                   data-testid="link-footer-address"
                 >
-                  District Court Complex, Rohtak, Haryana - 124001
+                  Chamber No. 600, District Court Complex, Rohtak, Haryana - 124001
                 </a>
               </li>
               <li className="flex items-center gap-2">
