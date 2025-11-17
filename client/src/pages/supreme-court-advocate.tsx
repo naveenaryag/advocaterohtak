@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, Mail, CheckCircle, Scale, FileText, Gavel } from 'lucide-react';
+import { Phone, MessageCircle, Mail, CheckCircle, Scale, FileText, Gavel, Award, GraduationCap, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -46,7 +46,7 @@ export default function SupremeCourtAdvocate() {
 
   const processSteps = [
     { step: '1', title: 'Case Evaluation & Legal Opinion', description: 'We examine whether the matter is fit for the Supreme Court.' },
-    { step: '2', title: 'Drafting of SLP / Appeal Petition', description: 'Strong drafting = higher chances of admission.' },
+    { step: '2', title: 'Drafting of SLP / Appeal Petition', description: 'Careful drafting with proper legal grounds and precedent research.' },
     { step: '3', title: 'Filing Through an Advocate-on-Record (AOR)', description: 'Every Supreme Court filing must be signed and filed by an AOR.' },
     { step: '4', title: 'Listing Before Supreme Court Bench', description: 'Date is given through the automated listing system.' },
     { step: '5', title: 'Arguments on Admission', description: 'Court decides whether to issue notice or dismiss.' },
@@ -63,12 +63,36 @@ export default function SupremeCourtAdvocate() {
       answer: 'Yes. Anyone from any state in India can approach a Supreme Court advocate directly for consultation and representation.'
     },
     {
+      question: 'What is the difference between SLP and Appeal?',
+      answer: 'Special Leave Petition (SLP) is filed under Article 136 seeking permission from Supreme Court to appeal against High Court orders. It\'s discretionary. Regular appeals are filed as a matter of right in specific cases like Death Sentence appeals.'
+    },
+    {
+      question: 'Can I file an SLP myself without a lawyer?',
+      answer: 'Technically yes, but it is highly not recommended. Supreme Court practice requires specialized knowledge of procedure, drafting standards, and an Advocate-on-Record (AOR) must sign the petition. Professional legal assistance significantly improves the quality of presentation.'
+    },
+    {
+      question: 'What is the role of an Advocate-on-Record (AOR)?',
+      answer: 'An AOR is a specially designated advocate authorized to file matters in the Supreme Court. They handle all filings, serve notices, and are on record before the court. Your arguing counsel works with an AOR for filing formalities.'
+    },
+    {
       question: 'Can the Supreme Court grant bail?',
       answer: 'Yes, the Supreme Court can grant bail in exceptional circumstances or when lower courts refuse relief, especially in cases involving fundamental rights or procedural irregularities.'
     },
     {
+      question: 'How do I know if my case qualifies for the Supreme Court?',
+      answer: 'Cases involving substantial questions of law, constitutional interpretation, fundamental rights violations, or where High Court judgments contain errors of law may qualify. A detailed case evaluation is necessary to assess Supreme Court fitness.'
+    },
+    {
+      question: 'What documents are needed for filing an SLP?',
+      answer: 'Required documents include certified copy of the impugned High Court order, lower court orders, relevant evidence documents, vakalatnama, and affidavit. Complete documentation requirements vary by case type.'
+    },
+    {
       question: 'How long does a Supreme Court case take?',
-      answer: 'Admission hearing can happen within weeks; final disposal depends on the court schedule and complexity of the matter. We keep clients informed at every stage.'
+      answer: 'Admission hearing can happen within weeks to months; final disposal after admission depends on court schedule, backlog, and case complexity. Timeline varies significantly across different case types.'
+    },
+    {
+      question: 'Can Supreme Court overturn High Court judgments?',
+      answer: 'Yes, if the Supreme Court finds legal errors, procedural irregularities, or jurisdictional issues in the High Court judgment, it can modify, set aside, or overturn the decision. This depends on the merits and legal grounds presented.'
     }
   ];
 
@@ -79,11 +103,46 @@ export default function SupremeCourtAdvocate() {
     url: 'https://advocatenaveenary.com/supreme-court-advocate',
     description: 'Supreme Court advocate specializing in SLPs, Criminal Appeals, Civil Appeals, Constitutional Matters, and Writ Petitions before the Hon\'ble Supreme Court of India.',
     jobTitle: 'Supreme Court Advocate',
-    memberOf: {
-      '@type': 'Organization',
-      name: 'Supreme Court Bar Association',
-      identifier: 'SCBA A-01417'
-    },
+    memberOf: [
+      {
+        '@type': 'Organization',
+        name: 'Supreme Court Bar Association',
+        identifier: 'SCBA A-01417'
+      },
+      {
+        '@type': 'Organization',
+        name: 'Punjab & Haryana High Court Bar',
+        identifier: 'COP P1700/2014'
+      }
+    ],
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'degree',
+        name: 'Bachelor of Laws (LL.B.) with Honors',
+        educationalLevel: 'Undergraduate',
+        dateCreated: '2014'
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'degree',
+        name: 'Master of Laws (LL.M.)',
+        educationalLevel: 'Postgraduate',
+        dateCreated: '2016'
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'certification',
+        name: 'UGC NET Qualified in Law',
+        dateCreated: '2014'
+      }
+    ],
+    award: [
+      'Outstanding Lawyer Award (2019)',
+      'International Legal Conference Chairperson (2019)',
+      'Moot Court Judge Certification (2024)',
+      'Mr. Talent Award - Excellence in Legal Practice'
+    ],
     areaServed: {
       '@type': 'Country',
       name: 'India'
@@ -148,7 +207,7 @@ export default function SupremeCourtAdvocate() {
               </h1>
               
               <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Top Supreme Court Lawyer for SLPs, Appeals & Constitutional Matters
+                Specialist in SLPs, Appeals & Constitutional Matters
               </p>
               
               <p className="text-base text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -236,7 +295,7 @@ export default function SupremeCourtAdvocate() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                    <p className="text-foreground">Known for strong drafting, sharp arguments, and high success ratio in admissions</p>
+                    <p className="text-foreground">Known for effective drafting, research-driven approach, and strong legal grounds</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
@@ -258,8 +317,111 @@ export default function SupremeCourtAdvocate() {
           </div>
         </section>
 
+        {/* Professional Credentials & Qualifications */}
+        <section className="py-12 sm:py-16 bg-card" data-testid="section-credentials">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-8 text-center">
+                Professional Credentials & Qualifications
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Bar Enrollment */}
+                <Card className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Scale className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-3">Bar Council Enrollment</h3>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span><strong>Supreme Court Bar Association:</strong> SCBA A-01417</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span><strong>Punjab & Haryana High Court:</strong> COP P1700/2014</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span><strong>District Bar Association, Rohtak:</strong> Enrolled 2014</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Academic Qualifications */}
+                <Card className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <GraduationCap className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-3">Academic Qualifications</h3>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span><strong>Bachelor of Laws (LL.B.) with Honors</strong> - 2014</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span><strong>Master of Laws (LL.M.)</strong> - 2016</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span><strong>UGC NET Qualified in Law</strong> - 2014</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Professional Achievements */}
+                <Card className="p-6 md:col-span-2">
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Award className="h-6 w-6 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-foreground mb-3">Professional Achievements & Recognition</h3>
+                      <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2">
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">Outstanding Lawyer Award (2019)</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">International Legal Conference Chairperson (2019)</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">Moot Court Judge Certification (2024)</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">Mr. Talent Award - Excellence in Legal Practice</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">15+ Research Papers Published in National & International Journals</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-muted-foreground">Regular Speaker at Legal Seminars & Workshops</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Practice Areas */}
-        <section className="py-12 sm:py-16 bg-card" data-testid="section-practice-areas">
+        <section className="py-12 sm:py-16" data-testid="section-practice-areas">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-8 text-center">
@@ -324,12 +486,12 @@ export default function SupremeCourtAdvocate() {
               
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
-                  { title: 'Strong Drafting & Legal Strategy', desc: 'Drafts are prepared with deep legal research and citations.' },
+                  { title: 'Research-Based Drafting & Legal Strategy', desc: 'Drafts prepared with thorough legal research, precedents, and citations.' },
                   { title: 'Clear Communication & Transparency', desc: 'Clients are informed at every step of the process.' },
-                  { title: 'Experience Across Multiple States', desc: 'Handles matters arising from many High Courts.' },
-                  { title: 'High Success Rate in Admissions', desc: 'Strategic grounds lead to better chances of notice.' },
-                  { title: 'Affordable & Transparent Fee Structure', desc: 'No hidden charges or surprise costs.' },
-                  { title: 'Prompt Response & Availability', desc: 'Available for urgent SLPs and time-sensitive matters.' }
+                  { title: 'Experience Across Multiple States', desc: 'Handles matters arising from Delhi, Haryana, Punjab, UP, Rajasthan, MP & other High Courts.' },
+                  { title: 'Strong Legal Grounds', desc: 'Focus on identifying substantial questions of law and proper legal framework.' },
+                  { title: 'Transparent & Ethical Fee Structure', desc: 'No hidden charges or surprise costs. Clear fee discussion upfront.' },
+                  { title: 'Prompt Response & Availability', desc: 'Available for urgent SLPs and time-sensitive constitutional matters.' }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
@@ -394,12 +556,34 @@ export default function SupremeCourtAdvocate() {
                 </a>
               </div>
               
-              <div className="flex justify-center gap-6 text-sm opacity-90">
+              <div className="flex flex-col items-center gap-4 text-sm opacity-90">
                 <a href={`mailto:${email}`} className="flex items-center gap-2 hover:opacity-80 transition-opacity" data-testid="link-email-contact">
                   <Mail className="h-4 w-4" />
                   {email}
                 </a>
+                <a 
+                  href="https://www.google.com/maps/place/District+Court+Complex,+Rohtak,+Haryana+124001" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+                  data-testid="link-office-address"
+                >
+                  <MapPin className="h-4 w-4" />
+                  <span>District Court Complex, Rohtak, Haryana - 124001</span>
+                </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Legal Disclaimer */}
+        <section className="py-8 bg-muted/30" data-testid="section-disclaimer">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <h3 className="font-semibold text-foreground mb-3 text-center">Important Legal Notice</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed text-center">
+                This page provides general information about Supreme Court practice and legal procedures. The content on this page does not constitute legal advice and does not create an attorney-client relationship. Case outcomes depend on specific facts, evidence, applicable law, and judicial discretion. No representation or guarantee is made regarding the result of any legal matter. Please consult directly with Advocate Naveen Arya for case-specific evaluation and personalized legal advice. All information is subject to change and should be verified independently.
+              </p>
             </div>
           </div>
         </section>
