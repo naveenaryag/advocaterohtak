@@ -9,6 +9,8 @@ import supremeCourtImage from '@assets/naveen-Arya-lawyer-supreme-court_17633190
 import awardImage1 from '@assets/moot-court-Award-MDU_1763319067665.jpg';
 import awardImage2 from '@assets/naveen-arya-award-ILA_1763319067667.jpg';
 import awardImage3 from '@assets/naveen-arya-presenting-award-to-district-judge-rohtak-Sh-H-S-Narang_1763319067670.jpg';
+import awardCeremony1 from '@assets/Advocate - Naveen Arya -Rohtak_1763358725716.jpg';
+import conferencePanel from '@assets/naveen-arya-conference_1763358725718.jpg';
 
 export default function About() {
   const personSchema = {
@@ -255,7 +257,7 @@ export default function About() {
 
               <div className="space-y-6 pt-2.5">
                 <h3 className="font-serif text-2xl font-bold text-foreground text-center">Award Ceremonies & Recognition</h3>
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="relative rounded-xl overflow-hidden shadow-lg border-2 border-primary/10 hover-elevate transition-all">
                     <img
                       src={awardImage1}
@@ -265,6 +267,7 @@ export default function About() {
                       height="256"
                       style={{ filter: 'brightness(1.15) contrast(1.1) saturate(1.1)' }}
                       loading="lazy"
+                      data-testid="img-award-mdu"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                       <p className="text-white text-sm font-medium">Moot Court Judge Award - MDU</p>
@@ -278,6 +281,7 @@ export default function About() {
                       width="400"
                       height="256"
                       loading="lazy"
+                      data-testid="img-award-ila"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                       <p className="text-white text-sm font-medium">International Lawyers Association Award</p>
@@ -291,9 +295,41 @@ export default function About() {
                       width="400"
                       height="256"
                       loading="lazy"
+                      data-testid="img-presenting-award"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                       <p className="text-white text-sm font-medium">Presenting Award to District Judge</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg border-2 border-primary/10 hover-elevate transition-all">
+                    <img
+                      src={awardCeremony1}
+                      alt="Advocate Naveen Arya receiving excellence award at legal ceremony with senior advocates"
+                      className="w-full h-64 object-cover"
+                      width="400"
+                      height="256"
+                      loading="lazy"
+                      data-testid="img-award-ceremony"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                      <p className="text-white text-sm font-medium">Legal Excellence Award Ceremony</p>
+                    </div>
+                  </div>
+                  <div className="relative rounded-xl overflow-hidden shadow-lg border-2 border-primary/10 hover-elevate transition-all">
+                    <img
+                      src={conferencePanel}
+                      alt="Advocate Naveen Arya participating in international legal conference panel discussion"
+                      className="w-full h-64 object-cover"
+                      width="400"
+                      height="256"
+                      loading="lazy"
+                      data-testid="img-conference-panel"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                      <p className="text-white text-sm font-medium">International Legal Conference Panel</p>
                     </div>
                   </div>
                 </div>

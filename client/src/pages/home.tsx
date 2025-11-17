@@ -19,6 +19,8 @@ import heroImage1280Jpg from '@assets/advocate-hero-1280w.jpg';
 import heroImage1600 from '@assets/advocate-hero-1600w.webp';
 import heroImage1600Jpg from '@assets/advocate-hero-1600w.jpg';
 import rohtakCourtImage from '@assets/rohtak-court_1763319002240.jpg';
+import awardImage from '@assets/advocate-rohtak-1536x1024_1763358725717.jpg';
+import conferenceImage from '@assets/taking-part-in-International-conference_1763358725722.jpg';
 
 export default function Home() {
   const localBusinessSchema = {
@@ -310,30 +312,50 @@ export default function Home() {
 
         <section className="py-20 bg-card" data-testid="section-experience">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
                 Experience in Rohtak Courts
               </h2>
-              <div className="space-y-4 text-lg text-muted-foreground">
-                <p>
-                  With over a decade of practice in Rohtak District Courts, I have developed deep expertise in navigating the local legal system. My extensive experience includes regular appearances before District Courts, Additional District Courts, and various civil and criminal courts in Rohtak.
-                </p>
-                <p>
-                  I maintain strong professional relationships with the judicial system and possess comprehensive knowledge of local court procedures, which translates into efficient case management and favorable outcomes for my clients.
-                </p>
-                <div className="grid sm:grid-cols-3 gap-6 mt-8">
-                  <div className="text-center p-6 bg-primary/5 rounded-lg">
-                    <p className="text-4xl font-bold text-primary mb-2">95%</p>
-                    <p className="text-sm text-foreground font-medium">Success Rate</p>
-                  </div>
-                  <div className="text-center p-6 bg-primary/5 rounded-lg">
-                    <p className="text-4xl font-bold text-primary mb-2">500+</p>
-                    <p className="text-sm text-foreground font-medium">Cases Handled</p>
-                  </div>
-                  <div className="text-center p-6 bg-primary/5 rounded-lg">
-                    <p className="text-4xl font-bold text-primary mb-2">10+</p>
-                    <p className="text-sm text-foreground font-medium">Years Practice</p>
-                  </div>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div className="space-y-4 text-lg text-muted-foreground">
+                  <p>
+                    With over a decade of practice in Rohtak District Courts, I have developed deep expertise in navigating the local legal system. My extensive experience includes regular appearances before District Courts, Additional District Courts, and various civil and criminal courts in Rohtak.
+                  </p>
+                  <p>
+                    I maintain strong professional relationships with the judicial system and possess comprehensive knowledge of local court procedures, which translates into efficient case management and favorable outcomes for my clients.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  <img 
+                    src={awardImage} 
+                    alt="Advocate Naveen Arya receiving legal excellence award from senior legal professionals in Rohtak" 
+                    className="rounded-md shadow-lg w-full h-48 object-cover"
+                    loading="lazy"
+                    data-testid="img-award-ceremony"
+                  />
+                  <img 
+                    src={conferenceImage} 
+                    alt="Advocate Naveen Arya speaking at international legal conference as expert lawyer from Rohtak" 
+                    className="rounded-md shadow-lg w-full h-48 object-cover"
+                    loading="lazy"
+                    data-testid="img-conference-speaker"
+                  />
+                </div>
+              </div>
+              
+              <div className="grid sm:grid-cols-3 gap-6 mt-8">
+                <div className="text-center p-6 bg-primary/5 rounded-lg">
+                  <p className="text-4xl font-bold text-primary mb-2">95%</p>
+                  <p className="text-sm text-foreground font-medium">Success Rate</p>
+                </div>
+                <div className="text-center p-6 bg-primary/5 rounded-lg">
+                  <p className="text-4xl font-bold text-primary mb-2">500+</p>
+                  <p className="text-sm text-foreground font-medium">Cases Handled</p>
+                </div>
+                <div className="text-center p-6 bg-primary/5 rounded-lg">
+                  <p className="text-4xl font-bold text-primary mb-2">10+</p>
+                  <p className="text-sm text-foreground font-medium">Years Practice</p>
                 </div>
               </div>
             </div>

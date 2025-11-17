@@ -3,6 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { SEO } from '@/components/seo';
+import supremeCourtImage from '@assets/naveen-Arya-lawyer-supreme-court_1763358725719.jpg';
+import supremeCourtImage2 from '@assets/supreme-court_1763358725721.jpg';
 
 export default function SupremeCourtAdvocate() {
   const whatsappUrl = 'https://wa.me/919050225555?text=' + encodeURIComponent('I need consultation for a Supreme Court matter');
@@ -209,35 +211,47 @@ export default function SupremeCourtAdvocate() {
         {/* About Section */}
         <section className="py-12 sm:py-16" data-testid="section-about-advocate">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-8 text-center">
                 About Advocate Naveen Arya – Supreme Court Advocate
               </h2>
               
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-foreground"><strong>Supreme Court Bar Association Member (SCBA A-01417)</strong></p>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <p className="text-foreground"><strong>Supreme Court Bar Association Member (SCBA A-01417)</strong></p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Practicing Since 2014 with 10+ years of litigation experience</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Appears regularly before the Supreme Court in criminal, civil, and writ matters</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Expertise in SLPs against High Court orders</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Known for strong drafting, sharp arguments, and high success ratio in admissions</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Represents clients across Delhi, Haryana, Rajasthan, UP, Punjab, MP & all major states</p>
+                  </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-foreground">Practicing Since 2014 with 10+ years of litigation experience</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-foreground">Appears regularly before the Supreme Court in criminal, civil, and writ matters</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-foreground">Expertise in SLPs against High Court orders</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-foreground">Known for strong drafting, sharp arguments, and high success ratio in admissions</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                  <p className="text-foreground">Represents clients across Delhi, Haryana, Rajasthan, UP, Punjab, MP & all major states</p>
+                
+                <div className="order-first md:order-last">
+                  <img 
+                    src={supremeCourtImage} 
+                    alt="Advocate Naveen Arya in lawyer robes standing before Supreme Court of India building" 
+                    className="rounded-md shadow-lg w-full h-auto object-cover"
+                    loading="lazy"
+                    data-testid="img-supreme-court-advocate"
+                  />
                 </div>
               </div>
             </div>
