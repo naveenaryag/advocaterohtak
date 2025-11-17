@@ -307,13 +307,13 @@ export default function Contact() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <p className="text-lg font-medium text-foreground">Need immediate assistance?</p>
               <div className="flex gap-3">
-                <a href="tel:+919876543210" data-testid="button-quick-call">
+                <a href="tel:+919050111113" data-testid="button-quick-call">
                   <Button variant="default" className="gap-2">
                     <Phone className="h-4 w-4" />
                     Call Now
                   </Button>
                 </a>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" data-testid="button-quick-whatsapp">
+                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-quick-whatsapp">
                   <Button variant="outline" className="gap-2">
                     <MessageCircle className="h-4 w-4" />
                     WhatsApp
