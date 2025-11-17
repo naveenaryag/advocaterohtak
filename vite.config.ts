@@ -10,15 +10,10 @@ export default defineConfig({
     react(),
     runtimeErrorOverlay(),
     // Conditional plugins loaded inline
-    ...(process.env.NODE_ENV !== "production" &&
-    process.env.REPL_ID !== undefined
+    ...(process.env.NODE_ENV !== "production" && process.env.REPL_ID !== undefined
       ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
-          ),
-          await import("@replit/vite-plugin-dev-banner").then((m) =>
-            m.devBanner(),
-          ),
+          await import("@replit/vite-plugin-cartographer").then((m) => m.cartographer()),
+          await import("@replit/vite-plugin-dev-banner").then((m) => m.devBanner()),
         ]
       : []),
   ],
@@ -41,41 +36,13 @@ export default defineConfig({
     minify: "esbuild",
     sourcemap: false,
 
-    // 🔧 Split vendor (node_modules) into logical chunks
+    // 🔧 Split vendor (node_modules) from your own code
     rollupOptions: {
       output: {
-        manualChunks(id: string) {
-          if (!id.includes("node_modules")) return;
-
-          // react-vendor: React + React DOM
-          if (
-            id.includes("/react-dom") ||
-            id.includes("/react/") // catches react/jsx-runtime etc.
-          ) {
-            return "react-vendor";
+        manualChunks(id: string) {  // Add type annotation
+          if (id.includes("node_modules")) {
+            return "vendor";
           }
-
-          // ui-vendor: Radix UI + Lucide icons
-          if (id.includes("@radix-ui") || id.includes("lucide-react")) {
-            return "ui-vendor";
-          }
-
-          // query-vendor: TanStack Query
-          if (id.includes("@tanstack/react-query")) {
-            return "query-vendor";
-          }
-
-          // form-vendor: React Hook Form + Zod
-          if (
-            id.includes("react-hook-form") ||
-            id.includes("@hookform/resolvers") ||
-            id.includes("/zod/")
-          ) {
-            return "form-vendor";
-          }
-
-          // Fallback bucket for everything else in node_modules
-          return "vendor";
         },
         chunkFileNames: "assets/[name]-[hash].js",
         entryFileNames: "assets/[name]-[hash].js",
