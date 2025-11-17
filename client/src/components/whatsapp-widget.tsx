@@ -40,6 +40,7 @@ export function WhatsAppWidget() {
             ? 'opacity-100 scale-100 translate-y-0' 
             : 'opacity-0 scale-95 translate-y-2 pointer-events-none'
         }`}
+        aria-hidden={!isOpen}
       >
         <div className="bg-card border border-border rounded-xl shadow-xl p-2 min-w-[200px]">
           {/* Call Now Button */}
@@ -48,6 +49,7 @@ export function WhatsAppWidget() {
             className="flex items-center gap-3 px-4 py-3 rounded-lg hover-elevate active-elevate-2 transition-all group min-h-12"
             data-testid="button-call"
             aria-label="Call Now"
+            tabIndex={isOpen ? 0 : -1}
           >
             <div className="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
               <Phone className="h-5 w-5 text-white" />
@@ -66,6 +68,7 @@ export function WhatsAppWidget() {
             className="flex items-center gap-3 px-4 py-3 rounded-lg hover-elevate active-elevate-2 transition-all group min-h-12 mt-1"
             data-testid="button-whatsapp"
             aria-label="Chat on WhatsApp"
+            tabIndex={isOpen ? 0 : -1}
           >
             <div className="h-10 w-10 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
               <MessageCircle className="h-5 w-5 text-white" />

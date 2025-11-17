@@ -54,7 +54,7 @@ export const practiceAreas: PracticeArea[] = [
 export const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Rajesh Kumar',
+    name: 'Vikram Hooda',
     caseType: 'Bail Matter',
     rating: 5,
     comment: 'Advocate Naveen Arya secured my bail within 48 hours. His prompt action and deep knowledge of criminal law saved me and my family from immense stress. Highly recommended for any criminal case.',
