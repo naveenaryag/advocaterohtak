@@ -79,18 +79,15 @@ export function WhatsAppWidget() {
       </div>
 
       {/* Main Floating Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="group min-h-14 min-w-14 flex items-center justify-center"
-        aria-label="Contact Options"
-        data-testid="button-contact-toggle"
-      >
+      <div className="relative group">
         <Button
+          onClick={() => setIsOpen(!isOpen)}
           size="icon"
           className={`h-14 w-14 rounded-full shadow-lg hover:shadow-xl transition-all bg-[#25D366] hover:bg-[#1fb855] text-white border-0 ${
             !isOpen ? 'animate-bounce-subtle' : ''
           }`}
           aria-label="Toggle Contact Menu"
+          data-testid="button-contact-toggle"
         >
           <MessageCircle className="h-7 w-7" />
         </Button>
@@ -101,7 +98,7 @@ export function WhatsAppWidget() {
             Get in Touch
           </span>
         )}
-      </button>
+      </div>
     </div>
   );
 }

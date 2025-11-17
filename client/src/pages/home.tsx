@@ -181,7 +181,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="relative w-full max-w-full mb-16 sm:mb-0">
+              <div className="relative w-full max-w-full mb-6 sm:mb-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
                   <picture>
                     <source
