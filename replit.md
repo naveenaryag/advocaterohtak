@@ -38,7 +38,14 @@ Preferred communication style: Simple, everyday language.
 **Development**: Vite dev server with HMR for client and server.
 **Production**: Vite builds the client with advanced optimizations, esbuild bundles the server, and Express serves static assets. All routes fallback to `index.html` for SPA routing.
 **Performance Optimizations** (November 17, 2025):
-- **Code Splitting**: Vendor libraries (React, UI components) separated into `vendor.js` (~427 KB / 132 KB gzipped) for long-term caching. App code in `index.js` (~73 KB / 20 KB gzipped) for faster updates.
+- **Targeted Vendor Chunk Splitting**: Node modules split into logical, cacheable chunks for optimal performance:
+  - `react-vendor.js`: React + React DOM core (141 KB / 45 KB gzipped) - rarely changes, excellent long-term caching
+  - `ui-vendor.js`: Radix UI + Lucide icons (65 KB / 20 KB gzipped) - UI components together
+  - `form-vendor.js`: React Hook Form + Zod (87 KB / 24 KB gzipped) - only loaded on pages with forms
+  - `query-vendor.js`: TanStack Query (1 KB / 0.5 KB gzipped) - data fetching isolated
+  - `vendor.js`: Remaining dependencies (132 KB / 43 KB gzipped) - fallback for other libraries
+  - App code in `index.js` (~74 KB / 20 KB gzipped) for faster updates
+  - **Benefits**: Better browser caching, reduced unused code per page, parallel chunk loading
 - **Route-level Splitting**: Each page lazy-loaded as separate chunks (0.6-24 KB each) for optimal initial load time.
 - **Build Configuration**: esbuild minification, ES2017 target, sourcemaps disabled in production for maximum performance.
 - **Asset Optimization**: Deterministic hashing for cache busting, 4KB inline limit for small assets.
