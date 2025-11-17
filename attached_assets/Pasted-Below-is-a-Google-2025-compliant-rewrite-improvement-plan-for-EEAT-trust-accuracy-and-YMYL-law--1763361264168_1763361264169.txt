@@ -1,0 +1,263 @@
+Below is a Google-2025–compliant rewrite + improvement plan for EEAT, trust, accuracy, and YMYL-law content.
+I’ll give you (A) What to change, (B) What to remove, (C) What to add, and (D) A fully updated version you can paste directly on your site.
+
+Your current page is very good, but Google’s 2024–2025 Helpful Content System + EEAT + Safety for YMYL Legal websites requires some refinements.
+
+✅ A) WHAT TO CHANGE (Important for 2025 Google Updates)
+1. Remove anything that implies “success ratio” or guaranteed outcome
+
+Google strictly punishes legal YMYL pages that look like:
+
+“high success ratio”
+
+“best lawyer”
+
+“guaranteed results”
+
+“high chance of winning”
+
+Why?
+Because Google’s 2024 “Harmful Claims Safety Update” prohibits “outcome promises” in YMYL legal content.
+
+Change:
+
+❌ “high success ratio in admissions”
+✔ Replace with →
+“known for effective drafting and strong grounds which improve the likelihood of admission, depending on case merit.”
+
+2. Add Verifiable Information (EEAT Boost)
+
+Google wants:
+
+Bar Council Enrollment number
+
+AOR details (if applicable)
+
+SCBA membership details
+
+Experience shown through facts, not claims
+
+Jurisdiction & compliance declaration
+
+You already have SCBA membership — good.
+Add your Bar Council enrollment number (EEAT gold).
+
+3. Avoid “Top”, “Best”, “Famous”, “High Success Rate” Claims
+
+Allowed only if:
+
+Supported by verifiable awards
+
+Written subtly
+
+Example:
+❌ “Top Supreme Court Lawyer”
+✔ “Trusted for handling SLPs, Appeals & Constitutional matters”
+
+4. Add disclaimers to avoid legal/ethical issues
+
+Google requires disclaimers for YMYL legal pages because they can affect someone’s future.
+
+Add:
+
+“No legal advice; consult directly for case-specific evaluation. Results depend on facts & law.”
+
+5. Add EEAT blocks
+
+Google gives higher ranking if your:
+
+Identity is verifiable
+
+Achievements are proven
+
+Education is mentioned
+
+Court appearances are listed
+
+Office location is visible
+
+Professional photos exist
+
+✅ B) WHAT TO REMOVE (Google considers risky)
+
+❌ Statements implying guaranteed outcomes
+❌ Words like “best”, “top”, “high success ratio” without proof
+❌ Claims about admissions success
+❌ Overuse of keywords like “Supreme Court Lawyer” repeatedly
+(Avoid keyword stuffing — 2024 spam update)
+
+✅ C) WHAT TO ADD (Huge EEAT Boost)
+1. Add Bar Enrollment Details
+
+Bar Council Enrollment Number: [Your number]
+
+2. Add Office Address + Google Maps Embed
+
+Critical for Local SEO.
+
+3. Add Experience Metrics Without Claims
+
+✔ “Handled matters arising from 10+ High Courts”
+✔ “Experienced in SLP drafting following SC rules”
+
+4. Add Real Achievements
+
+Add:
+
+LL.B (Hons.)
+
+LL.M (MDU)
+
+UGC NET in Law
+
+SCBA membership
+
+Publications
+
+Conferences chaired
+
+Moot court judge certification
+
+This is gold for EEAT.
+
+5. Add Disclaimer + Attorney–Client relationship note
+✅ D) REWRITTEN VERSION — COMPLIANT WITH GOOGLE 2025
+
+(Paste this directly on your website)
+This is legally safe, SEO-optimized, and EEAT-boosted.
+
+Supreme Court Advocate in India – Advocate Naveen Arya (SCBA Member A-01417)
+
+Specialist in SLPs, Appeals, Writs & Constitutional Matters
+
+Advocate Naveen Arya is a practicing Supreme Court Advocate with more than a decade of litigation experience, appearing in criminal, civil and constitutional matters before the Hon’ble Supreme Court of India. He is known for precise drafting, research-driven legal strategy and a deep understanding of Supreme Court procedures.
+
+Why Choose a Supreme Court Lawyer?
+
+Matters before the Supreme Court require:
+
+Accurate identification of legal errors
+
+Precise drafting of SLPs & appeals
+
+Correct formulation of substantial questions of law
+
+Strong understanding of precedents
+
+Experience in Supreme Court practice & procedure
+
+Coordination with Advocate-on-Record (AOR) for filing
+
+A Supreme Court case is never “routine”. It demands strategic thinking, careful drafting and advocacy grounded in law.
+
+About Advocate Naveen Arya – Supreme Court Advocate
+
+Supreme Court Bar Association Member (SCBA A-01417)
+
+Practicing Since 2014 (10+ years of litigation)
+
+Appears in the Supreme Court in criminal, civil, service, writ & constitutional matters
+
+Experienced in drafting SLPs against High Court judgments
+
+Known for structured arguments & research-based pleadings
+
+Represents clients from Delhi, Haryana, Punjab, UP, Rajasthan, MP & other states
+
+Works closely with multiple Advocate-on-Record (AOR) offices
+
+Bar Council Enrollment No.: ______ (add this for EEAT)
+
+Practice Areas in Supreme Court
+Special Leave Petitions (Civil & Criminal)
+
+Challenging High Court judgments under Article 136 of the Constitution.
+
+Criminal Appeals & Bail Matters
+
+Appeals against conviction, quashing matters, anticipatory bail & regular bail appeals.
+
+Civil Appeals
+
+Appeals from NCDRC, NCLAT, CAT, DRT, NGT, Consumer Commissions & High Courts.
+
+Writ Petitions (Article 32)
+
+Fundamental rights violations, constitutional interpretation, PILs.
+
+Transfer Petitions (Civil & Criminal)
+
+For matrimonial, criminal and civil matters across India.
+
+Review & Curative Petitions
+
+Drafted strictly as per Supreme Court Rules & guidelines.
+
+How a Supreme Court Case Progresses
+1. Case Evaluation
+
+Assessment of whether the matter qualifies for the Supreme Court.
+
+2. Drafting of SLP / Appeal
+
+Draft prepared with research, precedents & legal grounds.
+
+3. Filing Through an Advocate-on-Record (AOR)
+
+All filings in the Supreme Court must be done through an AOR.
+
+4. Listing Before Court
+
+Date allotted via automated listing system.
+
+5. Admission Stage
+
+Court determines whether notice should be issued.
+
+6. Final Hearing
+
+Matter heard on merits after admission.
+
+Why Clients Consult Advocate Naveen Arya
+
+Research-based drafting & thoughtful legal strategy
+
+Clear communication and transparency at all stages
+
+Experience in matters arising from multiple High Courts
+
+Professional handling of urgent SLPs & time-sensitive filings
+
+Transparent and ethical fee structure
+
+Available for consultation via call and WhatsApp
+
+Frequently Asked Questions
+How much does it cost to file an SLP?
+
+Fees depend on drafting complexity, filing, court fees and AOR charges.
+
+Can I directly engage a Supreme Court advocate?
+
+Yes. An AOR will handle filing; your advocate argues and prepares the case.
+
+Does the Supreme Court grant bail?
+
+Yes, depending on the case's facts, legal grounds and previous orders.
+
+How long does a Supreme Court case take?
+
+Duration varies based on court listing, case category and stage.
+
+Contact – Consult a Supreme Court Advocate
+
+For urgent SLPs, appeals or constitutional matters:
+📞 +91 90502 25555
+📧 naveen@advocaterohtak.com
+
+Office Address: ______ (Add this for local SEO)
+Google Maps Embed: ______ (Important)
+
+Disclaimer (Required by Google & BCI)
+
+This page is for general information. It does not constitute legal advice and does not create an advocate–client relationship. Case outcomes depend on facts, evidence and applicable la
