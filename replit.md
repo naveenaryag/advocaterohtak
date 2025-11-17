@@ -31,6 +31,7 @@ Preferred communication style: Simple, everyday language.
 **Key Routes**:
 - `/` (Home), `/criminal-lawyer`, `/practice-areas`, `/about`, `/directory`, `/contact`, `/blog`, `/blog/:slug`.
 - Dedicated SEO landing pages for specific practice areas (e.g., `/matrimonial-cases`, `/supreme-court-advocate`) are accessible via search engines but not always in the main navigation.
+- Professional 404 error page with branded design, navigation shortcuts, and direct contact information.
 **Content Management**: Static content is hardcoded within `client/src/lib/data.ts`.
 
 ## Build and Deployment
@@ -47,7 +48,7 @@ Preferred communication style: Simple, everyday language.
   - **Repeat visitors**: Immediate load (localStorage consent flag)
   - **Result**: Eliminates 263 KB from PageSpeed "unused JavaScript" while preserving 95%+ tracking accuracy
   - **Guard flag**: Prevents duplicate script loading
-- **Responsive Image Optimization**: Hero image sizes attribute optimized from `50vw, 600px` to `55vw, 48vw` causing browser to select 640w variant instead of 960w on desktop (26.5 KB savings while maintaining quality).
+- **Responsive Image Optimization**: Hero image sizes attribute optimized to `(max-width: 640px) 100vw, (max-width: 1024px) 55vw, 600px` ensuring browser selects 640w variant (22.5 KB) instead of 960w (49 KB) for desktop displays, saving 26.5 KB while maintaining image quality.
 - **Total Network Savings**: ~289.5 KB reduction in PageSpeed testing (263 KB analytics + 26.5 KB images).
 - **Expected Impact**: ~40% reduction in critical path latency, improved LCP score, better browser caching, parallel resource loading, reduced network congestion.
 **Performance Targets**: Aim for optimal Core Web Vitals (LCP < 2.5s, CLS < 0.1, INP < 200ms).
