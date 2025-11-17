@@ -105,7 +105,7 @@ export const faqs: FAQ[] = [
   {
     id: '4',
     question: 'Which courts do you practice in?',
-    answer: 'I primarily practice in Rohtak District Courts, including the District Court, Additional District Courts, and various civil and criminal courts in Rohtak. I also appear before the Punjab & Haryana High Court and the Hon\'ble Supreme Court of India (SCBA Registration A-01417) for appeals, SLPs, and constitutional matters.',
+    answer: 'I primarily practice in Rohtak District Courts, including the District Court, Additional District Courts, and various civil and criminal courts in Rohtak. I also appear before the Punjab & Haryana High Court, Delhi High Court, and the Hon\'ble Supreme Court of India (SCBA Registration A-01417) for appeals, SLPs, and constitutional matters.',
   },
   {
     id: '5',
@@ -115,7 +115,7 @@ export const faqs: FAQ[] = [
   {
     id: '6',
     question: 'Do you handle cases outside Rohtak?',
-    answer: 'While my primary practice is in Rohtak, I can handle cases in nearby districts and appear before the Punjab & Haryana High Court and Supreme Court of India. For Supreme Court matters, I handle SLPs, appeals, and constitutional cases (SCBA A-01417). For matters outside my regular jurisdiction, I can coordinate with associates or advise on the best course of action.',
+    answer: 'While my primary practice is in Rohtak, I can handle cases in nearby districts and appear before the Punjab & Haryana High Court, Delhi High Court, and Supreme Court of India. For Higher Court and Supreme Court matters, I handle appeals, writs, SLPs, and constitutional cases (SCBA A-01417). For matters outside my regular jurisdiction, I can coordinate with associates or advise on the best course of action.',
   },
 ];
 
