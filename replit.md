@@ -23,6 +23,21 @@ This is a professional lawyer website for Advocate Naveen Arya, a legal practiti
   - Mobile menu accessibility: Added SheetHeader and SheetTitle to Sheet component
   - Zero console errors in production
 
+- **SEO Discovery Files - AI & Search Engine Visibility** (November 17, 2025):
+  - Created comprehensive robots.txt in server/routes.ts allowing all major AI crawlers:
+    - OpenAI (GPTBot, ChatGPT-User)
+    - Anthropic (ClaudeBot, anthropic-ai)
+    - Perplexity (PerplexityBot)
+    - Google (Googlebot, Google-Extended)
+    - Microsoft (Bingbot)
+    - Other search engines (DuckDuckBot, Amazonbot, Baiduspider, YandexBot, cohere-ai)
+  - Created llm.txt in client/public/ with structured semantic data for AI models:
+    - Attorney credentials (SCBA A-01417, High Court COP P1700/2014)
+    - Practice areas, qualifications, awards
+    - E-E-A-T signals (15+ research papers, NET qualified, LL.M.)
+    - Corrected NAP consistency: +91 90502 25555, naveen@advocaterohtak.com
+  - Maximizes discoverability by ChatGPT, Claude, Perplexity, and other AI assistants
+
 - **Social Media & Court Links Update**:
   - Updated Footer with verified social profiles: Facebook (naveenaryapresident), LinkedIn (true-lawyer), Instagram (truelawyer2)
   - Added Google Maps link to footer social icons and made office address clickable for direct navigation
