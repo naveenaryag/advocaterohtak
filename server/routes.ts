@@ -34,28 +34,29 @@ export async function registerRoutes(app: Express): Promise<Server> {
     const protocol = req.protocol;
     const host = req.get('host');
     const baseUrl = `${protocol}://${host}`;
+    const currentDate = new Date().toISOString().split('T')[0];
     const pages = [
-      { url: "/", changefreq: "weekly", priority: "1.0" },
-      { url: "/criminal-lawyer", changefreq: "weekly", priority: "0.9" },
-      { url: "/supreme-court-advocate", changefreq: "weekly", priority: "0.9" },
-      { url: "/matrimonial-cases", changefreq: "weekly", priority: "0.9" },
-      { url: "/cheque-bounce-cases", changefreq: "weekly", priority: "0.9" },
-      { url: "/civil-disputes", changefreq: "weekly", priority: "0.9" },
-      { url: "/bail-matters", changefreq: "weekly", priority: "0.9" },
-      { url: "/property-litigation", changefreq: "weekly", priority: "0.9" },
-      { url: "/practice-areas", changefreq: "weekly", priority: "0.9" },
-      { url: "/about", changefreq: "monthly", priority: "0.8" },
-      { url: "/directory", changefreq: "monthly", priority: "0.8" },
-      { url: "/contact", changefreq: "monthly", priority: "0.8" },
-      { url: "/blog", changefreq: "weekly", priority: "0.7" },
-      { url: "/blog/understanding-bail-rights-in-india", changefreq: "monthly", priority: "0.6" },
-      { url: "/blog/cheque-bounce-cases-guide", changefreq: "monthly", priority: "0.6" },
-      { url: "/blog/property-dispute-resolution", changefreq: "monthly", priority: "0.6" },
-      { url: "/disclaimer", changefreq: "yearly", priority: "0.5" },
-      { url: "/privacy-policy", changefreq: "yearly", priority: "0.5" },
-      { url: "/terms", changefreq: "yearly", priority: "0.5" },
-      { url: "/cookie-policy", changefreq: "yearly", priority: "0.5" },
-      { url: "/legal-compliance", changefreq: "yearly", priority: "0.6" },
+      { url: "/", changefreq: "weekly", priority: "1.0", lastmod: currentDate },
+      { url: "/criminal-lawyer", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/supreme-court-advocate", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/matrimonial-cases", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/cheque-bounce-cases", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/civil-disputes", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/bail-matters", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/property-litigation", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/practice-areas", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
+      { url: "/about", changefreq: "monthly", priority: "0.8", lastmod: currentDate },
+      { url: "/directory", changefreq: "monthly", priority: "0.8", lastmod: currentDate },
+      { url: "/contact", changefreq: "monthly", priority: "0.8", lastmod: currentDate },
+      { url: "/blog", changefreq: "weekly", priority: "0.7", lastmod: currentDate },
+      { url: "/blog/understanding-bail-rights-in-india", changefreq: "monthly", priority: "0.6", lastmod: currentDate },
+      { url: "/blog/cheque-bounce-cases-guide", changefreq: "monthly", priority: "0.6", lastmod: currentDate },
+      { url: "/blog/property-dispute-resolution", changefreq: "monthly", priority: "0.6", lastmod: currentDate },
+      { url: "/disclaimer", changefreq: "yearly", priority: "0.5", lastmod: currentDate },
+      { url: "/privacy-policy", changefreq: "yearly", priority: "0.5", lastmod: currentDate },
+      { url: "/terms", changefreq: "yearly", priority: "0.5", lastmod: currentDate },
+      { url: "/cookie-policy", changefreq: "yearly", priority: "0.5", lastmod: currentDate },
+      { url: "/legal-compliance", changefreq: "yearly", priority: "0.6", lastmod: currentDate },
     ];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -64,6 +65,7 @@ ${pages
   .map(
     (page) => `  <url>
     <loc>${baseUrl}${page.url}</loc>
+    <lastmod>${page.lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`

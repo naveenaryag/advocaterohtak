@@ -7,6 +7,19 @@ const app = express();
 
 app.use(compression());
 
+app.use((req, res, next) => {
+  const host = req.get('host') || '';
+  
+  if (host.startsWith('www.') && !host.includes('localhost')) {
+    const protocol = req.protocol;
+    const newHost = host.replace(/^www\./, '');
+    const newUrl = `${protocol}://${newHost}${req.originalUrl}`;
+    return res.redirect(301, newUrl);
+  }
+  
+  next();
+});
+
 declare module 'http' {
   interface IncomingMessage {
     rawBody: unknown
