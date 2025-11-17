@@ -1,0 +1,95 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
+import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+
+const rootDir = path.resolve(import.meta.dirname, "client");
+
+export default defineConfig({
+  plugins: [
+    react(),
+    runtimeErrorOverlay(),
+    // Conditional plugins loaded inline
+    ...(process.env.NODE_ENV !== "production" &&
+    process.env.REPL_ID !== undefined
+      ? [
+          await import("@replit/vite-plugin-cartographer").then((m) =>
+            m.cartographer(),
+          ),
+          await import("@replit/vite-plugin-dev-banner").then((m) =>
+            m.devBanner(),
+          ),
+        ]
+      : []),
+  ],
+
+  resolve: {
+    alias: {
+      "@": path.resolve(rootDir, "src"),
+      "@shared": path.resolve(import.meta.dirname, "shared"),
+      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+    },
+  },
+
+  root: rootDir,
+
+  build: {
+    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    emptyOutDir: true,
+
+    // 🔧 Performance improvements
+    minify: "esbuild",
+    sourcemap: false,
+
+    // 🔧 Split vendor (node_modules) into logical chunks
+    rollupOptions: {
+      output: {
+        manualChunks(id: string) {
+          if (!id.includes("node_modules")) return;
+
+          // react-vendor: React + React DOM
+          if (
+            id.includes("/react-dom") ||
+            id.includes("/react/") // catches react/jsx-runtime etc.
+          ) {
+            return "react-vendor";
+          }
+
+          // ui-vendor: Radix UI + Lucide icons
+          if (
+            id.includes("@radix-ui") ||
+            id.includes("lucide-react")
+          ) {
+            return "ui-vendor";
+          }
+
+          // query-vendor: TanStack Query
+          if (id.includes("@tanstack/react-query")) {
+            return "query-vendor";
+          }
+
+          // form-vendor: React Hook Form + Zod
+          if (
+            id.includes("react-hook-form") ||
+            id.includes("@hookform/resolvers") ||
+            id.includes("/zod/")
+          ) {
+            return "form-vendor";
+          }
+
+          // Fallback bucket for everything else in node_modules
+          return "vendor";
+        },
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
+      },
+    },
+
+    assetsInlineLimit: 4096,
+  },
+
+  server: {
+    fs: {
+      strict: true,
+      deny: ["]()
