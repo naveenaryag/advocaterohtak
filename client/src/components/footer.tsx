@@ -164,7 +164,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://main.sci.gov.in/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-supreme-court">
+                <a href="https://www.sci.gov.in/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-supreme-court">
                   Supreme Court of India
                 </a>
               </li>
