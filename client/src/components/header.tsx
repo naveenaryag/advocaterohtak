@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X, Phone, Scale } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -77,6 +77,9 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] sm:w-[350px]">
+                <SheetHeader>
+                  <SheetTitle>Navigation Menu</SheetTitle>
+                </SheetHeader>
                 <nav className="flex flex-col gap-2 mt-8" data-testid="nav-mobile">
                   {navigation.map((item) => (
                     <Link key={item.name} href={item.href} onClick={() => setIsOpen(false)}>

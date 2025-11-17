@@ -8,6 +8,16 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { practiceAreas, testimonials, faqs } from '@/lib/data';
 import heroImage from '@assets/advocate-rohtak_1763319067660.jpg';
+import heroImage400 from '@assets/advocate-hero-400w.webp';
+import heroImage400Jpg from '@assets/advocate-hero-400w.jpg';
+import heroImage640 from '@assets/advocate-hero-640w.webp';
+import heroImage640Jpg from '@assets/advocate-hero-640w.jpg';
+import heroImage960 from '@assets/advocate-hero-960w.webp';
+import heroImage960Jpg from '@assets/advocate-hero-960w.jpg';
+import heroImage1280 from '@assets/advocate-hero-1280w.webp';
+import heroImage1280Jpg from '@assets/advocate-hero-1280w.jpg';
+import heroImage1600 from '@assets/advocate-hero-1600w.webp';
+import heroImage1600Jpg from '@assets/advocate-hero-1600w.jpg';
 import rohtakCourtImage from '@assets/rohtak-court_1763319002240.jpg';
 
 export default function Home() {
@@ -173,14 +183,26 @@ export default function Home() {
 
               <div className="relative w-full max-w-full mb-16 sm:mb-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
-                  <img
-                    src={heroImage}
-                    alt="Advocate Naveen Arya - Best Advocate in Rohtak addressing legal conference, SCBA A-01417"
-                    className="w-full h-auto object-cover"
-                    width="800"
-                    height="600"
-                    loading="eager"
-                  />
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={`${heroImage400} 400w, ${heroImage640} 640w, ${heroImage960} 960w, ${heroImage1280} 1280w, ${heroImage1600} 1600w`}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                    />
+                    <source
+                      type="image/jpeg"
+                      srcSet={`${heroImage400Jpg} 400w, ${heroImage640Jpg} 640w, ${heroImage960Jpg} 960w, ${heroImage1280Jpg} 1280w, ${heroImage1600Jpg} 1600w`}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                    />
+                    <img
+                      src={heroImage1280Jpg}
+                      alt="Advocate Naveen Arya - Best Advocate in Rohtak addressing legal conference, SCBA A-01417"
+                      className="w-full h-auto object-cover"
+                      width="1280"
+                      height="853"
+                      loading="eager"
+                    />
+                  </picture>
                 </div>
                 <div className="absolute bottom-4 left-4 sm:bottom-auto sm:-bottom-6 sm:left-auto sm:-left-6 bg-primary text-primary-foreground p-4 sm:p-6 rounded-xl shadow-lg max-w-[calc(100%-2rem)]">
                   <div className="flex items-center gap-3">
