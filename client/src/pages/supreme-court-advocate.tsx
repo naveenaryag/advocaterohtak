@@ -119,14 +119,14 @@ export default function SupremeCourtAdvocate() {
       {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'degree',
-        name: 'Bachelor of Laws (LL.B.) with Honors',
+        name: 'Bachelor of Law (LLB) with Honors',
         educationalLevel: 'Undergraduate',
         dateCreated: '2014'
       },
       {
         '@type': 'EducationalOccupationalCredential',
         credentialCategory: 'degree',
-        name: 'Master of Laws (LL.M.)',
+        name: 'Master of Law (LLM)',
         educationalLevel: 'Postgraduate',
         dateCreated: '2016'
       },
@@ -363,11 +363,11 @@ export default function SupremeCourtAdvocate() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
-                          <span><strong>Bachelor of Laws (LL.B.) with Honors</strong> - 2014</span>
+                          <span><strong>Bachelor of Law (LLB) with Honors</strong> - 2014</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
-                          <span><strong>Master of Laws (LL.M.)</strong> - 2016</span>
+                          <span><strong>Master of Law (LLM)</strong> - 2016</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />

@@ -69,9 +69,9 @@ export default function About() {
   ];
 
   const awards = [
-    'Bachelor of Laws (B.L.) with Honors - 2014',
+    'Bachelor of Law (LLB) with Honors - 2014',
     'Certificate of Practice (COP) - P1700/2014',
-    'Master of Laws (M.L.) - 2016',
+    'Master of Law (LLM) - 2016',
     'National Eligibility Test (NET) Qualified - 2014',
     'Outstanding Lawyer Award - 2019',
     'International Legal Conference - Chairperson - 2019',
