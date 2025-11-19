@@ -30,7 +30,7 @@ export default function Home() {
     image: heroImage,
     '@id': 'https://advocatenaveenary.com',
     url: 'https://advocatenaveenary.com',
-    telephone: '+91 90502 25555',
+    telephone: '+91 90502 11113',
     priceRange: '₹₹',
     address: {
       '@type': 'PostalAddress',
@@ -91,7 +91,7 @@ export default function Home() {
     <>
       <SEO
         title="Best Advocate in Rohtak | Advocate Naveen Arya - Top Criminal Lawyer"
-        description="Best advocate in Rohtak with 10+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90502 25555 for free consultation."
+        description="Best advocate in Rohtak with 10+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90502 11113 for free consultation."
         keywords={[
           'advocate rohtak',
           'best advocate in rohtak',
@@ -134,14 +134,14 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+919050225555" data-testid="button-hero-call" className="inline-block">
+                  <a href="tel:+919050111113" data-testid="button-hero-call" className="inline-block">
                     <Button size="lg" className="w-full sm:w-auto text-lg rounded-full gap-2">
                       <Phone className="h-5 w-5" />
                       Call Now
                     </Button>
                   </a>
                   <a
-                    href="https://wa.me/919050225555"
+                    href="https://wa.me/919050111113"
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid="button-hero-whatsapp"
@@ -532,7 +532,7 @@ export default function Home() {
               Get expert legal consultation today. Available 24/7 for emergency matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto text-lg px-8 py-6 rounded-full gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now

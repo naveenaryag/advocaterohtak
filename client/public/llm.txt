@@ -84,10 +84,10 @@ geo_coordinates: 28.8935102, 76.5940006
 google_maps: https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z
 
 [CONTACT]
-phone: +91 90502 25555
+phone: +91 90502 11113
 email: naveen@advocaterohtak.com
 website: https://advocaterohtak.com
-whatsapp: https://wa.me/919050225555
+whatsapp: https://wa.me/919050111113
 office_hours: Monday-Saturday, 10:00 AM - 6:00 PM
 
 [SOCIAL_MEDIA]

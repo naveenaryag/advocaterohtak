@@ -25,7 +25,7 @@ export default function Directory() {
           postalCode: '124001',
           addressCountry: 'IN',
         },
-        telephone: '+91 90502 25555',
+        telephone: '+91 90502 11113',
         email: 'naveen@advocaterohtak.com',
       },
     ],
@@ -189,8 +189,8 @@ export default function Directory() {
                       <Phone className="h-5 w-5 text-primary flex-shrink-0" />
                       <div>
                         <p className="text-sm font-medium text-foreground">Contact Number</p>
-                        <a href="tel:+919050225555" className="text-sm text-primary hover:underline">
-                          +91 90502 25555
+                        <a href="tel:+919050111113" className="text-sm text-primary hover:underline">
+                          +91 90502 11113
                         </a>
                       </div>
                     </div>
@@ -206,7 +206,7 @@ export default function Directory() {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3 mt-6 pt-6 border-t">
-                    <a href="tel:+919050225555" data-testid="button-call-advocate">
+                    <a href="tel:+919050111113" data-testid="button-call-advocate">
                       <Button className="w-full sm:w-auto gap-2">
                         <Phone className="h-4 w-4" />
                         Call Now

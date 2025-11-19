@@ -41,7 +41,7 @@ export default function PracticeAreas() {
     <>
       <SEO
         title="Rohtak Lawyer Services | Practice Areas - Criminal, Civil & Family Law Expert"
-        description="Comprehensive legal services by best advocate in Rohtak. Expert in criminal defense, matrimonial cases, property disputes, cheque bounce cases, bail matters, civil litigation. SCBA: A-01417. Call +91 90502 25555."
+        description="Comprehensive legal services by best advocate in Rohtak. Expert in criminal defense, matrimonial cases, property disputes, cheque bounce cases, bail matters, civil litigation. SCBA: A-01417. Call +91 90502 11113."
         keywords={[
           'legal services rohtak',
           'rohtak lawyer services',

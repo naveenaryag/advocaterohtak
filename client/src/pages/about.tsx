@@ -171,7 +171,7 @@ export default function About() {
                       Schedule Consultation
                     </Button>
                   </Link>
-                  <a href="tel:+919050225555" data-testid="button-call-now">
+                  <a href="tel:+919050111113" data-testid="button-call-now">
                     <Button variant="outline" size="lg">
                       Call Now
                     </Button>

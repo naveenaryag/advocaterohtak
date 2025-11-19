@@ -123,7 +123,7 @@ export default function CivilDisputes() {
     <>
       <SEO
         title="Civil Lawyer in Rohtak | Property, Contract & Civil Litigation Expert - Advocate Naveen Arya"
-        description="Expert civil lawyer in Rohtak for property disputes, contract cases, civil suits, injunctions. 10+ years litigation experience. SCBA: A-01417. Call +91 90502 25555 for consultation."
+        description="Expert civil lawyer in Rohtak for property disputes, contract cases, civil suits, injunctions. 10+ years litigation experience. SCBA: A-01417. Call +91 90502 11113 for consultation."
         keywords={[
           'civil lawyer rohtak',
           'civil litigation rohtak',
@@ -149,13 +149,13 @@ export default function CivilDisputes() {
                 Comprehensive civil litigation services for property disputes, contract matters, recovery suits, and injunctions. Advocate Naveen Arya provides strategic legal representation protecting your civil rights and interests through skilled advocacy in Rohtak courts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="tel:+919050225555" data-testid="button-hero-call">
+                <a href="tel:+919050111113" data-testid="button-hero-call">
                   <Button size="lg" className="w-full sm:w-auto gap-2">
                     <Phone className="h-5 w-5" />
                     Legal Consultation
                   </Button>
                 </a>
-                <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                     <MessageCircle className="h-5 w-5" />
                     WhatsApp Us
@@ -325,7 +325,7 @@ export default function CivilDisputes() {
               Get expert legal representation to protect your rights and interests. Schedule consultation today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now

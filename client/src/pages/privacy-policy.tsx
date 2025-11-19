@@ -287,7 +287,7 @@ export default function PrivacyPolicy() {
                         <p className="font-semibold text-foreground text-lg">Grievance Officer</p>
                         <p><strong>Name:</strong> Advocate Naveen Arya</p>
                         <p><strong>Email:</strong> <a href="mailto:naveen@advocaterohtak.com" className="text-primary hover:underline">naveen@advocaterohtak.com</a></p>
-                        <p><strong>Phone:</strong> <a href="tel:+919050225555" className="text-primary hover:underline">+91 90502 25555</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+919050111113" className="text-primary hover:underline">+91 90502 11113</a></p>
                         <p><strong>Office Address:</strong> District Court Complex, Rohtak, Haryana - 124001</p>
                         <p className="text-sm text-muted-foreground pt-2">
                           <strong>Response Time:</strong> We will acknowledge your grievance within 48 hours and provide a resolution within 72 hours of acknowledgment.
@@ -295,7 +295,7 @@ export default function PrivacyPolicy() {
                       </div>
 
                       <p className="mt-4">
-                        For urgent privacy concerns or data breach notifications, please call us directly at <a href="tel:+919050225555" className="text-primary hover:underline">+91 90502 25555</a>.
+                        For urgent privacy concerns or data breach notifications, please call us directly at <a href="tel:+919050111113" className="text-primary hover:underline">+91 90502 11113</a>.
                       </p>
                     </div>
                   </div>

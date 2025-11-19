@@ -78,11 +78,11 @@ export default function CriminalLawyer() {
     },
     {
       question: 'How much does a criminal lawyer charge in Rohtak for bail?',
-      answer: 'Legal fees vary based on case complexity, court level, and urgency. We offer transparent pricing and free initial consultation. Contact us at +91 90502 25555 for detailed fee structure specific to your case.',
+      answer: 'Legal fees vary based on case complexity, court level, and urgency. We offer transparent pricing and free initial consultation. Contact us at +91 90502 11113 for detailed fee structure specific to your case.',
     },
     {
       question: 'Is criminal lawyer available 24/7 for urgent bail matters?',
-      answer: 'Yes, Advocate Naveen Arya provides 24/7 availability for urgent criminal matters including immediate bail applications, anticipatory bail, and emergency consultations. Call or WhatsApp +91 90502 25555 anytime.',
+      answer: 'Yes, Advocate Naveen Arya provides 24/7 availability for urgent criminal matters including immediate bail applications, anticipatory bail, and emergency consultations. Call or WhatsApp +91 90502 11113 anytime.',
     },
     {
       question: 'What types of criminal cases are handled in Rohtak?',
@@ -94,7 +94,7 @@ export default function CriminalLawyer() {
     <>
       <SEO
         title="Best Criminal Lawyer in Rohtak | Advocate Naveen Arya - Criminal Defense Expert"
-        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 10+ years experience, 95% bail success rate. SCBA: A-01417. Call +91 90502 25555 for urgent consultation."
+        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 10+ years experience, 95% bail success rate. SCBA: A-01417. Call +91 90502 11113 for urgent consultation."
         keywords={[
           'best criminal lawyer in rohtak',
           'criminal advocate rohtak',
@@ -121,13 +121,13 @@ export default function CriminalLawyer() {
                   Looking for the best criminal lawyer in Rohtak? Advocate Naveen Arya offers aggressive defense strategies backed by 10+ years of experience in criminal law. Protecting your rights and freedom with unwavering dedication.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <a href="tel:+919050225555" data-testid="button-hero-call">
+                  <a href="tel:+919050111113" data-testid="button-hero-call">
                     <Button size="lg" className="w-full sm:w-auto gap-2">
                       <Phone className="h-5 w-5" />
                       Urgent Consultation
                     </Button>
                   </a>
-                  <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                  <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                     <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                       <MessageCircle className="h-5 w-5" />
                       WhatsApp 24/7
@@ -301,7 +301,7 @@ export default function CriminalLawyer() {
               Don't wait. Get immediate legal assistance from an experienced criminal lawyer in Rohtak.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now - 24/7

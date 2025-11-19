@@ -123,7 +123,7 @@ export default function ChequeBounce() {
     <>
       <SEO
         title="Cheque Bounce Lawyer in Rohtak | Section 138 NI Act Expert - Advocate Naveen Arya"
-        description="Expert cheque bounce lawyer in Rohtak for Section 138 NI Act cases. Legal notice, complaint filing, defense, recovery. 10+ years experience. SCBA: A-01417. Call +91 90502 25555."
+        description="Expert cheque bounce lawyer in Rohtak for Section 138 NI Act cases. Legal notice, complaint filing, defense, recovery. 10+ years experience. SCBA: A-01417. Call +91 90502 11113."
         keywords={[
           'cheque bounce lawyer rohtak',
           'section 138 lawyer rohtak',
@@ -149,13 +149,13 @@ export default function ChequeBounce() {
                 Specialized representation in Section 138 NI Act cases for dishonor of cheques. Advocate Naveen Arya provides comprehensive legal services from notice drafting to court representation, protecting your financial interests with proven expertise.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="tel:+919050225555" data-testid="button-hero-call">
+                <a href="tel:+919050111113" data-testid="button-hero-call">
                   <Button size="lg" className="w-full sm:w-auto gap-2">
                     <Phone className="h-5 w-5" />
                     Immediate Consultation
                   </Button>
                 </a>
-                <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                     <MessageCircle className="h-5 w-5" />
                     WhatsApp Now
@@ -325,7 +325,7 @@ export default function ChequeBounce() {
               Act quickly to protect your rights. Get expert legal assistance for cheque bounce matters.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now

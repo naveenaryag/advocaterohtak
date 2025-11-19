@@ -123,7 +123,7 @@ export default function PropertyLitigation() {
     <>
       <SEO
         title="Property Lawyer in Rohtak | Title Disputes, Partition & Real Estate Litigation - Advocate Naveen Arya"
-        description="Expert property lawyer in Rohtak for title disputes, partition, possession matters, property documentation. 10+ years real estate litigation experience. SCBA: A-01417. Call +91 90502 25555."
+        description="Expert property lawyer in Rohtak for title disputes, partition, possession matters, property documentation. 10+ years real estate litigation experience. SCBA: A-01417. Call +91 90502 11113."
         keywords={[
           'property lawyer rohtak',
           'real estate lawyer rohtak',
@@ -149,13 +149,13 @@ export default function PropertyLitigation() {
                 Comprehensive property law services for title disputes, partition suits, possession matters, and real estate transactions. Advocate Naveen Arya provides expert representation protecting your valuable property rights through skilled advocacy and thorough legal analysis.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="tel:+919050225555" data-testid="button-hero-call">
+                <a href="tel:+919050111113" data-testid="button-hero-call">
                   <Button size="lg" className="w-full sm:w-auto gap-2">
                     <Phone className="h-5 w-5" />
                     Legal Consultation
                   </Button>
                 </a>
-                <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                     <MessageCircle className="h-5 w-5" />
                     WhatsApp Now
@@ -325,7 +325,7 @@ export default function PropertyLitigation() {
               Protect your property rights with expert legal guidance. Get comprehensive consultation today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now

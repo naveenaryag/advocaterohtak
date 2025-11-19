@@ -197,7 +197,7 @@ export default function Disclaimer() {
                   If you require legal advice or wish to engage our services, please contact us to schedule a formal consultation:
                 </p>
                 <div className="space-y-2 text-muted-foreground">
-                  <p><strong>Phone:</strong> <a href="tel:+919050225555" className="text-primary hover:underline">+91 90502 25555</a></p>
+                  <p><strong>Phone:</strong> <a href="tel:+919050111113" className="text-primary hover:underline">+91 90502 11113</a></p>
                   <p><strong>Email:</strong> <a href="mailto:naveen@advocaterohtak.com" className="text-primary hover:underline">naveen@advocaterohtak.com</a></p>
                   <p><strong>Office:</strong> District Court Complex, Rohtak, Haryana - 124001</p>
                 </div>

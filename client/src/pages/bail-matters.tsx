@@ -123,7 +123,7 @@ export default function BailMatters() {
     <>
       <SEO
         title="Bail Lawyer in Rohtak | Anticipatory & Regular Bail Expert - Advocate Naveen Arya"
-        description="Expert bail lawyer in Rohtak for anticipatory bail, regular bail, interim bail. 95% success rate, 24/7 emergency availability. SCBA: A-01417. Call +91 90502 25555 immediately."
+        description="Expert bail lawyer in Rohtak for anticipatory bail, regular bail, interim bail. 95% success rate, 24/7 emergency availability. SCBA: A-01417. Call +91 90502 11113 immediately."
         keywords={[
           'bail lawyer rohtak',
           'anticipatory bail rohtak',
@@ -149,13 +149,13 @@ export default function BailMatters() {
                 Urgent bail assistance with 95% success rate. Advocate Naveen Arya specializes in anticipatory bail, regular bail, and interim bail applications across all criminal matters. Available 24/7 for immediate legal action protecting your liberty.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="tel:+919050225555" data-testid="button-hero-call">
+                <a href="tel:+919050111113" data-testid="button-hero-call">
                   <Button size="lg" className="w-full sm:w-auto gap-2">
                     <Phone className="h-5 w-5" />
                     Emergency Bail - Call Now
                   </Button>
                 </a>
-                <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                     <MessageCircle className="h-5 w-5" />
                     WhatsApp 24/7
@@ -325,7 +325,7 @@ export default function BailMatters() {
               Don't delay. Contact us immediately for expert bail representation available 24/7.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now - Emergency

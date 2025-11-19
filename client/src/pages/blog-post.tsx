@@ -229,7 +229,7 @@ export default function BlogPost() {
                       Schedule Consultation
                     </Button>
                   </Link>
-                  <a href="tel:+919050225555" data-testid="button-call">
+                  <a href="tel:+919050111113" data-testid="button-call">
                     <Button variant="outline">Call Now</Button>
                   </a>
                 </div>

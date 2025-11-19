@@ -85,11 +85,11 @@ export default function NotFound() {
             <p className="mb-2">Need immediate legal assistance?</p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="tel:+919050225555" 
+                href="tel:+919050111113" 
                 className="text-primary hover:underline font-medium"
                 data-testid="link-phone"
               >
-                +91 90502 25555
+                +91 90502 11113
               </a>
               <span className="text-border">|</span>
               <a 

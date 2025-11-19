@@ -111,7 +111,7 @@ export default function MatrimonialCases() {
     },
     {
       question: 'How much does a matrimonial lawyer charge in Rohtak?',
-      answer: 'Legal fees vary based on case complexity, type of proceeding, and duration. We offer transparent pricing with no hidden charges. Initial consultation is available to discuss your case and provide a clear fee structure. Contact us at +91 90502 25555 for detailed information specific to your situation.',
+      answer: 'Legal fees vary based on case complexity, type of proceeding, and duration. We offer transparent pricing with no hidden charges. Initial consultation is available to discuss your case and provide a clear fee structure. Contact us at +91 90502 11113 for detailed information specific to your situation.',
     },
     {
       question: 'Can domestic violence cases be filed along with divorce?',
@@ -123,7 +123,7 @@ export default function MatrimonialCases() {
     <>
       <SEO
         title="Matrimonial Lawyer in Rohtak | Divorce, Custody & Family Law Expert - Advocate Naveen Arya"
-        description="Expert matrimonial lawyer in Rohtak for divorce, child custody, maintenance, domestic violence. 10+ years experience in family law. SCBA: A-01417. Call +91 90502 25555 for confidential consultation."
+        description="Expert matrimonial lawyer in Rohtak for divorce, child custody, maintenance, domestic violence. 10+ years experience in family law. SCBA: A-01417. Call +91 90502 11113 for confidential consultation."
         keywords={[
           'matrimonial lawyer rohtak',
           'divorce lawyer rohtak',
@@ -149,13 +149,13 @@ export default function MatrimonialCases() {
                 Navigate divorce, custody, and family disputes with compassionate legal guidance. Advocate Naveen Arya provides experienced representation in all matrimonial matters, prioritizing your family's well-being while protecting your legal rights.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="tel:+919050225555" data-testid="button-hero-call">
+                <a href="tel:+919050111113" data-testid="button-hero-call">
                   <Button size="lg" className="w-full sm:w-auto gap-2">
                     <Phone className="h-5 w-5" />
                     Confidential Consultation
                   </Button>
                 </a>
-                <a href="https://wa.me/919050225555" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                     <MessageCircle className="h-5 w-5" />
                     WhatsApp Us
@@ -325,7 +325,7 @@ export default function MatrimonialCases() {
               Get compassionate, experienced representation for your family law matter. Confidential consultation available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919050225555" data-testid="button-cta-call">
+              <a href="tel:+919050111113" data-testid="button-cta-call">
                 <Button size="lg" variant="secondary" className="w-full sm:w-auto gap-2">
                   <Phone className="h-5 w-5" />
                   Call Now
