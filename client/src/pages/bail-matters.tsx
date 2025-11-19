@@ -123,7 +123,7 @@ export default function BailMatters() {
     <>
       <SEO
         title="Bail Lawyer in Rohtak | Anticipatory & Regular Bail Expert - Advocate Naveen Arya"
-        description="Expert bail lawyer in Rohtak for anticipatory bail, regular bail, interim bail. 95% success rate, 24/7 emergency availability. SCBA: A-01417. Call +91 90502 11113 immediately."
+        description="Expert bail lawyer in Rohtak for anticipatory bail, regular bail, interim bail. 95% success rate, 24/7 emergency availability. SCBA: A-01417. Call +91 90501 11113 immediately."
         keywords={[
           'bail lawyer rohtak',
           'anticipatory bail rohtak',

@@ -123,7 +123,7 @@ export default function ChequeBounce() {
     <>
       <SEO
         title="Cheque Bounce Lawyer in Rohtak | Section 138 NI Act Expert - Advocate Naveen Arya"
-        description="Expert cheque bounce lawyer in Rohtak for Section 138 NI Act cases. Legal notice, complaint filing, defense, recovery. 10+ years experience. SCBA: A-01417. Call +91 90502 11113."
+        description="Expert cheque bounce lawyer in Rohtak for Section 138 NI Act cases. Legal notice, complaint filing, defense, recovery. 10+ years experience. SCBA: A-01417. Call +91 90501 11113."
         keywords={[
           'cheque bounce lawyer rohtak',
           'section 138 lawyer rohtak',

@@ -30,7 +30,7 @@ export default function Home() {
     image: heroImage,
     '@id': 'https://advocatenaveenary.com',
     url: 'https://advocatenaveenary.com',
-    telephone: '+91 90502 11113',
+    telephone: '+91 90501 11113',
     priceRange: '₹₹',
     address: {
       '@type': 'PostalAddress',
@@ -91,7 +91,7 @@ export default function Home() {
     <>
       <SEO
         title="Best Advocate in Rohtak | Advocate Naveen Arya - Top Criminal Lawyer"
-        description="Best advocate in Rohtak with 10+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90502 11113 for free consultation."
+        description="Best advocate in Rohtak with 10+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90501 11113 for free consultation."
         keywords={[
           'advocate rohtak',
           'best advocate in rohtak',

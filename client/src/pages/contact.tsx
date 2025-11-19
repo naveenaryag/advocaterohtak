@@ -78,7 +78,7 @@ export default function Contact() {
     mainEntity: {
       '@type': 'Attorney',
       name: 'Advocate Naveen Arya',
-      telephone: '+91 90502 11113',
+      telephone: '+91 90501 11113',
       email: 'naveen@advocaterohtak.com',
       address: {
         '@type': 'PostalAddress',
@@ -95,7 +95,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Advocate Naveen Arya | Best Lawyer in Rohtak - Free Consultation"
-        description="Contact top advocate in Rohtak for legal consultation. Call +91 90502 11113 or WhatsApp for immediate response. Office at Chamber No. 600, District Court Complex, Rohtak."
+        description="Contact top advocate in Rohtak for legal consultation. Call +91 90501 11113 or WhatsApp for immediate response. Office at Chamber No. 600, District Court Complex, Rohtak."
         keywords={[
           'contact advocate rohtak',
           'lawyer consultation rohtak',
@@ -130,7 +130,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Call Us</h3>
                 <a href="tel:+919050111113" className="text-primary hover:underline font-medium">
-                  +91 90502 11113
+                  +91 90501 11113
                 </a>
                 <p className="text-sm text-muted-foreground mt-2">Available 24/7</p>
               </Card>
@@ -203,7 +203,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="+91 90502 11113" {...field} disabled={contactMutation.isPending} data-testid="input-phone" />
+                            <Input type="tel" placeholder="+91 90501 11113" {...field} disabled={contactMutation.isPending} data-testid="input-phone" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

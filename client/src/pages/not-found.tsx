@@ -89,7 +89,7 @@ export default function NotFound() {
                 className="text-primary hover:underline font-medium"
                 data-testid="link-phone"
               >
-                +91 90502 11113
+                +91 90501 11113
               </a>
               <span className="text-border">|</span>
               <a 

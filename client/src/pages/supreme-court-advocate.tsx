@@ -8,7 +8,7 @@ import supremeCourtImage2 from '@assets/supreme-court_1763358725721.jpg';
 
 export default function SupremeCourtAdvocate() {
   const whatsappUrl = 'https://wa.me/919050111113?text=' + encodeURIComponent('I need consultation for a Supreme Court matter');
-  const phoneNumber = '+91 90502 11113';
+  const phoneNumber = '+91 90501 11113';
   const email = 'naveen@advocaterohtak.com';
 
   const practiceAreas = [
@@ -155,7 +155,7 @@ export default function SupremeCourtAdvocate() {
       postalCode: '124001',
       addressCountry: 'IN'
     },
-    telephone: '+91 90502 11113',
+    telephone: '+91 90501 11113',
     email: 'naveen@advocaterohtak.com',
     priceRange: '₹₹',
     knowsAbout: [
@@ -176,7 +176,7 @@ export default function SupremeCourtAdvocate() {
     <>
       <SEO
         title="Supreme Court Advocate in India | SLP Lawyer | Naveen Arya SCBA A-01417"
-        description="Expert Supreme Court advocate for SLP, Criminal Appeals, Civil Appeals & Constitutional Matters. SCBA Member A-01417. 10+ years experience. Call +91 90502 11113"
+        description="Expert Supreme Court advocate for SLP, Criminal Appeals, Civil Appeals & Constitutional Matters. SCBA Member A-01417. 10+ years experience. Call +91 90501 11113"
         keywords={[
           'supreme court advocate india',
           'SLP lawyer',

@@ -111,7 +111,7 @@ export default function MatrimonialCases() {
     },
     {
       question: 'How much does a matrimonial lawyer charge in Rohtak?',
-      answer: 'Legal fees vary based on case complexity, type of proceeding, and duration. We offer transparent pricing with no hidden charges. Initial consultation is available to discuss your case and provide a clear fee structure. Contact us at +91 90502 11113 for detailed information specific to your situation.',
+      answer: 'Legal fees vary based on case complexity, type of proceeding, and duration. We offer transparent pricing with no hidden charges. Initial consultation is available to discuss your case and provide a clear fee structure. Contact us at +91 90501 11113 for detailed information specific to your situation.',
     },
     {
       question: 'Can domestic violence cases be filed along with divorce?',
@@ -123,7 +123,7 @@ export default function MatrimonialCases() {
     <>
       <SEO
         title="Matrimonial Lawyer in Rohtak | Divorce, Custody & Family Law Expert - Advocate Naveen Arya"
-        description="Expert matrimonial lawyer in Rohtak for divorce, child custody, maintenance, domestic violence. 10+ years experience in family law. SCBA: A-01417. Call +91 90502 11113 for confidential consultation."
+        description="Expert matrimonial lawyer in Rohtak for divorce, child custody, maintenance, domestic violence. 10+ years experience in family law. SCBA: A-01417. Call +91 90501 11113 for confidential consultation."
         keywords={[
           'matrimonial lawyer rohtak',
           'divorce lawyer rohtak',

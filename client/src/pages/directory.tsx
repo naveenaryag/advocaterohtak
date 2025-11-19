@@ -25,7 +25,7 @@ export default function Directory() {
           postalCode: '124001',
           addressCountry: 'IN',
         },
-        telephone: '+91 90502 11113',
+        telephone: '+91 90501 11113',
         email: 'naveen@advocaterohtak.com',
       },
     ],
@@ -190,7 +190,7 @@ export default function Directory() {
                       <div>
                         <p className="text-sm font-medium text-foreground">Contact Number</p>
                         <a href="tel:+919050111113" className="text-sm text-primary hover:underline">
-                          +91 90502 11113
+                          +91 90501 11113
                         </a>
                       </div>
                     </div>

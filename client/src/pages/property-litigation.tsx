@@ -123,7 +123,7 @@ export default function PropertyLitigation() {
     <>
       <SEO
         title="Property Lawyer in Rohtak | Title Disputes, Partition & Real Estate Litigation - Advocate Naveen Arya"
-        description="Expert property lawyer in Rohtak for title disputes, partition, possession matters, property documentation. 10+ years real estate litigation experience. SCBA: A-01417. Call +91 90502 11113."
+        description="Expert property lawyer in Rohtak for title disputes, partition, possession matters, property documentation. 10+ years real estate litigation experience. SCBA: A-01417. Call +91 90501 11113."
         keywords={[
           'property lawyer rohtak',
           'real estate lawyer rohtak',

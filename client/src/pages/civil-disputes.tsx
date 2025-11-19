@@ -123,7 +123,7 @@ export default function CivilDisputes() {
     <>
       <SEO
         title="Civil Lawyer in Rohtak | Property, Contract & Civil Litigation Expert - Advocate Naveen Arya"
-        description="Expert civil lawyer in Rohtak for property disputes, contract cases, civil suits, injunctions. 10+ years litigation experience. SCBA: A-01417. Call +91 90502 11113 for consultation."
+        description="Expert civil lawyer in Rohtak for property disputes, contract cases, civil suits, injunctions. 10+ years litigation experience. SCBA: A-01417. Call +91 90501 11113 for consultation."
         keywords={[
           'civil lawyer rohtak',
           'civil litigation rohtak',

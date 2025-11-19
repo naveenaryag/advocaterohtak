@@ -286,7 +286,7 @@ export default function LegalCompliance() {
                   </p>
                   <div className="not-prose space-y-2">
                     <p><strong>Email:</strong> <a href="mailto:naveen@advocaterohtak.com" className="text-primary hover:underline">naveen@advocaterohtak.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+919050111113" className="text-primary hover:underline">+91 90502 11113</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919050111113" className="text-primary hover:underline">+91 90501 11113</a></p>
                     <p><strong>Office:</strong> District Court Complex, Rohtak, Haryana - 124001</p>
                   </div>
                 </div>
