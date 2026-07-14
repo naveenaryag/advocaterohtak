@@ -8,15 +8,37 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { blogPosts } from '@/lib/data';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
-import bailRightsImage from '@assets/stock_images/courtroom_judge_gave_f4141f3f.jpg';
-import chequeBounceImage from '@assets/stock_images/financial_documents__d768546d.jpg';
-import propertyDisputeImage from '@assets/stock_images/real_estate_property_0b567b7c.jpg';
+import bailRightsImage from '@assets/stock_images/bail-rights-criminal-lawyer-rohtak.jpg';
+import chequeBounceImage from '@assets/stock_images/cheque-bounce-138-ni-act-lawyer-rohtak.jpg';
+import propertyDisputeImage from '@assets/stock_images/property-dispute-lawyer-rohtak.jpg';
+import firGuideImage from '@assets/stock_images/how-to-file-fir-rohtak-police-station.jpg';
+import divorceImage from '@assets/stock_images/divorce-lawyer-rohtak-family-court.jpg';
+import dowryCaseImage from '@assets/stock_images/498a-dowry-case-lawyer-rohtak.jpg';
+import ndpsBailImage from '@assets/stock_images/ndps-drug-case-bail-lawyer-rohtak.jpg';
+import anticipatoryBailImage from '@assets/stock_images/anticipatory-bail-lawyer-rohtak.jpg';
 
 export default function BlogPost() {
   const blogImages: Record<string, string> = {
-    '1': bailRightsImage,
-    '2': chequeBounceImage,
-    '3': propertyDisputeImage,
+    '1': bailRightsImage,           // Bail rights guide
+    '2': chequeBounceImage,         // Cheque bounce cases
+    '3': propertyDisputeImage,      // Property dispute
+    '4': firGuideImage,             // FIR filing guide
+    '5': divorceImage,              // Divorce procedure
+    '6': dowryCaseImage,            // 498A case guide
+    '7': ndpsBailImage,             // NDPS bail guide
+    '8': anticipatoryBailImage,     // Anticipatory bail guide
+  };
+
+  // SEO-optimized alt texts for each blog post
+  const blogAltTexts: Record<string, string> = {
+    '1': 'Bail rights and criminal law expert Advocate Naveen Arya in Rohtak court',
+    '2': 'Cheque bounce Section 138 NI Act lawyer in Rohtak handling financial disputes',
+    '3': 'Property dispute and land litigation lawyer in Rohtak District Court',
+    '4': 'How to file FIR at Rohtak police station - complete legal guide',
+    '5': 'Divorce lawyer in Rohtak Family Court handling matrimonial cases',
+    '6': 'Section 498A dowry harassment case defense lawyer in Rohtak',
+    '7': 'NDPS drug case bail lawyer in Rohtak - expert legal representation',
+    '8': 'Anticipatory bail and pre-arrest protection lawyer in Rohtak',
   };
 
   const [, params] = useRoute('/blog/:slug');
@@ -39,27 +61,38 @@ export default function BlogPost() {
     );
   }
 
+  // Get the full image URL for schema
+  const imageUrl = `https://advocaterohtak.com${blogImages[post.id] || bailRightsImage}`;
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.excerpt,
+    image: {
+      '@type': 'ImageObject',
+      url: imageUrl,
+      width: 1200,
+      height: 630,
+    },
     author: {
       '@type': 'Person',
       name: post.author,
+      url: 'https://advocaterohtak.com/about',
     },
     datePublished: post.publishedDate,
+    dateModified: post.publishedDate,
     publisher: {
       '@type': 'Organization',
       name: 'Advocate Naveen Arya Law Practice',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://advocatenaveenary.com/logo.png',
+        url: 'https://advocaterohtak.com/favicon.png',
       },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://advocatenaveenary.com/blog/${post.slug}`,
+      '@id': `https://advocaterohtak.com/blog/${post.slug}`,
     },
     keywords: post.keywords.join(', '),
   };
@@ -147,9 +180,12 @@ export default function BlogPost() {
                 <div className="relative w-full h-64 sm:h-96 rounded-xl overflow-hidden shadow-xl border-2 border-primary/10 mb-8">
                   <img
                     src={blogImages[post.id]}
-                    alt={`${post.title} - Expert legal article by Advocate Naveen Arya, best lawyer in Rohtak`}
+                    alt={blogAltTexts[post.id] || `${post.title} - Advocate Naveen Arya, best lawyer in Rohtak`}
+                    title={post.title}
                     className="w-full h-full object-cover"
                     loading="eager"
+                    width="1200"
+                    height="630"
                     data-testid="img-post-header"
                   />
                 </div>
@@ -244,9 +280,12 @@ export default function BlogPost() {
                         <div className="relative h-32 overflow-hidden">
                           <img
                             src={blogImages[relatedPost.id]}
-                            alt={`${relatedPost.title} - Related legal article`}
+                            alt={blogAltTexts[relatedPost.id] || `${relatedPost.title} - Advocate Naveen Arya Rohtak`}
+                            title={relatedPost.title}
                             className="w-full h-full object-cover"
                             loading="lazy"
+                            width="600"
+                            height="315"
                             data-testid={`img-related-${relatedPost.id}`}
                           />
                         </div>
