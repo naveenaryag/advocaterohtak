@@ -170,6 +170,24 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
+            <h3 className="font-semibold text-foreground mb-4 mt-6">Areas We Serve</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/lawyer-jhajjar" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-jhajjar">
+                  Jhajjar
+                </Link>
+              </li>
+              <li>
+                <Link href="/lawyer-sonipat" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-sonipat">
+                  Sonipat
+                </Link>
+              </li>
+              <li>
+                <Link href="/lawyer-bhiwani" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-bhiwani">
+                  Bhiwani
+                </Link>
+              </li>
+            </ul>
             <h3 className="font-semibold text-foreground mb-4 mt-6">Court Links</h3>
             <ul className="space-y-2 text-sm">
               <li>

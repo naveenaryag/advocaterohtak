@@ -84,6 +84,54 @@ export const testimonials: Testimonial[] = [
     comment: 'Recovered full amount in my Section 138 case. The professional handling and regular updates throughout the case gave me confidence. Best advocate in Rohtak for financial disputes.',
     date: '2024-03-05',
   },
+  {
+    id: '5',
+    name: 'Rajesh Kumar',
+    caseType: 'Anticipatory Bail',
+    rating: 5,
+    comment: 'Got anticipatory bail in a false 498A case. Advocate Naveen Arya understood the urgency and filed the application immediately. His arguments in court were very strong. Forever grateful.',
+    date: '2024-04-12',
+  },
+  {
+    id: '6',
+    name: 'Sanjay Malik',
+    caseType: 'Criminal Trial',
+    rating: 5,
+    comment: 'Acquitted in a serious criminal case after 3 years of trial. Naveen Sir\'s cross-examination skills and legal strategy were exceptional. The best criminal lawyer in Rohtak without doubt.',
+    date: '2024-05-20',
+  },
+  {
+    id: '7',
+    name: 'Anita Yadav',
+    caseType: 'Domestic Violence',
+    rating: 5,
+    comment: 'Very sensitive handling of my DV case. Got protection order and maintenance for me and my children. Advocate Arya truly cares about his clients\' wellbeing.',
+    date: '2024-06-08',
+  },
+  {
+    id: '8',
+    name: 'Deepak Jain',
+    caseType: 'Supreme Court SLP',
+    rating: 5,
+    comment: 'Filed SLP in Supreme Court against High Court order. Naveen Sir\'s expertise in constitutional matters and Supreme Court practice is remarkable. Got stay order in first hearing.',
+    date: '2024-07-01',
+  },
+  {
+    id: '9',
+    name: 'Suresh Tanwar',
+    caseType: 'Land Partition',
+    rating: 5,
+    comment: 'Family property partition settled amicably with his mediation skills. When needed, he was ready for court too. Best property lawyer for complex family disputes.',
+    date: '2024-03-28',
+  },
+  {
+    id: '10',
+    name: 'Mohan Lal',
+    caseType: 'NDPS Case',
+    rating: 5,
+    comment: 'Got bail in NDPS case which others said was impossible. Advocate Naveen Arya found procedural lapses and argued brilliantly. His knowledge of NDPS Act is unmatched in Rohtak.',
+    date: '2024-02-15',
+  },
 ];
 
 export const faqs: FAQ[] = [
@@ -115,7 +163,47 @@ export const faqs: FAQ[] = [
   {
     id: '6',
     question: 'Do you handle cases outside Rohtak?',
-    answer: 'While my primary practice is in Rohtak, I can handle cases in nearby districts and appear before the Punjab & Haryana High Court, Delhi High Court, and Supreme Court of India. For Higher Court and Supreme Court matters, I handle appeals, writs, SLPs, and constitutional cases (SCBA A-01417). For matters outside my regular jurisdiction, I can coordinate with associates or advise on the best course of action.',
+    answer: 'While my primary practice is in Rohtak, I can handle cases in nearby districts including Jhajjar, Sonipat, Bhiwani, and Hisar. I also appear before the Punjab & Haryana High Court, Delhi High Court, and Supreme Court of India. For Higher Court and Supreme Court matters, I handle appeals, writs, SLPs, and constitutional cases (SCBA A-01417). For matters outside my regular jurisdiction, I can coordinate with associates or advise on the best course of action.',
+  },
+  {
+    id: '7',
+    question: 'How long does it take to get bail in Rohtak?',
+    answer: 'Bail timelines depend on the offense type and court schedule. For bailable offenses, bail can be granted same day. For non-bailable offenses, regular bail applications are typically heard within 2-7 days. Anticipatory bail applications are usually listed within 1-3 days. I ensure prompt filing and representation to secure earliest possible release.',
+  },
+  {
+    id: '8',
+    question: 'What is the fee for divorce case in Rohtak?',
+    answer: 'Divorce case fees depend on whether it is mutual consent or contested divorce. Mutual consent divorces are simpler and cost less. Contested divorces involving child custody, maintenance, and property division require more work. I offer a free initial consultation to assess your case and provide a detailed fee estimate.',
+  },
+  {
+    id: '9',
+    question: 'Can I get anticipatory bail in a 498A case?',
+    answer: 'Yes, anticipatory bail is commonly granted in Section 498A (dowry harassment) cases, especially when the allegations appear exaggerated or false. I have successfully secured anticipatory bail in numerous 498A cases by presenting strong grounds and demonstrating no flight risk. Contact immediately if you apprehend arrest.',
+  },
+  {
+    id: '10',
+    question: 'How to file cheque bounce case in Rohtak?',
+    answer: 'To file a Section 138 cheque bounce case: (1) Send legal notice within 30 days of dishonour, (2) Wait 15 days for payment, (3) File complaint before Magistrate within 30 days if unpaid. I handle all documentation, notice drafting, and court representation for cheque bounce cases with high success rate.',
+  },
+  {
+    id: '11',
+    question: 'What documents are needed for property case?',
+    answer: 'For property disputes, you need: original sale deed/registry, jamabandi (revenue record), mutation records, tax receipts, property maps, chain of title documents, and any previous court orders. I provide free document verification to assess the strength of your case before filing.',
+  },
+  {
+    id: '12',
+    question: 'Is online consultation available?',
+    answer: 'Yes, I offer online consultations via video call for clients who cannot visit the office. This is especially useful for NRI clients, those in other cities, or for urgent initial consultations. Schedule online consultation by calling or WhatsApp at +91 90501 11113.',
+  },
+  {
+    id: '13',
+    question: 'What is your success rate in criminal cases?',
+    answer: 'I have achieved 95% success rate in bail applications and secured 300+ acquittals in criminal trials over my 12+ years of practice. Each case is different, but my thorough preparation, knowledge of law, and aggressive courtroom advocacy maximize chances of favorable outcome.',
+  },
+  {
+    id: '14',
+    question: 'Do you handle Supreme Court cases?',
+    answer: 'Yes, I am a registered member of Supreme Court Bar Association (SCBA A-01417) and regularly appear before the Supreme Court of India. I handle SLPs (Special Leave Petitions), Criminal Appeals, Civil Appeals, Writ Petitions under Article 32, and Transfer Petitions.',
   },
 ];
 

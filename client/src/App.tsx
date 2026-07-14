@@ -25,6 +25,9 @@ const PrivacyPolicy = lazy(() => import("@/pages/privacy-policy"));
 const Terms = lazy(() => import("@/pages/terms"));
 const CookiePolicy = lazy(() => import("@/pages/cookie-policy"));
 const LegalCompliance = lazy(() => import("@/pages/legal-compliance"));
+const LawyerJhajjar = lazy(() => import("@/pages/lawyer-jhajjar"));
+const LawyerSonipat = lazy(() => import("@/pages/lawyer-sonipat"));
+const LawyerBhiwani = lazy(() => import("@/pages/lawyer-bhiwani"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 function Router() {
@@ -50,6 +53,9 @@ function Router() {
         <Route path="/terms" component={Terms} />
         <Route path="/cookie-policy" component={CookiePolicy} />
         <Route path="/legal-compliance" component={LegalCompliance} />
+        <Route path="/lawyer-jhajjar" component={LawyerJhajjar} />
+        <Route path="/lawyer-sonipat" component={LawyerSonipat} />
+        <Route path="/lawyer-bhiwani" component={LawyerBhiwani} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
