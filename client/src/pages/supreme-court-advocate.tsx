@@ -176,7 +176,7 @@ export default function SupremeCourtAdvocate() {
     <>
       <SEO
         title="Supreme Court Advocate in India | SLP Lawyer | Naveen Arya SCBA A-01417"
-        description="Expert Supreme Court advocate for SLP, Criminal Appeals, Civil Appeals & Constitutional Matters. SCBA Member A-01417. 10+ years experience. Call +91 90501 11113"
+        description="Expert Supreme Court advocate for SLP, Criminal Appeals, Civil Appeals & Constitutional Matters. SCBA Member A-01417. 12+ years experience. Call +91 90501 11113"
         keywords={[
           'supreme court advocate india',
           'SLP lawyer',
@@ -211,7 +211,7 @@ export default function SupremeCourtAdvocate() {
               </p>
               
               <p className="text-base text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-                Expert legal representation before the Hon'ble Supreme Court of India. Specialized in Special Leave Petitions (SLP), Criminal Appeals, Civil Appeals, Writs and Constitutional matters. Over 10 years of litigation experience with deep understanding of Supreme Court procedures.
+                Expert legal representation before the Hon'ble Supreme Court of India. Specialized in Special Leave Petitions (SLP), Criminal Appeals, Civil Appeals, Writs and Constitutional matters. Over 12 years of litigation experience with deep understanding of Supreme Court procedures.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -283,7 +283,7 @@ export default function SupremeCourtAdvocate() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />
-                    <p className="text-foreground">Practicing Since 2014 with 10+ years of litigation experience</p>
+                    <p className="text-foreground">Practicing Since 2014 with 12+ years of litigation experience</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0 mt-1" />

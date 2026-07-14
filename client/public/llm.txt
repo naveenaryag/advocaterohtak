@@ -21,7 +21,7 @@ District Bar Association, Rohtak: Enrolled 2014
 LL.B (Bachelor of Laws with Honors) - 2014
 LL.M (Master of Laws) - 2016
 UGC-NET (Law) Qualified - 2014
-10+ years litigation experience
+12+ years litigation experience
 Published 15+ research papers in national and international journals
 Judge - National Moot Court Competition (MDU Rohtak, 2024)
 Outstanding Lawyer Award - 2019
@@ -96,7 +96,7 @@ linkedin: https://www.linkedin.com/in/true-lawyer/
 instagram: https://www.instagram.com/truelawyer2/
 
 [EEAT]
-experience: 10+ years practicing law in Rohtak District Courts and Punjab & Haryana High Court
+experience: 12+ years practicing law in Rohtak District Courts and Punjab & Haryana High Court
 expertise: Criminal Law, Civil Litigation, NI Act 138, Family Law, Property Disputes, Consumer Cases
 authority: SCBA member (A-01417), published author (15+ research papers), national judge (2024), award recipient
 trust: Verified identity, credible practice, transparent dealings, 1000+ satisfied clients, 500+ cases won
@@ -138,7 +138,7 @@ entity-type: Legal Professional
 practice-type: Independent Advocate
 jurisdiction: India (Haryana & Delhi NCR)
 specialization: Criminal, Civil, Matrimonial, NI Act, Property Law, Consumer Law
-years_practicing: 10+
+years_practicing: 12+
 bar_registration: Supreme Court Bar Association (A-01417)
 high_court: Punjab & Haryana High Court (COP: P1700/2014)
 district_court: Rohtak District Courts (Enrolled: 2014)
@@ -164,7 +164,7 @@ conversion_goal: Phone calls, WhatsApp inquiries, contact form submissions
 verified_credentials: SCBA A-01417, COP P1700/2014
 awards: Outstanding Lawyer Award 2019, Mr. Talent Award
 publications: 15+ research papers in reputed journals
-experience: 10+ years, 500+ cases won, 1000+ happy clients
+experience: 12+ years, 500+ cases won, 1000+ happy clients
 testimonials: High client satisfaction, verified reviews
 transparency: Clear fee structure, honest communication
 

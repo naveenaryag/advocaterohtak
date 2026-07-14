@@ -61,7 +61,7 @@ export default function Home() {
       '@type': 'City',
       name: 'Rohtak',
     },
-    description: 'Best advocate in Rohtak specializing in criminal law, matrimonial cases, property disputes, and cheque bounce cases. Over 10 years experience with 500+ successful cases.',
+    description: 'Best advocate in Rohtak specializing in criminal law, matrimonial cases, property disputes, and cheque bounce cases. Over 12 years experience with 500+ successful cases.',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
@@ -91,7 +91,7 @@ export default function Home() {
     <>
       <SEO
         title="Best Advocate in Rohtak | Advocate Naveen Arya - Top Criminal Lawyer"
-        description="Best advocate in Rohtak with 10+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90501 11113 for free consultation."
+        description="Best advocate in Rohtak with 12+ years experience. Expert criminal lawyer specializing in criminal law, matrimonial cases, property disputes, bail matters. SCBA: A-01417, COP: P1700/2014. Call +91 90501 11113 for free consultation."
         keywords={[
           'advocate rohtak',
           'best advocate in rohtak',
@@ -129,7 +129,7 @@ export default function Home() {
                     Top Criminal Lawyer & Legal Expert in Rohtak
                   </p>
                   <p className="text-base sm:text-lg text-muted-foreground max-w-xl">
-                    Looking for the best advocate in Rohtak? With over 10 years of exceptional legal service, Advocate Naveen Arya is recognized as one of the top advocates in Rohtak, specializing in criminal law, matrimonial cases, property disputes, and civil litigation across Rohtak District Courts.
+                    Looking for the best advocate in Rohtak? With over 12 years of exceptional legal service, Advocate Naveen Arya is recognized as one of the top advocates in Rohtak, specializing in criminal law, matrimonial cases, property disputes, and civil litigation across Rohtak District Courts.
                   </p>
                 </div>
 
@@ -162,7 +162,7 @@ export default function Home() {
                   <div className="flex items-center gap-2" data-testid="stat-experience">
                     <Award className="h-5 w-5 text-accent" />
                     <div>
-                      <p className="text-2xl font-bold text-foreground">10+</p>
+                      <p className="text-2xl font-bold text-foreground">12+</p>
                       <p className="text-sm text-muted-foreground">Years Experience</p>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ export default function Home() {
               {[
                 {
                   title: 'Extensive Experience',
-                  description: 'Over 10 years of practice in Rohtak District Courts with deep understanding of local legal procedures and court systems.',
+                  description: 'Over 12 years of practice in Rohtak District Courts with deep understanding of local legal procedures and court systems.',
                 },
                 {
                   title: 'Proven Track Record',
@@ -354,7 +354,7 @@ export default function Home() {
                   <p className="text-sm text-foreground font-medium">Cases Handled</p>
                 </div>
                 <div className="text-center p-6 bg-primary/5 rounded-lg">
-                  <p className="text-4xl font-bold text-primary mb-2">10+</p>
+                  <p className="text-4xl font-bold text-primary mb-2">12+</p>
                   <p className="text-sm text-foreground font-medium">Years Practice</p>
                 </div>
               </div>
@@ -415,7 +415,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-xl font-semibold text-foreground mb-2">Deep Knowledge of Rohtak Courts</h3>
                       <p className="text-muted-foreground">
-                        Over 10 years of daily practice in Rohtak District Courts means I know every procedure, every official, and every legal nuance specific to Rohtak. This local expertise translates to faster case resolution and better outcomes for my clients.
+                        Over 12 years of daily practice in Rohtak District Courts means I know every procedure, every official, and every legal nuance specific to Rohtak. This local expertise translates to faster case resolution and better outcomes for my clients.
                       </p>
                     </div>
                   </div>
@@ -476,13 +476,13 @@ export default function Home() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
                     <p className="text-white text-lg font-semibold mb-2">Rohtak District Court Complex</p>
-                    <p className="text-white/80 text-sm">Serving justice in Rohtak for over 10 years with dedication and expertise</p>
+                    <p className="text-white/80 text-sm">Serving justice in Rohtak for over 12 years with dedication and expertise</p>
                   </div>
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <Card className="p-4 text-center hover-elevate">
-                    <div className="text-2xl font-bold text-primary mb-1">10+</div>
+                    <div className="text-2xl font-bold text-primary mb-1">12+</div>
                     <p className="text-xs text-muted-foreground">Years in Rohtak Courts</p>
                   </Card>
                   <Card className="p-4 text-center hover-elevate">

@@ -146,7 +146,7 @@ export default function Directory() {
                       <Briefcase className="h-5 w-5 opacity-80" />
                       <div>
                         <p className="text-sm opacity-80">Experience</p>
-                        <p className="font-semibold">10+ Years</p>
+                        <p className="font-semibold">12+ Years</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">

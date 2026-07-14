@@ -18,7 +18,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
-              Expert legal representation in Rohtak with over 10 years of experience in criminal law, civil litigation, and family matters.
+              Expert legal representation in Rohtak with over 12 years of experience in criminal law, civil litigation, and family matters.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a

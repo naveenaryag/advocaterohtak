@@ -56,14 +56,14 @@ export default function About() {
     { year: '2017', event: 'Independent Practice', description: 'Established independent law practice' },
     { year: '2019', event: 'Expanded Practice Areas', description: 'Added civil and family law expertise' },
     { year: '2021', event: '500+ Cases Milestone', description: 'Achieved significant case resolution milestone' },
-    { year: '2024', event: 'Decade of Service', description: 'Completed 10 years of dedicated legal service' },
+    { year: '2024', event: 'Decade of Service', description: 'Completed a decade of dedicated legal service' },
   ];
 
   const credentials = [
     { icon: GraduationCap, title: 'Legal Education', value: 'B.L. (Honors), M.L.' },
     { icon: Scale, title: 'SCBA Registration', value: 'No. A-01417' },
     { icon: Scale, title: 'COP Registration', value: 'P1700/2014' },
-    { icon: Briefcase, title: 'Experience', value: '10+ Years in Practice' },
+    { icon: Briefcase, title: 'Experience', value: '12+ Years in Practice' },
     { icon: TrendingUp, title: 'Success Rate', value: '95% Case Success' },
     { icon: Users, title: 'Clients Served', value: '1000+ Happy Clients' },
   ];
@@ -102,7 +102,7 @@ export default function About() {
     <>
       <SEO
         title="About Advocate Naveen Arya | Best Lawyer in Rohtak - Experience & Credentials"
-        description="Meet Advocate Naveen Arya, a leading lawyer in Rohtak with 10+ years of experience. SCBA registered advocate specializing in criminal law, civil litigation, and family matters."
+        description="Meet Advocate Naveen Arya, a leading lawyer in Rohtak with 12+ years of experience. SCBA registered advocate specializing in criminal law, civil litigation, and family matters."
         keywords={[
           'advocate naveen arya',
           'best lawyer rohtak',
@@ -154,7 +154,7 @@ export default function About() {
                   <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Professional Profile</h2>
                   <div className="space-y-4 text-lg text-muted-foreground">
                     <p>
-                      Advocate Naveen Arya is a distinguished legal practitioner with over 10 years of experience in Rohtak District Courts. Enrolled with the Bar Council of Haryana in 2014, he has established himself as one of the most trusted advocates in the region.
+                      Advocate Naveen Arya is a distinguished legal practitioner with over 12 years of experience in Rohtak District Courts. Enrolled with the Bar Council of Haryana in 2014, he has established himself as one of the most trusted advocates in the region.
                     </p>
                     <p>
                       His practice encompasses a wide spectrum of legal services including criminal defense, civil litigation, matrimonial disputes, property matters, and commercial law. With a client-first approach and commitment to excellence, Advocate Arya has successfully represented over 1000 clients and achieved favorable outcomes in 500+ cases.

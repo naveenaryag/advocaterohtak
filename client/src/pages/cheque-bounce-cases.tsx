@@ -123,7 +123,7 @@ export default function ChequeBounce() {
     <>
       <SEO
         title="Cheque Bounce Lawyer in Rohtak | Section 138 NI Act Expert - Advocate Naveen Arya"
-        description="Expert cheque bounce lawyer in Rohtak for Section 138 NI Act cases. Legal notice, complaint filing, defense, recovery. 10+ years experience. SCBA: A-01417. Call +91 90501 11113."
+        description="Expert cheque bounce lawyer in Rohtak for Section 138 NI Act cases. Legal notice, complaint filing, defense, recovery. 12+ years experience. SCBA: A-01417. Call +91 90501 11113."
         keywords={[
           'cheque bounce lawyer rohtak',
           'section 138 lawyer rohtak',
@@ -165,7 +165,7 @@ export default function ChequeBounce() {
 
               <div className="grid grid-cols-3 gap-4 pt-12 max-w-2xl mx-auto">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">10+</p>
+                  <p className="text-3xl font-bold text-primary">12+</p>
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">

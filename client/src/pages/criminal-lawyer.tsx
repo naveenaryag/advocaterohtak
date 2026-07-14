@@ -70,7 +70,7 @@ export default function CriminalLawyer() {
   const faqs = [
     {
       question: 'Who is the best criminal lawyer in Rohtak?',
-      answer: 'Advocate Naveen Arya is recognized as one of the best criminal lawyers in Rohtak with over 10 years of experience, a 95% bail success rate, and 300+ acquittals. He is registered with SCBA (A-01417) and Punjab & Haryana High Court (P1700/2014).',
+      answer: 'Advocate Naveen Arya is recognized as one of the best criminal lawyers in Rohtak with over 12 years of experience, a 95% bail success rate, and 300+ acquittals. He is registered with SCBA (A-01417) and Punjab & Haryana High Court (P1700/2014).',
     },
     {
       question: 'What is the success rate for bail applications in Rohtak?',
@@ -94,7 +94,7 @@ export default function CriminalLawyer() {
     <>
       <SEO
         title="Best Criminal Lawyer in Rohtak | Advocate Naveen Arya - Criminal Defense Expert"
-        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 10+ years experience, 95% bail success rate. SCBA: A-01417. Call +91 90501 11113 for urgent consultation."
+        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 12+ years experience, 95% bail success rate. SCBA: A-01417. Call +91 90501 11113 for urgent consultation."
         keywords={[
           'best criminal lawyer in rohtak',
           'criminal advocate rohtak',
@@ -118,7 +118,7 @@ export default function CriminalLawyer() {
                   Best Criminal Lawyer in Rohtak
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  Looking for the best criminal lawyer in Rohtak? Advocate Naveen Arya offers aggressive defense strategies backed by 10+ years of experience in criminal law. Protecting your rights and freedom with unwavering dedication.
+                  Looking for the best criminal lawyer in Rohtak? Advocate Naveen Arya offers aggressive defense strategies backed by 12+ years of experience in criminal law. Protecting your rights and freedom with unwavering dedication.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <a href="tel:+919050111113" data-testid="button-hero-call">

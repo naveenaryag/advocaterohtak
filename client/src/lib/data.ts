@@ -6,7 +6,7 @@ export const practiceAreas: PracticeArea[] = [
     title: 'Criminal Law',
     icon: 'Scale',
     description: 'Expert representation in criminal cases including bail matters, anticipatory bail, and criminal trials',
-    detailedDescription: 'Comprehensive criminal defense services covering all stages of criminal proceedings. With over 10 years of experience in Rohtak District Courts, I provide strategic defense in cases ranging from minor offenses to serious criminal charges. My expertise includes bail applications, quashing petitions, anticipatory bail, and trial advocacy.',
+    detailedDescription: 'Comprehensive criminal defense services covering all stages of criminal proceedings. With over 12 years of experience in Rohtak District Courts, I provide strategic defense in cases ranging from minor offenses to serious criminal charges. My expertise includes bail applications, quashing petitions, anticipatory bail, and trial advocacy.',
     relatedBlogSlugs: ['understanding-bail-rights-in-india', 'criminal-defense-strategies', 'anticipatory-bail-guide'],
   },
   {
@@ -90,7 +90,7 @@ export const faqs: FAQ[] = [
   {
     id: '1',
     question: 'What types of cases do you handle?',
-    answer: 'I specialize in criminal law, matrimonial cases, property disputes, cheque bounce cases (Section 138), bail matters, and civil litigation. With over 10 years of experience practicing in Rohtak District Courts, I provide comprehensive legal representation across diverse practice areas.',
+    answer: 'I specialize in criminal law, matrimonial cases, property disputes, cheque bounce cases (Section 138), bail matters, and civil litigation. With over 12 years of experience practicing in Rohtak District Courts, I provide comprehensive legal representation across diverse practice areas.',
   },
   {
     id: '2',
@@ -173,7 +173,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Contact for Bail Assistance in Rohtak</h2>
-<p>If you need immediate assistance with bail matters in Rohtak, contact Advocate Naveen Arya for expert legal representation. With over 10 years of experience in criminal law and a strong track record of securing bail for clients, you can trust in professional and effective legal support.</p>`,
+<p>If you need immediate assistance with bail matters in Rohtak, contact Advocate Naveen Arya for expert legal representation. With over 12 years of experience in criminal law and a strong track record of securing bail for clients, you can trust in professional and effective legal support.</p>`,
     author: 'Advocate Naveen Arya',
     publishedDate: '2024-01-15',
     readTime: '8 min read',

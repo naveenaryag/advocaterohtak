@@ -123,7 +123,7 @@ export default function PropertyLitigation() {
     <>
       <SEO
         title="Property Lawyer in Rohtak | Title Disputes, Partition & Real Estate Litigation - Advocate Naveen Arya"
-        description="Expert property lawyer in Rohtak for title disputes, partition, possession matters, property documentation. 10+ years real estate litigation experience. SCBA: A-01417. Call +91 90501 11113."
+        description="Expert property lawyer in Rohtak for title disputes, partition, possession matters, property documentation. 12+ years real estate litigation experience. SCBA: A-01417. Call +91 90501 11113."
         keywords={[
           'property lawyer rohtak',
           'real estate lawyer rohtak',
@@ -165,7 +165,7 @@ export default function PropertyLitigation() {
 
               <div className="grid grid-cols-3 gap-4 pt-12 max-w-2xl mx-auto">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">10+</p>
+                  <p className="text-3xl font-bold text-primary">12+</p>
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">

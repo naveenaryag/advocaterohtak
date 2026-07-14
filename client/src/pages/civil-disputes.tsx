@@ -123,7 +123,7 @@ export default function CivilDisputes() {
     <>
       <SEO
         title="Civil Lawyer in Rohtak | Property, Contract & Civil Litigation Expert - Advocate Naveen Arya"
-        description="Expert civil lawyer in Rohtak for property disputes, contract cases, civil suits, injunctions. 10+ years litigation experience. SCBA: A-01417. Call +91 90501 11113 for consultation."
+        description="Expert civil lawyer in Rohtak for property disputes, contract cases, civil suits, injunctions. 12+ years litigation experience. SCBA: A-01417. Call +91 90501 11113 for consultation."
         keywords={[
           'civil lawyer rohtak',
           'civil litigation rohtak',
@@ -165,7 +165,7 @@ export default function CivilDisputes() {
 
               <div className="grid grid-cols-3 gap-4 pt-12 max-w-2xl mx-auto">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">10+</p>
+                  <p className="text-3xl font-bold text-primary">12+</p>
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">

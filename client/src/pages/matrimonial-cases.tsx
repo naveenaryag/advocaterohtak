@@ -123,7 +123,7 @@ export default function MatrimonialCases() {
     <>
       <SEO
         title="Matrimonial Lawyer in Rohtak | Divorce, Custody & Family Law Expert - Advocate Naveen Arya"
-        description="Expert matrimonial lawyer in Rohtak for divorce, child custody, maintenance, domestic violence. 10+ years experience in family law. SCBA: A-01417. Call +91 90501 11113 for confidential consultation."
+        description="Expert matrimonial lawyer in Rohtak for divorce, child custody, maintenance, domestic violence. 12+ years experience in family law. SCBA: A-01417. Call +91 90501 11113 for confidential consultation."
         keywords={[
           'matrimonial lawyer rohtak',
           'divorce lawyer rohtak',
@@ -165,7 +165,7 @@ export default function MatrimonialCases() {
 
               <div className="grid grid-cols-3 gap-4 pt-12 max-w-2xl mx-auto">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">10+</p>
+                  <p className="text-3xl font-bold text-primary">12+</p>
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">
