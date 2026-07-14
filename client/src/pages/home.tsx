@@ -82,9 +82,35 @@ export default function Home() {
     })),
   };
 
+  // Review schema for star ratings in search results
+  const reviewSchema = testimonials.map((testimonial) => ({
+    '@type': 'Review',
+    author: {
+      '@type': 'Person',
+      name: testimonial.name,
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: testimonial.rating.toString(),
+      bestRating: '5',
+      worstRating: '1',
+    },
+    reviewBody: testimonial.comment,
+    datePublished: testimonial.date,
+    itemReviewed: {
+      '@type': 'LegalService',
+      name: 'Advocate Naveen Arya',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Rohtak',
+        addressRegion: 'Haryana',
+      },
+    },
+  }));
+
   const combinedSchema = {
     '@context': 'https://schema.org',
-    '@graph': [localBusinessSchema, faqSchema],
+    '@graph': [localBusinessSchema, faqSchema, ...reviewSchema],
   };
 
   return (
