@@ -126,7 +126,7 @@ export default function LawyerBhiwani() {
     <>
       <SEO
         title="Best Lawyer in Bhiwani | Advocate Naveen Arya - Criminal, Divorce, Property Expert"
-        description="Top rated lawyer in Bhiwani for criminal cases, bail, divorce, property disputes. 12+ years experience. 95% bail success rate. SCBA: A-01417. Call +91 90501 11113."
+        description="Top rated lawyer in Bhiwani for criminal cases, bail, divorce, property disputes. 12+ years experience. 85% bail success rate. SCBA: A-01417. Call +91 90501 11113."
         keywords={[
           'lawyer in bhiwani',
           'best advocate bhiwani',
@@ -178,7 +178,7 @@ export default function LawyerBhiwani() {
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">95%</p>
+                  <p className="text-3xl font-bold text-primary">85%</p>
                   <p className="text-sm text-muted-foreground">Bail Success</p>
                 </div>
                 <div className="text-center">
@@ -225,7 +225,7 @@ export default function LawyerBhiwani() {
                 {[
                   'Regular appearances in Bhiwani District Court with knowledge of local procedures',
                   'Supreme Court Bar Association member (SCBA A-01417) for High Court appeals',
-                  '95% success rate in bail applications including difficult criminal cases',
+                  '85% success rate in bail applications including difficult criminal cases',
                   '24/7 availability for urgent bail and criminal emergencies',
                   'Transparent fee structure with free initial consultation',
                   'Fluent in Hindi for effective communication with clients and courts',

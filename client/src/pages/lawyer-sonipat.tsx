@@ -59,7 +59,7 @@ export default function LawyerSonipat() {
         name: 'Who is the best criminal lawyer in Sonipat?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Advocate Naveen Arya is among the top criminal lawyers serving Sonipat with 12+ years experience and 95% bail success rate. He handles all criminal cases including murder, NDPS, theft, assault at Sonipat District Court. SCBA Registration: A-01417.',
+          text: 'Advocate Naveen Arya is among the top criminal lawyers serving Sonipat with 12+ years experience and 85% bail success rate. He handles all criminal cases including murder, NDPS, theft, assault at Sonipat District Court. SCBA Registration: A-01417.',
         },
       },
       {
@@ -98,7 +98,7 @@ export default function LawyerSonipat() {
   const faqs = [
     {
       question: 'Who is the best criminal lawyer in Sonipat?',
-      answer: 'Advocate Naveen Arya is among the top criminal lawyers serving Sonipat with 12+ years experience and 95% bail success rate. He handles all criminal cases including murder, NDPS, theft, assault at Sonipat District Court. SCBA Registration: A-01417.',
+      answer: 'Advocate Naveen Arya is among the top criminal lawyers serving Sonipat with 12+ years experience and 85% bail success rate. He handles all criminal cases including murder, NDPS, theft, assault at Sonipat District Court. SCBA Registration: A-01417.',
     },
     {
       question: 'How much does a lawyer charge in Sonipat?',
@@ -126,7 +126,7 @@ export default function LawyerSonipat() {
     <>
       <SEO
         title="Best Lawyer in Sonipat | Advocate Naveen Arya - Criminal, Divorce, Property Expert"
-        description="Top rated lawyer in Sonipat for criminal cases, bail, divorce, property disputes. 12+ years experience. 95% bail success rate. SCBA: A-01417. Call +91 90501 11113."
+        description="Top rated lawyer in Sonipat for criminal cases, bail, divorce, property disputes. 12+ years experience. 85% bail success rate. SCBA: A-01417. Call +91 90501 11113."
         keywords={[
           'lawyer in sonipat',
           'best advocate sonipat',
@@ -178,7 +178,7 @@ export default function LawyerSonipat() {
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">95%</p>
+                  <p className="text-3xl font-bold text-primary">85%</p>
                   <p className="text-sm text-muted-foreground">Bail Success</p>
                 </div>
                 <div className="text-center">
@@ -225,7 +225,7 @@ export default function LawyerSonipat() {
                 {[
                   'Regular appearances in Sonipat District Court with expertise in local court procedures',
                   'Supreme Court Bar Association member (SCBA A-01417) for appeals and constitutional matters',
-                  '95% success rate in bail applications including complex NDPS and murder cases',
+                  '85% success rate in bail applications including complex NDPS and murder cases',
                   '24/7 availability for urgent criminal matters and bail emergencies',
                   'Transparent fee structure with free initial case assessment',
                   'Fluent in Hindi and English for effective court representation',

@@ -198,7 +198,7 @@ export const faqs: FAQ[] = [
   {
     id: '13',
     question: 'What is your success rate in criminal cases?',
-    answer: 'I have achieved 95% success rate in bail applications and secured 300+ acquittals in criminal trials over my 12+ years of practice. Each case is different, but my thorough preparation, knowledge of law, and aggressive courtroom advocacy maximize chances of favorable outcome.',
+    answer: 'I have achieved 85% success rate in bail applications and secured 300+ acquittals in criminal trials over my 12+ years of practice. Each case is different, but my thorough preparation, knowledge of law, and aggressive courtroom advocacy maximize chances of favorable outcome.',
   },
   {
     id: '14',

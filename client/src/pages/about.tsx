@@ -64,7 +64,7 @@ export default function About() {
     { icon: Scale, title: 'SCBA Registration', value: 'No. A-01417' },
     { icon: Scale, title: 'COP Registration', value: 'P1700/2014' },
     { icon: Briefcase, title: 'Experience', value: '12+ Years in Practice' },
-    { icon: TrendingUp, title: 'Success Rate', value: '95% Case Success' },
+    { icon: TrendingUp, title: 'Success Rate', value: '85% Case Success' },
     { icon: Users, title: 'Clients Served', value: '1000+ Happy Clients' },
   ];
 

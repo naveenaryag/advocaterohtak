@@ -29,7 +29,7 @@ export default function BailMatters() {
       '@type': 'City',
       name: 'Rohtak',
     },
-    description: 'Expert bail lawyer in Rohtak for regular bail, anticipatory bail, interim bail applications. 95% success rate with 24/7 emergency availability.',
+    description: 'Expert bail lawyer in Rohtak for regular bail, anticipatory bail, interim bail applications. 85% success rate with 24/7 emergency availability.',
   };
 
   const faqSchema = {
@@ -115,7 +115,7 @@ export default function BailMatters() {
     },
     {
       question: 'Is bail available in all criminal cases?',
-      answer: 'Bail is generally available in most cases as constitutional right under Article 21. However, some serious offenses have stricter bail provisions requiring stronger grounds. Even in heinous crimes, bail can be obtained showing exceptional circumstances. Our 95% bail success rate demonstrates effective advocacy across case types.',
+      answer: 'Bail is generally available in most cases as constitutional right under Article 21. However, some serious offenses have stricter bail provisions requiring stronger grounds. Even in heinous crimes, bail can be obtained showing exceptional circumstances. Our 85% bail success rate demonstrates effective advocacy across case types.',
     },
   ];
 
@@ -123,7 +123,7 @@ export default function BailMatters() {
     <>
       <SEO
         title="Bail Lawyer in Rohtak | Anticipatory & Regular Bail Expert - Advocate Naveen Arya"
-        description="Expert bail lawyer in Rohtak for anticipatory bail, regular bail, interim bail. 95% success rate, 24/7 emergency availability. SCBA: A-01417. Call +91 90501 11113 immediately."
+        description="Expert bail lawyer in Rohtak for anticipatory bail, regular bail, interim bail. 85% success rate, 24/7 emergency availability. SCBA: A-01417. Call +91 90501 11113 immediately."
         keywords={[
           'bail lawyer rohtak',
           'anticipatory bail rohtak',
@@ -146,7 +146,7 @@ export default function BailMatters() {
                 Bail Application Expert in Rohtak
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Urgent bail assistance with 95% success rate. Advocate Naveen Arya specializes in anticipatory bail, regular bail, and interim bail applications across all criminal matters. Available 24/7 for immediate legal action protecting your liberty.
+                Urgent bail assistance with 85% success rate. Advocate Naveen Arya specializes in anticipatory bail, regular bail, and interim bail applications across all criminal matters. Available 24/7 for immediate legal action protecting your liberty.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <a href="tel:+919050111113" data-testid="button-hero-call">
@@ -165,7 +165,7 @@ export default function BailMatters() {
 
               <div className="grid grid-cols-3 gap-4 pt-12 max-w-2xl mx-auto">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">95%</p>
+                  <p className="text-3xl font-bold text-primary">85%</p>
                   <p className="text-sm text-muted-foreground">Bail Success Rate</p>
                 </div>
                 <div className="text-center">
@@ -195,7 +195,7 @@ export default function BailMatters() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {[
                 { icon: Clock, title: 'Immediate Response', description: '24/7 emergency availability for urgent bail matters with rapid legal action.' },
-                { icon: Shield, title: 'High Success Rate', description: '95% success in securing bail across all types of criminal cases in Rohtak courts.' },
+                { icon: Shield, title: 'High Success Rate', description: '85% success in securing bail across all types of criminal cases in Rohtak courts.' },
                 { icon: Gavel, title: 'Strong Advocacy', description: 'Persuasive arguments addressing court concerns and establishing bail eligibility.' },
                 { icon: FileText, title: 'Complete Documentation', description: 'Thorough preparation of bail petitions with comprehensive legal grounds and evidence.' },
                 { icon: Scale, title: 'Multiple Courts', description: 'Experience in Magistrate Courts, Sessions Courts, and High Court bail applications.' },
@@ -272,7 +272,7 @@ export default function BailMatters() {
               <div className="space-y-4">
                 {[
                   'Round-the-clock availability ensuring immediate response to bail emergencies at any hour',
-                  'Proven 95% success rate in securing bail across all types of criminal matters',
+                  'Proven 85% success rate in securing bail across all types of criminal matters',
                   'Deep understanding of bail jurisprudence and recent Supreme Court precedents',
                   'Strategic preparation addressing specific court concerns and bail opposition grounds',
                   'Efficient coordination with sureties, police, and court staff expediting release process',

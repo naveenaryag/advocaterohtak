@@ -67,7 +67,7 @@ export default function LawyerJhajjar() {
         name: 'How to get bail in Jhajjar court?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'For bail in Jhajjar court, you need an experienced criminal lawyer to file bail application with proper grounds. Advocate Naveen Arya provides 24/7 bail assistance for Jhajjar cases with 95% success rate. Contact +91 90501 11113 for urgent bail matters.',
+          text: 'For bail in Jhajjar court, you need an experienced criminal lawyer to file bail application with proper grounds. Advocate Naveen Arya provides 24/7 bail assistance for Jhajjar cases with 85% success rate. Contact +91 90501 11113 for urgent bail matters.',
         },
       },
       {
@@ -102,7 +102,7 @@ export default function LawyerJhajjar() {
     },
     {
       question: 'How to get bail in Jhajjar court?',
-      answer: 'For bail in Jhajjar court, you need an experienced criminal lawyer to file bail application with proper grounds. Advocate Naveen Arya provides 24/7 bail assistance for Jhajjar cases with 95% success rate. Contact +91 90501 11113 for urgent bail matters.',
+      answer: 'For bail in Jhajjar court, you need an experienced criminal lawyer to file bail application with proper grounds. Advocate Naveen Arya provides 24/7 bail assistance for Jhajjar cases with 85% success rate. Contact +91 90501 11113 for urgent bail matters.',
     },
     {
       question: 'What is the advocate fee in Jhajjar?',
@@ -126,7 +126,7 @@ export default function LawyerJhajjar() {
     <>
       <SEO
         title="Best Lawyer in Jhajjar | Advocate Naveen Arya - Criminal, Divorce, Property Expert"
-        description="Top rated lawyer in Jhajjar for criminal cases, bail, divorce, property disputes. 12+ years experience. 95% bail success rate. SCBA: A-01417. Call +91 90501 11113 for consultation."
+        description="Top rated lawyer in Jhajjar for criminal cases, bail, divorce, property disputes. 12+ years experience. 85% bail success rate. SCBA: A-01417. Call +91 90501 11113 for consultation."
         keywords={[
           'lawyer in jhajjar',
           'best advocate jhajjar',
@@ -178,7 +178,7 @@ export default function LawyerJhajjar() {
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">95%</p>
+                  <p className="text-3xl font-bold text-primary">85%</p>
                   <p className="text-sm text-muted-foreground">Bail Success</p>
                 </div>
                 <div className="text-center">
@@ -225,7 +225,7 @@ export default function LawyerJhajjar() {
                 {[
                   'Regular appearances in Jhajjar District Court with thorough knowledge of local procedures',
                   'Supreme Court Bar Association member (SCBA A-01417) for High Court and Supreme Court appeals',
-                  '95% success rate in bail applications across Jhajjar and Rohtak courts',
+                  '85% success rate in bail applications across Jhajjar and Rohtak courts',
                   '24/7 availability for urgent bail matters and criminal emergencies',
                   'Transparent fee structure with free initial consultation',
                   'Expertise in both Hindi and English for all court proceedings',

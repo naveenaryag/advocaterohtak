@@ -34,7 +34,7 @@ export default function CriminalLawyer() {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     name: 'Criminal Law Defense Services in Rohtak - Advocate Naveen Arya',
-    description: 'Watch Advocate Naveen Arya, the best criminal lawyer in Rohtak, discuss criminal defense strategies, bail applications, and client representation. 95% bail success rate.',
+    description: 'Watch Advocate Naveen Arya, the best criminal lawyer in Rohtak, discuss criminal defense strategies, bail applications, and client representation. 85% bail success rate.',
     thumbnailUrl: 'https://img.youtube.com/vi/2DxSEk6fnNE/maxresdefault.jpg',
     uploadDate: '2024-02-10T00:00:00Z',
     contentUrl: 'https://www.youtube.com/watch?v=2DxSEk6fnNE',
@@ -70,11 +70,11 @@ export default function CriminalLawyer() {
   const faqs = [
     {
       question: 'Who is the best criminal lawyer in Rohtak?',
-      answer: 'Advocate Naveen Arya is recognized as one of the best criminal lawyers in Rohtak with over 12 years of experience, a 95% bail success rate, and 300+ acquittals. He is registered with SCBA (A-01417) and Punjab & Haryana High Court (P1700/2014).',
+      answer: 'Advocate Naveen Arya is recognized as one of the best criminal lawyers in Rohtak with over 12 years of experience, a 85% bail success rate, and 300+ acquittals. He is registered with SCBA (A-01417) and Punjab & Haryana High Court (P1700/2014).',
     },
     {
       question: 'What is the success rate for bail applications in Rohtak?',
-      answer: 'Our practice has achieved a 95% success rate in bail applications across Rohtak District Courts and Sessions Court. We handle both regular bail and anticipatory bail with extensive experience in complex criminal cases.',
+      answer: 'Our practice has achieved a 85% success rate in bail applications across Rohtak District Courts and Sessions Court. We handle both regular bail and anticipatory bail with extensive experience in complex criminal cases.',
     },
     {
       question: 'How much does a criminal lawyer charge in Rohtak for bail?',
@@ -94,7 +94,7 @@ export default function CriminalLawyer() {
     <>
       <SEO
         title="Best Criminal Lawyer in Rohtak | Advocate Naveen Arya - Criminal Defense Expert"
-        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 12+ years experience, 95% bail success rate. SCBA: A-01417. Call +91 90501 11113 for urgent consultation."
+        description="Best criminal lawyer in Rohtak for bail, anticipatory bail, criminal trials, NDPS cases. 12+ years experience, 85% bail success rate. SCBA: A-01417. Call +91 90501 11113 for urgent consultation."
         keywords={[
           'best criminal lawyer in rohtak',
           'criminal advocate rohtak',
@@ -137,7 +137,7 @@ export default function CriminalLawyer() {
 
                 <div className="grid grid-cols-3 gap-4 pt-6 border-t">
                   <div className="text-center">
-                    <p className="text-3xl font-bold text-primary">95%</p>
+                    <p className="text-3xl font-bold text-primary">85%</p>
                     <p className="text-sm text-muted-foreground">Bail Success</p>
                   </div>
                   <div className="text-center">

@@ -346,7 +346,7 @@ export default function Home() {
               
               <div className="grid sm:grid-cols-3 gap-6 mt-8">
                 <div className="text-center p-6 bg-primary/5 rounded-lg">
-                  <p className="text-4xl font-bold text-primary mb-2">95%</p>
+                  <p className="text-4xl font-bold text-primary mb-2">85%</p>
                   <p className="text-sm text-foreground font-medium">Success Rate</p>
                 </div>
                 <div className="text-center p-6 bg-primary/5 rounded-lg">
@@ -443,7 +443,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-xl font-semibold text-foreground mb-2">Proven Success in Rohtak</h3>
                       <p className="text-muted-foreground">
-                        With a 95% success rate in Rohtak courts and 500+ cases won, my track record speaks for itself. I understand what works in Rohtak's legal environment and apply this knowledge to maximize your chances of success.
+                        With a 85% success rate in Rohtak courts and 500+ cases won, my track record speaks for itself. I understand what works in Rohtak's legal environment and apply this knowledge to maximize your chances of success.
                       </p>
                     </div>
                   </div>
