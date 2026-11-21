@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { insertContactInquirySchema } from "@shared/schema";
 import { z } from "zod";
 import { sendContactEmail } from "./email";
+import { sendTelegramNotification } from "./telegram";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   app.post("/api/contact", async (req, res) => {
@@ -11,6 +12,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const validatedData = insertContactInquirySchema.parse(req.body);
       const inquiry = await storage.createContactInquiry(validatedData);
       
+      // Send email notification
       await sendContactEmail({
         name: validatedData.name,
         email: validatedData.email,
@@ -18,7 +20,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
         subject: validatedData.subject,
         message: validatedData.message,
       });
-      
+
+      // Send Telegram notification (non-blocking)
+      sendTelegramNotification({
+        name: validatedData.name,
+        phone: validatedData.phone,
+        email: validatedData.email,
+        subject: validatedData.subject,
+        message: validatedData.message,
+      }).catch(err => console.error("[Telegram Error]:", err));
+
       res.json({ success: true, inquiry });
     } catch (error) {
       if (error instanceof z.ZodError) {

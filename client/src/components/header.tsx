@@ -6,11 +6,10 @@ import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from '@/co
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Criminal Lawyer', href: '/criminal-lawyer' },
-  { name: 'Practice Areas', href: '/practice-areas' },
+  { name: 'Criminal Lawyer', href: '/criminal-lawyer-rohtak' },
+  { name: 'Divorce Lawyer', href: '/divorce-lawyer-rohtak' },
+  { name: 'Bail Matters', href: '/bail-matters' },
   { name: 'About', href: '/about' },
-  { name: 'Directory', href: '/directory' },
-  { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];
 

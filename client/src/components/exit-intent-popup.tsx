@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { X, Download, Phone, MessageCircle } from 'lucide-react';
+import { X, Phone, MessageCircle, Gavel } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
@@ -171,10 +171,15 @@ export function ExitIntentPopup() {
 
         {!isSubmitted ? (
           <>
-            {/* Header */}
-            <div className="bg-primary px-6 py-5 text-primary-foreground">
-              <h2 className="text-xl font-bold mb-1">Wait! Before You Go...</h2>
-              <p className="text-sm opacity-90">Get FREE Legal Consultation</p>
+            {/* Header with Gavel Icon */}
+            <div className="bg-primary px-6 py-5 text-primary-foreground relative">
+              <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-primary border-4 border-background flex items-center justify-center shadow-lg">
+                <Gavel className="h-8 w-8 text-primary-foreground" />
+              </div>
+              <div className="pt-6">
+                <h2 className="text-xl font-bold mb-1 text-center">Wait! Before You Go...</h2>
+                <p className="text-sm opacity-90 text-center">Get FREE Legal Consultation</p>
+              </div>
             </div>
 
             {/* Content */}
@@ -248,17 +253,9 @@ export function ExitIntentPopup() {
               Expect a call within 15 minutes from Advocate Naveen Arya's office.
             </p>
 
-            <div className="space-y-3">
-              <a href="/free-legal-guide" className="block">
-                <Button variant="outline" className="w-full gap-2">
-                  <Download className="h-4 w-4" />
-                  Download Free Legal Guide
-                </Button>
-              </a>
-              <Button variant="ghost" onClick={handleClose} className="w-full">
-                Continue Browsing
-              </Button>
-            </div>
+            <Button variant="default" onClick={handleClose} className="w-full">
+              Continue Browsing
+            </Button>
           </div>
         )}
       </div>
