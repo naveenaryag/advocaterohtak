@@ -7,6 +7,10 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import divorceImg from '@assets/stock_images/divorce-lawyer-rohtak-family-court.jpg';
+import dowryCaseImg from '@assets/stock_images/498a-dowry-case-lawyer-rohtak.jpg';
+
 export default function MatrimonialCases() {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -283,6 +287,56 @@ export default function MatrimonialCases() {
                     <p className="text-lg text-muted-foreground">{point}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Family Law Expertise Section with Images */}
+        <section className="py-20 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Compassionate Family Law Support
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Family disputes are emotionally challenging. We provide sensitive legal guidance while protecting your rights and your children's welfare.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Mutual Consent Divorce:</strong> Quickest resolution when both parties agree - typically 6-8 months</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Child Custody:</strong> Always prioritizing child's best interests and welfare</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>498A Defense:</strong> Strong defense against false dowry harassment allegations</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Maintenance:</strong> Fair calculation based on actual needs and paying capacity</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Confidential Consultation
+                  </Button>
+                </a>
+              </div>
+              <div className="grid gap-4">
+                <img
+                  src={divorceImg}
+                  alt="Divorce Lawyer Rohtak Family Court"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={280}
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

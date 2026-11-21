@@ -7,6 +7,9 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import propertyDisputeImg from '@assets/stock_images/property-dispute-lawyer-rohtak.jpg';
+
 export default function PropertyLitigation() {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -283,6 +286,56 @@ export default function PropertyLitigation() {
                     <p className="text-lg text-muted-foreground">{point}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Property Rights Section with Image */}
+        <section className="py-20 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <img
+                  src={propertyDisputeImg}
+                  alt="Property Dispute Lawyer Rohtak"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Protect Your Property Rights
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Property disputes require comprehensive understanding of land laws, revenue records, and civil procedure. We provide end-to-end property litigation services.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Title Verification:</strong> Thorough examination of ownership chain and documentation</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Partition Suits:</strong> Fair division of ancestral and joint family property</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Possession Recovery:</strong> Eviction of illegal occupants and encroachers</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Revenue Matters:</strong> Mutation, demarcation, and tehsil proceedings</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Get Property Legal Help
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

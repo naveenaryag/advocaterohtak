@@ -7,6 +7,9 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import rohtakCourtImg from '@assets/rohtak-court_1763319002240.jpg';
+
 export default function CivilDisputes() {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -283,6 +286,57 @@ export default function CivilDisputes() {
                     <p className="text-lg text-muted-foreground">{point}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Civil Court Practice Section */}
+        <section className="py-20 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="order-2 lg:order-1">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Expert Civil Litigation in Rohtak Courts
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Civil disputes require strategic approach combining legal expertise with practical solutions. We focus on protecting your rights while exploring efficient resolution paths.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Injunction Relief:</strong> Urgent orders under Order 39 CPC to prevent irreparable harm</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Recovery Suits:</strong> Effective money recovery proceedings for loans and debts</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Contract Enforcement:</strong> Specific performance and damages for breach</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Mediation:</strong> Court-annexed and private mediation for quick settlement</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Get Legal Consultation
+                  </Button>
+                </a>
+              </div>
+              <div className="order-1 lg:order-2">
+                <img
+                  src={rohtakCourtImg}
+                  alt="Rohtak District Court - Civil Cases"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-3">District Court Complex, Rohtak</p>
               </div>
             </div>
           </div>

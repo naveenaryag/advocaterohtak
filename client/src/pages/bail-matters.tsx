@@ -7,6 +7,10 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import bailRightsImg from '@assets/stock_images/bail-rights-criminal-lawyer-rohtak.jpg';
+import anticipatoryBailImg from '@assets/stock_images/anticipatory-bail-lawyer-rohtak.jpg';
+
 export default function BailMatters() {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -283,6 +287,56 @@ export default function BailMatters() {
                     <p className="text-lg text-muted-foreground">{point}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Know Your Bail Rights Section */}
+        <section className="py-20 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Know Your Bail Rights
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Under Indian law, bail is a constitutional right flowing from Article 21. Understanding your rights helps you make informed decisions during legal proceedings.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Bailable Offenses:</strong> Bail is a matter of right under Section 436 CrPC - police cannot refuse</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Non-Bailable Offenses:</strong> Court can grant bail under Sections 437/439 CrPC based on case merits</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Anticipatory Bail:</strong> Pre-arrest protection available under Section 438 CrPC</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Default Bail:</strong> Release is mandatory if chargesheet not filed within statutory period</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Get Bail Assistance Now
+                  </Button>
+                </a>
+              </div>
+              <div>
+                <img
+                  src={bailRightsImg}
+                  alt="Know Your Bail Rights - Criminal Lawyer Rohtak"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

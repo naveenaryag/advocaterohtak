@@ -7,6 +7,9 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import advocateImg from '@assets/advocate-rohtak-1536x1024_1763358725717.jpg';
+
 export default function LawyerSonipat() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
@@ -259,6 +262,56 @@ export default function LawyerSonipat() {
                   {area}
                 </span>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* About the Advocate Section */}
+        <section className="py-20 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <img
+                  src={advocateImg}
+                  alt="Advocate Naveen Arya - Best Lawyer for Sonipat Cases"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Why Sonipat Clients Choose Us
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  With extensive experience handling cases in Sonipat District Court, we provide reliable legal representation for all types of matters.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Local Court Expertise:</strong> Regular practice in Sonipat District Court</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>24/7 Bail Services:</strong> Emergency bail assistance for Sonipat cases</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>High Court Access:</strong> Appeals and anticipatory bail in Punjab & Haryana HC</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>SCBA Registered:</strong> Supreme Court practice rights (A-01417)</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Free Consultation
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </section>

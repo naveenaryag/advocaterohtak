@@ -7,6 +7,9 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import chequeBounceImg from '@assets/stock_images/cheque-bounce-138-ni-act-lawyer-rohtak.jpg';
+
 export default function ChequeBounce() {
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -283,6 +286,56 @@ export default function ChequeBounce() {
                     <p className="text-lg text-muted-foreground">{point}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 138 Overview with Image */}
+        <section className="py-20 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <img
+                  src={chequeBounceImg}
+                  alt="Cheque Bounce Section 138 NI Act Lawyer Rohtak"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Section 138 NI Act - Key Legal Points
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  The Negotiable Instruments Act provides strong remedies for cheque dishonor. Understanding key timelines and procedures is crucial for success.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Legal Notice:</strong> Must be sent within 30 days of bank memo receipt</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Payment Period:</strong> Drawer gets 15 days to make payment after notice</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Complaint Filing:</strong> Must file within 30 days of notice period expiry</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Penalty:</strong> Up to 2 years imprisonment or twice the cheque amount</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Get Legal Help Now
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
