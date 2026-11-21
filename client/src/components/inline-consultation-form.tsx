@@ -30,7 +30,7 @@ export function InlineConsultationForm({
       const res = await apiRequest('POST', '/api/contact', {
         name: data.name,
         phone: data.phone,
-        email: '',
+        email: `${data.phone.replace(/\D/g, '')}@callback.lead`,
         subject: `Quick Consultation - ${data.source}`,
         message: `Quick consultation request from ${data.source} page. Please call back.`,
       });

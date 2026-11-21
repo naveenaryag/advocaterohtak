@@ -19,9 +19,9 @@ export function ExitIntentPopup() {
       const res = await apiRequest('POST', '/api/contact', {
         name: data.name,
         phone: data.phone,
-        email: '',
+        email: `${data.phone.replace(/\D/g, '')}@callback.lead`,
         subject: 'Exit Intent Popup - Free Consultation',
-        message: 'Requested free consultation via exit popup.',
+        message: 'Requested free consultation via exit intent popup. Please call back.',
       });
       return res.json();
     },
