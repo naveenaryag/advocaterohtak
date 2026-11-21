@@ -22,18 +22,18 @@ export async function sendTelegramNotification(data: TelegramLeadData): Promise<
 
   const { name, phone, email, subject, message } = data;
 
-  // Format message - phone number plain so Telegram auto-detects it as clickable
-  const cleanPhone = phone.replace(/[^\d+]/g, '').replace(/\+/g, '\\+');
+  // Format message using HTML - phone number without spaces for auto-detection
+  const cleanPhone = phone.replace(/[^\d+]/g, '');
   const telegramMessage = `
-🔔 *NEW LEAD*
+🔔 <b>NEW LEAD</b>
 
-👤 *Name:* ${escapeMarkdownV2(name)}
-📱 *Phone:* ${cleanPhone}
-${email && !email.includes('@callback.lead') ? `📧 *Email:* ${escapeMarkdownV2(email)}` : ''}
-📋 *Subject:* ${escapeMarkdownV2(subject)}
+👤 <b>Name:</b> ${escapeHtml(name)}
+📱 <b>Phone:</b> ${cleanPhone}
+${email && !email.includes('@callback.lead') ? `📧 <b>Email:</b> ${escapeHtml(email)}` : ''}
+📋 <b>Subject:</b> ${escapeHtml(subject)}
 
-💬 *Message:*
-${escapeMarkdownV2(message)}
+💬 <b>Message:</b>
+${escapeHtml(message)}
 `.trim();
 
   try {
@@ -47,7 +47,7 @@ ${escapeMarkdownV2(message)}
         body: JSON.stringify({
           chat_id: TELEGRAM_CHAT_ID,
           text: telegramMessage,
-          parse_mode: "MarkdownV2",
+          parse_mode: "HTML",
           disable_web_page_preview: true,
         }),
       }
@@ -65,7 +65,10 @@ ${escapeMarkdownV2(message)}
   }
 }
 
-// Escape special MarkdownV2 characters for Telegram
-function escapeMarkdownV2(text: string): string {
-  return text.replace(/[_*\[\]()~`>#+=|{}.!\\-]/g, '\\$&');
+// Escape HTML special characters for Telegram
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
 }
