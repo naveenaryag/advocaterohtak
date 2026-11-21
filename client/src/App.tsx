@@ -32,6 +32,7 @@ const LegalCompliance = lazy(() => import("@/pages/legal-compliance"));
 const LawyerJhajjar = lazy(() => import("@/pages/lawyer-jhajjar"));
 const LawyerSonipat = lazy(() => import("@/pages/lawyer-sonipat"));
 const LawyerBhiwani = lazy(() => import("@/pages/lawyer-bhiwani"));
+const FreeLegalGuide = lazy(() => import("@/pages/free-legal-guide"));
 const NotFound = lazy(() => import("@/pages/not-found"));
 
 function Router() {
@@ -63,6 +64,7 @@ function Router() {
         <Route path="/lawyer-jhajjar" component={LawyerJhajjar} />
         <Route path="/lawyer-sonipat" component={LawyerSonipat} />
         <Route path="/lawyer-bhiwani" component={LawyerBhiwani} />
+        <Route path="/free-legal-guide" component={FreeLegalGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
