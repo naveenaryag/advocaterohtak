@@ -81,6 +81,37 @@ export default function PropertyLawyerRohtak() {
       question: 'What is the process for getting a stay on illegal possession?',
       answer: 'We file suit for possession/injunction along with application for temporary injunction. Courts in Rohtak typically hear injunction applications within 2-4 weeks. If urgency is established, ex-parte stay can be obtained. We prepare strong prima facie case to secure interim relief while main suit proceeds.',
     },
+    {
+      question: 'What is the court fee for property cases in Rohtak?',
+      answer: 'Court fee depends on property value and suit type. For partition suits, it\'s calculated on share value. For declaration suits, fixed court fee applies. For specific performance, ad valorem court fee on agreement value. We provide exact court fee calculations during consultation based on your property value.',
+    },
+    {
+      question: 'Can agricultural land disputes be resolved through courts?',
+      answer: 'Yes, but agricultural land disputes often require action in both civil courts and revenue forums. Issues like partition, possession, and title are handled by civil courts. Mutation, tenancy, and ceiling matters go to revenue authorities. We handle both jurisdictions for comprehensive resolution.',
+    },
+    {
+      question: 'How do I verify if property title is clear before buying?',
+      answer: 'Title verification involves: checking 30-year chain of ownership in registry, examining jamabandi for encumbrances, verifying mutation records, checking for pending litigation, and ensuring no revenue court disputes. We provide thorough title verification services before property purchase.',
+    },
+    {
+      question: 'What if someone is constructing on my land without permission?',
+      answer: 'File immediate application for temporary injunction to stop construction. Courts can grant ex-parte stay within days if urgency is shown. We also send legal notice and file suit for mandatory injunction to demolish unauthorized construction. Quick action is essential to prevent further encroachment.',
+    },
+    {
+      question: 'Do daughters have equal rights in ancestral property?',
+      answer: 'Yes, after Hindu Succession Amendment Act 2005, daughters have equal rights as sons in ancestral property. This applies to all properties where partition wasn\'t completed before 2005. We handle partition cases ensuring daughters receive their rightful share.',
+    },
+    {
+      question: 'What is the difference between mutation and registration?',
+      answer: 'Registration (registry) is the legal transfer document executed before Sub-Registrar. Mutation is updating revenue records (jamabandi) to reflect the new owner. Registration gives legal ownership. Mutation updates tax records. Both are essential - registration for title, mutation for revenue purposes.',
+    },
+  ];
+
+  const caseResults = [
+    { title: 'Partition of 10 Acre Agricultural Land', description: 'Secured equal partition among 5 siblings after 3-year litigation. Commissioner appointed for demarcation.', outcome: 'Partition Decree' },
+    { title: 'Possession from Illegal Occupant', description: 'Obtained possession of commercial property in Rohtak market occupied illegally for 8 years.', outcome: 'Possession Restored' },
+    { title: 'Stay on Construction', description: 'Ex-parte injunction granted within 48 hours to stop unauthorized construction on client\'s plot.', outcome: 'Stay Granted' },
+    { title: 'NRI Property Settlement', description: 'Helped NRI client settle family property dispute through mediation, avoiding years of litigation.', outcome: 'Settled' },
   ];
 
   return (
@@ -104,9 +135,9 @@ export default function PropertyLawyerRohtak() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section className="relative min-h-[auto] lg:min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
               <div className="text-center lg:text-left order-2 lg:order-1">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                   <Building className="h-4 w-4 text-primary" />
@@ -181,12 +212,12 @@ export default function PropertyLawyerRohtak() {
         </section>
 
         {/* What We Handle */}
-        <section className="py-16 bg-card">
+        <section className="py-10 lg:py-16 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               Property Matters We Handle in Rohtak
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Comprehensive property and civil law services in Rohtak District Courts, revenue offices, and Punjab & Haryana High Court.
             </p>
 
@@ -210,12 +241,12 @@ export default function PropertyLawyerRohtak() {
         </section>
 
         {/* Courts & Offices */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               Courts & Revenue Offices Where We Practice
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Property matters often require action in multiple forums. We handle all levels.
             </p>
 
@@ -273,12 +304,12 @@ export default function PropertyLawyerRohtak() {
         </section>
 
         {/* For Outstation Clients */}
-        <section className="py-16 bg-primary/5">
+        <section className="py-10 lg:py-16 bg-primary/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               For Property Owners in Delhi, Gurugram & NCR
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Own property in Rohtak but live elsewhere? Here's how we manage your case without requiring frequent travel.
             </p>
 
@@ -305,7 +336,7 @@ export default function PropertyLawyerRohtak() {
         </section>
 
         {/* First Consultation */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6 text-center">
@@ -346,9 +377,9 @@ export default function PropertyLawyerRohtak() {
         </section>
 
         {/* Protect Your Property Rights Section */}
-        <section className="py-16 bg-accent/5">
+        <section className="py-10 lg:py-16 bg-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center max-w-6xl mx-auto">
               <div className="order-2 lg:order-1">
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   Protecting Your Property Rights in Rohtak Courts
@@ -397,13 +428,13 @@ export default function PropertyLawyerRohtak() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 bg-card">
+        <section className="py-10 lg:py-16 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-muted-foreground text-center mb-12">
+              <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12">
                 Common questions about property cases in Rohtak
               </p>
 
@@ -423,8 +454,112 @@ export default function PropertyLawyerRohtak() {
           </div>
         </section>
 
+        {/* Case Results */}
+        <section className="py-10 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Recent Case Results
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Sample outcomes in property matters (details anonymized for client privacy)
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {caseResults.map((result, index) => (
+                <Card key={index} className="p-6 border-t-4 border-t-primary">
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+                    {result.outcome}
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{result.title}</h3>
+                  <p className="text-sm text-muted-foreground">{result.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related Practice Areas */}
+        <section className="py-10 lg:py-16 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Related Legal Services
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Property matters often intersect with other legal areas. We provide comprehensive support.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/criminal-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Criminal Defense</h3>
+                  <p className="text-sm text-muted-foreground mb-4">When property disputes lead to criminal cases like cheating, fraud, or trespass allegations</p>
+                  <span className="text-primary text-sm font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/divorce-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Family Property</h3>
+                  <p className="text-sm text-muted-foreground mb-4">For matrimonial property division, inheritance disputes, and succession matters</p>
+                  <span className="text-primary text-sm font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/practice-areas">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">All Practice Areas</h3>
+                  <p className="text-sm text-muted-foreground mb-4">View complete list of legal services including civil, criminal, and specialized matters</p>
+                  <span className="text-primary text-sm font-medium">View all →</span>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Blog Posts */}
+        <section className="py-10 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Helpful Resources
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Read our detailed guides on property law topics
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/property-dispute-resolution">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Resolving Property Disputes</h3>
+                  <p className="text-sm text-muted-foreground">Legal remedies and court procedures for property litigation</p>
+                </Card>
+              </Link>
+              <Link href="/blog/how-to-file-fir-in-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Filing FIR for Property Crimes</h3>
+                  <p className="text-sm text-muted-foreground">When property disputes become criminal matters</p>
+                </Card>
+              </Link>
+              <Link href="/blog/cheque-bounce-cases-guide">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Cheque Bounce in Property Deals</h3>
+                  <p className="text-sm text-muted-foreground">Section 138 cases arising from property transactions</p>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="/blog">
+                <Button variant="outline" size="lg">
+                  View All Articles
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
-        <section className="py-16 bg-primary text-primary-foreground">
+        <section className="py-10 lg:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
               Have a Property Dispute in Rohtak?

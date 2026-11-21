@@ -29,15 +29,15 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-all duration-300 ${
         isScrolled ? 'shadow-sm' : ''
       }`}
       data-testid="header-main"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between gap-4">
+        <div className="flex h-16 items-center justify-between gap-3">
           <Link href="/" className="flex items-center gap-2 hover-elevate rounded-md px-2 py-1" data-testid="link-home-logo">
-            <Scale className="h-7 w-7 text-primary" />
+            <Scale className="h-7 w-7 lg:h-7 lg:w-7 text-primary" />
             <div className="flex flex-col">
               <span className="font-serif text-lg font-semibold text-foreground">Advocate Naveen Arya</span>
               <span className="text-xs text-muted-foreground">Law Practice, Rohtak</span>
@@ -72,11 +72,16 @@ export function Header() {
 
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon" data-testid="button-mobile-menu" aria-label="Toggle mobile menu">
-                  {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-                </Button>
+                <button
+                    type="button"
+                    className="h-11 w-11 flex items-center justify-center rounded-md hover:bg-accent"
+                    data-testid="button-mobile-menu"
+                    aria-label="Toggle mobile menu"
+                  >
+                    {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                  </button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[280px] sm:w-[350px]">
+              <SheetContent side="right" className="w-[300px] sm:w-[350px]">
                 <SheetHeader>
                   <SheetTitle>Navigation Menu</SheetTitle>
                 </SheetHeader>
@@ -85,7 +90,7 @@ export function Header() {
                     <Link key={item.name} href={item.href} onClick={() => setIsOpen(false)}>
                       <Button
                         variant={location === item.href ? 'default' : 'ghost'}
-                        className="w-full justify-start"
+                        className="w-full justify-start h-12 text-base"
                         data-testid={`link-mobile-${item.name.toLowerCase().replace(' ', '-')}`}
                       >
                         {item.name}
@@ -94,8 +99,8 @@ export function Header() {
                   ))}
                   <div className="mt-4 pt-4 border-t">
                     <a href="tel:+919050111113" className="block" data-testid="link-call-mobile">
-                      <Button variant="default" className="w-full gap-2">
-                        <Phone className="h-4 w-4" />
+                      <Button variant="default" className="w-full gap-2 h-12 text-base">
+                        <Phone className="h-5 w-5" />
                         Call Now
                       </Button>
                     </a>
@@ -106,7 +111,7 @@ export function Header() {
                       className="block mt-2"
                       data-testid="link-whatsapp-mobile"
                     >
-                      <Button variant="outline" className="w-full gap-2">
+                      <Button variant="outline" className="w-full gap-2 h-12 text-base">
                         WhatsApp
                       </Button>
                     </a>

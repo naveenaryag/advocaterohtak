@@ -6,9 +6,111 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t" data-testid="footer-main">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+    <footer className="bg-card border-t pb-20 lg:pb-0" data-testid="footer-main">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+
+        {/* Mobile Layout */}
+        <div className="lg:hidden">
+          {/* Logo & Contact - Mobile */}
+          <div className="text-center mb-4">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Scale className="h-6 w-6 text-primary" />
+              <span className="font-serif text-lg font-semibold">Advocate Naveen Arya</span>
+            </div>
+            <p className="text-sm text-muted-foreground mb-4">
+              Expert legal representation in Rohtak
+            </p>
+
+            {/* Quick Contact - Mobile */}
+            <div className="flex flex-col gap-2 mb-6">
+              <a href="tel:+919050111113" className="inline-flex items-center justify-center gap-2 text-primary font-medium">
+                <Phone className="h-4 w-4" />
+                +91 90501 11113
+              </a>
+              <a href="mailto:naveen@advocaterohtak.com" className="inline-flex items-center justify-center gap-2 text-muted-foreground text-sm">
+                <Mail className="h-4 w-4" />
+                naveen@advocaterohtak.com
+              </a>
+            </div>
+
+            {/* Social Links - Mobile */}
+            <div className="flex justify-center gap-4 mb-4">
+              <a
+                href="https://www.facebook.com/naveenaryapresident"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/10 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5 text-muted-foreground" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/true-lawyer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/10 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-muted-foreground" />
+              </a>
+              <a
+                href="https://www.instagram.com/truelawyer2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/10 transition-colors"
+                aria-label="Instagram"
+              >
+                <SiInstagram className="h-5 w-5 text-muted-foreground" aria-hidden="true" />
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary/10 transition-colors"
+                aria-label="Google Maps"
+              >
+                <Map className="h-5 w-5 text-muted-foreground" />
+              </a>
+            </div>
+          </div>
+
+          {/* Links Grid - Mobile (2 columns) */}
+          <div className="grid grid-cols-2 gap-6 mb-4 text-sm">
+            <div>
+              <h3 className="font-semibold text-foreground mb-3">Services</h3>
+              <ul className="space-y-2">
+                <li><Link href="/criminal-lawyer" className="text-muted-foreground">Criminal Law</Link></li>
+                <li><Link href="/bail-matters" className="text-muted-foreground">Bail Matters</Link></li>
+                <li><Link href="/matrimonial-cases" className="text-muted-foreground">Matrimonial</Link></li>
+                <li><Link href="/cheque-bounce-cases" className="text-muted-foreground">Cheque Bounce</Link></li>
+                <li><Link href="/property-litigation" className="text-muted-foreground">Property</Link></li>
+                <li><Link href="/civil-disputes" className="text-muted-foreground">Civil Disputes</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-foreground mb-3">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><Link href="/" className="text-muted-foreground">Home</Link></li>
+                <li><Link href="/about" className="text-muted-foreground">About</Link></li>
+                <li><Link href="/contact" className="text-muted-foreground">Contact</Link></li>
+                <li><Link href="/blog" className="text-muted-foreground">Blog</Link></li>
+                <li><Link href="/disclaimer" className="text-muted-foreground">Disclaimer</Link></li>
+                <li><Link href="/privacy-policy" className="text-muted-foreground">Privacy Policy</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Office Address - Mobile */}
+          <div className="text-center text-sm text-muted-foreground mb-6 px-4">
+            <div className="flex items-start justify-center gap-2">
+              <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
+              <span>Chamber No. 600, District Court Complex, Rohtak - 124001</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop Layout (5 columns) */}
+        <div className="hidden lg:grid lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <Scale className="h-6 w-6 text-primary" />
@@ -218,7 +320,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-primary" />
-                <a 
+                <a
                   href="https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z/data=!3m1!4b1!4m6!3m5!1s0x390d85a7e4fa23ed:0xa4af0adba6e2ec69!8m2!3d28.8935102!4d76.5940006!16s%2Fg%2F11b779dh2m"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -244,10 +346,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+        {/* Copyright - Both layouts */}
+        <div className="mt-8 pt-6 border-t text-center text-sm text-muted-foreground">
           <p>&copy; {currentYear} Advocate Naveen Arya. All rights reserved.</p>
-          <p className="mt-2">
-            SCBA Registration: A-01417 | COP: P1700/2014 | Bar Council of India
+          <p className="mt-1 text-xs">
+            SCBA: A-01417 | COP: P1700/2014
           </p>
         </div>
       </div>

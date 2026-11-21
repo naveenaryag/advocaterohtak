@@ -83,6 +83,37 @@ export default function CriminalLawyerRohtak() {
       question: 'What is your success rate in anticipatory bail cases?',
       answer: 'Our anticipatory bail success rate is approximately 85% in Rohtak Sessions Court. We achieve this through thorough preparation of grounds, proper documentation showing no flight risk, and presenting strong arguments addressing the specific concerns courts consider for pre-arrest protection.',
     },
+    {
+      question: 'What documents should I bring for a bail application?',
+      answer: 'Essential documents include: copy of FIR, arrest memo (if arrested), ID proof (Aadhaar/Voter ID), address proof, proof of employment or business, medical records (if relevant), and any evidence supporting your case. For anticipatory bail, bring documents showing local roots like property papers, family details, and character references.',
+    },
+    {
+      question: 'Can you get bail in NDPS (drug) cases?',
+      answer: 'Yes, bail is possible even in NDPS cases. For small quantity cases, regular bail provisions apply. For commercial quantity cases, we focus on procedural lapses, chain of custody issues, and FSL report defects. We have successfully secured bail in multiple NDPS cases by identifying investigation flaws.',
+    },
+    {
+      question: 'What happens if anticipatory bail is rejected?',
+      answer: 'If Sessions Court rejects anticipatory bail, we immediately file an appeal in Punjab & Haryana High Court. If arrest is imminent, we can seek interim protection from the High Court. The High Court often takes a broader view and may grant bail on grounds the lower court overlooked.',
+    },
+    {
+      question: 'How much does a criminal lawyer charge in Rohtak?',
+      answer: 'Fees depend on case complexity, court level, and expected duration. Bail applications typically have fixed fees. Criminal trials are charged based on number of hearings and evidence complexity. We provide transparent fee estimates during consultation with no hidden charges.',
+    },
+    {
+      question: 'What is the difference between regular bail and anticipatory bail?',
+      answer: 'Regular bail is applied for after arrest and detention, while anticipatory bail is sought before arrest when you apprehend being arrested. Anticipatory bail provides protection from arrest. Regular bail secures release from custody. Both require different legal strategies and documentation.',
+    },
+    {
+      question: 'Can a 498A case be quashed?',
+      answer: 'Yes, false or exaggerated 498A cases can be quashed by the High Court under Section 482 CrPC. We file quashing petitions when allegations are vague, motivated by matrimonial discord, or when settlement has been reached. We have successfully quashed numerous 498A cases in Punjab & Haryana High Court.',
+    },
+  ];
+
+  const caseResults = [
+    { title: 'Anticipatory Bail in False 498A', description: 'Secured pre-arrest protection for client falsely implicated in dowry case. FIR later quashed.', outcome: 'Bail Granted' },
+    { title: 'NDPS Case - Commercial Quantity', description: 'Obtained bail in drug case by highlighting procedural violations in search and seizure.', outcome: 'Bail Granted' },
+    { title: 'Murder Trial Acquittal', description: 'Client acquitted after 3-year trial. Cross-examination exposed contradictions in witness testimonies.', outcome: 'Acquitted' },
+    { title: 'Cheating Case Defense', description: 'Successfully defended businessman in Rs. 50 lakh cheating case. Proved civil nature of dispute.', outcome: 'Discharged' },
   ];
 
   return (
@@ -106,9 +137,9 @@ export default function CriminalLawyerRohtak() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section className="relative min-h-[auto] lg:min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
               <div className="text-center lg:text-left order-2 lg:order-1">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                   <Shield className="h-4 w-4 text-primary" />
@@ -183,12 +214,12 @@ export default function CriminalLawyerRohtak() {
         </section>
 
         {/* What We Handle */}
-        <section className="py-16 bg-card">
+        <section className="py-10 lg:py-16 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               Criminal Matters We Handle in Rohtak
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Comprehensive criminal defense services across all categories of offenses in Rohtak District Courts, Sessions Court, and Punjab & Haryana High Court.
             </p>
 
@@ -212,12 +243,12 @@ export default function CriminalLawyerRohtak() {
         </section>
 
         {/* Courts We Practice In */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               Courts Where We Represent You
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Active practice across multiple court levels ensuring comprehensive legal coverage.
             </p>
 
@@ -283,12 +314,12 @@ export default function CriminalLawyerRohtak() {
         </section>
 
         {/* For Outstation Clients */}
-        <section className="py-16 bg-primary/5">
+        <section className="py-10 lg:py-16 bg-primary/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               For Clients in Delhi, Gurugram, Sonipat & Panipat
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Most of our clients live outside Rohtak. Here's how we keep you updated and handle your case without requiring frequent travel.
             </p>
 
@@ -315,7 +346,7 @@ export default function CriminalLawyerRohtak() {
         </section>
 
         {/* First Consultation */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6 text-center">
@@ -356,9 +387,9 @@ export default function CriminalLawyerRohtak() {
         </section>
 
         {/* Know Your Bail Rights */}
-        <section className="py-16 bg-accent/5">
+        <section className="py-10 lg:py-16 bg-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center max-w-6xl mx-auto">
               <div>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   Know Your Rights in Criminal Cases
@@ -406,13 +437,13 @@ export default function CriminalLawyerRohtak() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 bg-card">
+        <section className="py-10 lg:py-16 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-muted-foreground text-center mb-12">
+              <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12">
                 Common questions about criminal cases in Rohtak
               </p>
 
@@ -432,8 +463,112 @@ export default function CriminalLawyerRohtak() {
           </div>
         </section>
 
+        {/* Case Results */}
+        <section className="py-10 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Recent Case Results
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              A sample of recent successful outcomes in criminal cases (details anonymized for client privacy)
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {caseResults.map((result, index) => (
+                <Card key={index} className="p-6 border-t-4 border-t-primary">
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+                    {result.outcome}
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{result.title}</h3>
+                  <p className="text-sm text-muted-foreground">{result.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related Practice Areas */}
+        <section className="py-10 lg:py-16 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Related Legal Services
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Criminal cases often involve other legal matters. We provide comprehensive support.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/divorce-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Divorce & Family Law</h3>
+                  <p className="text-sm text-muted-foreground mb-4">When criminal cases involve matrimonial disputes like 498A or domestic violence</p>
+                  <span className="text-primary text-sm font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/property-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Property Disputes</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Property disputes that become criminal matters involving cheating or fraud allegations</p>
+                  <span className="text-primary text-sm font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/practice-areas">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">All Practice Areas</h3>
+                  <p className="text-sm text-muted-foreground mb-4">View complete list of legal services including civil, corporate, and specialized matters</p>
+                  <span className="text-primary text-sm font-medium">View all →</span>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Blog Posts */}
+        <section className="py-10 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Helpful Resources
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Read our detailed guides on criminal law topics
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/understanding-bail-rights-in-india">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Understanding Your Bail Rights in India</h3>
+                  <p className="text-sm text-muted-foreground">Comprehensive guide to bail provisions and your legal rights</p>
+                </Card>
+              </Link>
+              <Link href="/blog/anticipatory-bail-complete-guide">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Anticipatory Bail: Complete Guide</h3>
+                  <p className="text-sm text-muted-foreground">Everything about pre-arrest protection under Section 438 CrPC</p>
+                </Card>
+              </Link>
+              <Link href="/blog/498a-case-complete-guide">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Section 498A: Defense Guide</h3>
+                  <p className="text-sm text-muted-foreground">How to defend against false dowry harassment allegations</p>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="/blog">
+                <Button variant="outline" size="lg">
+                  View All Articles
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
-        <section className="py-16 bg-primary text-primary-foreground">
+        <section className="py-10 lg:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
               Need a Criminal Lawyer in Rohtak?

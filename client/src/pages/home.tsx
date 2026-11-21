@@ -6,7 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { practiceAreas, testimonials, faqs } from '@/lib/data';
+import { practiceAreas, testimonials, faqs, blogPosts } from '@/lib/data';
 import heroImage from '@assets/advocate-rohtak_1763319067660.jpg';
 import heroImage400 from '@assets/advocate-hero-400w.webp';
 import heroImage400Jpg from '@assets/advocate-hero-400w.jpg';
@@ -137,10 +137,10 @@ export default function Home() {
       <Header />
 
       <main>
-        <section className="relative min-h-[85vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5 overflow-hidden" data-testid="section-hero">
+        <section className="relative min-h-[auto] lg:min-h-[85vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5 overflow-hidden" data-testid="section-hero">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utb3BhY2l0eT0iLjA1Ii8+PC9nPjwvc3ZnPg==')] opacity-40" />
           
-          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
             <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
               <div className="space-y-8">
                 <div className="space-y-4">
@@ -247,9 +247,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-12 sm:py-20 bg-card" data-testid="section-why-choose">
+        <section className="py-12 sm:py-12 lg:py-20 bg-card" data-testid="section-why-choose">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-6 lg:mb-12">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Why Choose Advocate Naveen Arya?
               </h2>
@@ -294,9 +294,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20" data-testid="section-practice-areas">
+        <section className="py-12 lg:py-20" data-testid="section-practice-areas">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-6 lg:mb-12">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Practice Areas
               </h2>
@@ -337,7 +337,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-card" data-testid="section-experience">
+        <section className="py-12 lg:py-20 bg-card" data-testid="section-experience">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
@@ -395,9 +395,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20" data-testid="section-testimonials">
+        <section className="py-12 lg:py-20" data-testid="section-testimonials">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-6 lg:mb-12">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Client Testimonials
               </h2>
@@ -427,9 +427,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-card" data-testid="section-local-advocate">
+        <section className="py-12 lg:py-20 bg-card" data-testid="section-local-advocate">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
                   Why Choose a Local Rohtak Advocate?
@@ -529,10 +529,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20" data-testid="section-faq">
+        <section className="py-12 lg:py-20" data-testid="section-faq">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12">
+              <div className="text-center mb-6 lg:mb-12">
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
                   Frequently Asked Questions
                 </h2>
@@ -557,7 +557,142 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-primary text-primary-foreground" data-testid="section-cta">
+        {/* Recent Case Results */}
+        <section className="py-12 lg:py-20 bg-card" data-testid="section-case-results">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-6 lg:mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Recent Case Results
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Sample outcomes across different practice areas (details anonymized for client privacy)
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { title: 'Anticipatory Bail - 498A', description: 'Secured pre-arrest protection for client falsely implicated in matrimonial dispute.', outcome: 'Bail Granted', area: 'Criminal' },
+                { title: 'Mutual Consent Divorce', description: 'Completed divorce with fair settlement in 6 months for NRI client.', outcome: '6 Months', area: 'Family' },
+                { title: 'Property Partition', description: 'Secured equal partition of 10 acre agricultural land among siblings.', outcome: 'Decree Passed', area: 'Property' },
+                { title: 'Cheque Bounce Recovery', description: 'Full recovery of Rs. 25 lakh in Section 138 case through negotiation.', outcome: 'Full Recovery', area: 'Civil' },
+              ].map((result, index) => (
+                <Card key={index} className="p-6 border-t-4 border-t-primary">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-xs text-muted-foreground font-medium">{result.area}</span>
+                    <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full">
+                      {result.outcome}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{result.title}</h3>
+                  <p className="text-sm text-muted-foreground">{result.description}</p>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <p className="text-muted-foreground mb-4">
+                Each case is unique. Results depend on specific facts and circumstances.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Legal Resources / Blog Posts */}
+        <section className="py-12 lg:py-20" data-testid="section-blog-resources">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-6 lg:mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Legal Resources & Guides
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Helpful articles on common legal topics in Rohtak
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {blogPosts.slice(0, 4).map((post) => (
+                <Link key={post.id} href={`/blog/${post.slug}`}>
+                  <Card className="p-6 h-full hover:shadow-lg transition-shadow cursor-pointer group">
+                    <p className="text-sm text-primary font-medium mb-2">{post.readTime}</p>
+                    <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link href="/blog">
+                <Button size="lg" variant="outline">
+                  View All Articles
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Specialized Landing Pages */}
+        <section className="py-12 lg:py-20 bg-card" data-testid="section-specialized-pages">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-6 lg:mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4">
+                Specialized Legal Services
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Detailed information on specific practice areas
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/criminal-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group h-full">
+                  <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary mb-4">
+                    <Scale className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    Criminal Lawyer Rohtak
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Bail, anticipatory bail, criminal defense, NDPS cases. 85% bail success rate.
+                  </p>
+                  <span className="text-primary font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/divorce-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group h-full">
+                  <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary mb-4">
+                    <Users className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    Divorce Lawyer Rohtak
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Mutual consent divorce, custody, maintenance. Confidential consultations.
+                  </p>
+                  <span className="text-primary font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/property-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group h-full">
+                  <div className="inline-flex p-3 rounded-lg bg-primary/10 text-primary mb-4">
+                    <Award className="h-6 w-6" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    Property Lawyer Rohtak
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Partition suits, possession cases, land disputes. Revenue court expertise.
+                  </p>
+                  <span className="text-primary font-medium">Learn more →</span>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 lg:py-20 bg-primary text-primary-foreground" data-testid="section-cta">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
               Need Legal Assistance in Rohtak?

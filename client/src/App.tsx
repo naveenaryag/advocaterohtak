@@ -75,7 +75,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <WhatsAppWidget />
-        <div className="pb-20 lg:pb-0">
+        <div className="pt-16 pb-20 lg:pb-0">
           <Router />
         </div>
         <MobileCallBar />

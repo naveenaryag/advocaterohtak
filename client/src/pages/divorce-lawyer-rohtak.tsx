@@ -81,6 +81,37 @@ export default function DivorceLawyerRohtak() {
       question: 'What documents are needed for divorce filing?',
       answer: 'Essential documents include: marriage certificate, proof of residence, photographs, income documents (salary slips/ITR), wedding photos, and details of children if any. For contested divorce, evidence supporting grounds (cruelty, desertion, etc.) is needed. We guide you on exact requirements during consultation.',
     },
+    {
+      question: 'Can the 6-month cooling off period be waived?',
+      answer: 'Yes, the Supreme Court in Amardeep Singh case allowed waiver of the 6-month cooling period if both parties genuinely want divorce and there is no chance of reconciliation. We file applications for waiver along with the second motion petition, citing relevant grounds and case law.',
+    },
+    {
+      question: 'What are the grounds for contested divorce?',
+      answer: 'Under Hindu Marriage Act, grounds include: cruelty (physical or mental), desertion for 2+ years, adultery, conversion to another religion, unsound mind, virulent leprosy, venereal disease, renunciation, and not heard alive for 7 years. We help you understand which grounds apply to your situation.',
+    },
+    {
+      question: 'How is property divided in divorce?',
+      answer: 'India does not have automatic 50-50 division. Streedhan (gifts to wife) belongs to her. Joint property is divided based on contribution and circumstances. We negotiate property settlements as part of divorce proceedings, ensuring fair division of assets acquired during marriage.',
+    },
+    {
+      question: 'What is the difference between maintenance and alimony?',
+      answer: 'Maintenance is regular monthly payment for living expenses, while alimony is typically a one-time lump sum settlement. Interim maintenance is paid during divorce proceedings. Permanent maintenance/alimony is decided at final decree. We advise on which approach suits your situation better.',
+    },
+    {
+      question: 'Can divorce be converted from contested to mutual consent?',
+      answer: 'Yes, many contested divorces are settled and converted to mutual consent divorces during proceedings. This saves time and reduces conflict. We facilitate settlement discussions and draft comprehensive agreements covering all issues including custody, maintenance, and property.',
+    },
+    {
+      question: 'What happens if spouse doesn\'t appear in court?',
+      answer: 'If respondent spouse ignores summons, court can proceed ex-parte (without them). The case continues based on petitioner\'s evidence. However, ex-parte decrees can sometimes be challenged. We ensure proper service of summons and documentation to prevent future complications.',
+    },
+  ];
+
+  const caseResults = [
+    { title: 'Mutual Consent Divorce - NRI Client', description: 'Completed divorce for UK-based client with only 2 visits to India. Arranged all paperwork remotely.', outcome: '6 Months' },
+    { title: 'Child Custody - Father Won', description: 'Secured custody of 8-year-old for father by demonstrating better living arrangements and child\'s preference.', outcome: 'Custody Granted' },
+    { title: 'Contested to Mutual', description: 'Settled 3-year contested divorce through mediation. Fair maintenance and property settlement achieved.', outcome: 'Settled' },
+    { title: 'Maintenance Revision', description: 'Successfully reduced excessive maintenance order on appeal by presenting accurate income evidence.', outcome: 'Revised' },
   ];
 
   return (
@@ -104,9 +135,9 @@ export default function DivorceLawyerRohtak() {
 
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <section className="relative min-h-[auto] lg:min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
               <div className="text-center lg:text-left order-2 lg:order-1">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                   <Heart className="h-4 w-4 text-primary" />
@@ -181,12 +212,12 @@ export default function DivorceLawyerRohtak() {
         </section>
 
         {/* What We Handle */}
-        <section className="py-16 bg-card">
+        <section className="py-10 lg:py-16 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               Family Law Matters We Handle in Rohtak
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Complete family law services in Rohtak Family Court and District Courts. Sensitive handling with focus on protecting your interests and your children's welfare.
             </p>
 
@@ -210,12 +241,12 @@ export default function DivorceLawyerRohtak() {
         </section>
 
         {/* Courts We Practice In */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               Family Courts Where We Represent You
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               Active practice in Rohtak and appellate courts for all family law matters.
             </p>
 
@@ -261,12 +292,12 @@ export default function DivorceLawyerRohtak() {
         </section>
 
         {/* For Outstation Clients */}
-        <section className="py-16 bg-primary/5">
+        <section className="py-10 lg:py-16 bg-primary/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
               For Clients in Delhi, Gurugram, Sonipat & Panipat
             </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
               We understand travel is difficult during family disputes. Here's how we work with clients who live outside Rohtak.
             </p>
 
@@ -287,13 +318,13 @@ export default function DivorceLawyerRohtak() {
         </section>
 
         {/* First Consultation */}
-        <section className="py-16">
+        <section className="py-10 lg:py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6 text-center">
                 Your First Consultation
               </h2>
-              <p className="text-lg text-muted-foreground text-center mb-12">
+              <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12">
                 We understand divorce is difficult. Here's what to expect when you reach out.
               </p>
 
@@ -331,9 +362,9 @@ export default function DivorceLawyerRohtak() {
         </section>
 
         {/* Why Choose Us Section with Image */}
-        <section className="py-16 bg-accent/5">
+        <section className="py-10 lg:py-16 bg-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center max-w-6xl mx-auto">
               <div>
                 <img
                   src={advocateImg}
@@ -381,13 +412,13 @@ export default function DivorceLawyerRohtak() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 bg-card">
+        <section className="py-10 lg:py-16 bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-muted-foreground text-center mb-12">
+              <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12">
                 Common questions about divorce and family matters in Rohtak
               </p>
 
@@ -407,8 +438,112 @@ export default function DivorceLawyerRohtak() {
           </div>
         </section>
 
+        {/* Case Results */}
+        <section className="py-10 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Recent Case Results
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Sample outcomes in family law matters (details anonymized for client privacy)
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {caseResults.map((result, index) => (
+                <Card key={index} className="p-6 border-t-4 border-t-primary">
+                  <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+                    {result.outcome}
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">{result.title}</h3>
+                  <p className="text-sm text-muted-foreground">{result.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related Practice Areas */}
+        <section className="py-10 lg:py-16 bg-card">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Related Legal Services
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Divorce cases often involve other legal matters. We provide comprehensive support.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/criminal-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Criminal Defense</h3>
+                  <p className="text-sm text-muted-foreground mb-4">For 498A, domestic violence defense, and other criminal matters arising from marital disputes</p>
+                  <span className="text-primary text-sm font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/property-lawyer-rohtak">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Property Division</h3>
+                  <p className="text-sm text-muted-foreground mb-4">For property settlement, streedhan recovery, and matrimonial property disputes</p>
+                  <span className="text-primary text-sm font-medium">Learn more →</span>
+                </Card>
+              </Link>
+              <Link href="/practice-areas">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer group">
+                  <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">All Practice Areas</h3>
+                  <p className="text-sm text-muted-foreground mb-4">View complete list of legal services including civil, criminal, and specialized matters</p>
+                  <span className="text-primary text-sm font-medium">View all →</span>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Blog Posts */}
+        <section className="py-10 lg:py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-4 text-center">
+              Helpful Resources
+            </h2>
+            <p className="text-lg text-muted-foreground text-center mb-6 lg:mb-12 max-w-3xl mx-auto">
+              Read our detailed guides on divorce and family law topics
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <Link href="/blog/divorce-procedure-haryana">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Divorce Procedure in Haryana</h3>
+                  <p className="text-sm text-muted-foreground">Complete legal guide for Rohtak residents on divorce process</p>
+                </Card>
+              </Link>
+              <Link href="/blog/498a-case-complete-guide">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">498A Case Guide</h3>
+                  <p className="text-sm text-muted-foreground">Understanding dowry harassment cases and defense strategies</p>
+                </Card>
+              </Link>
+              <Link href="/blog/property-dispute-resolution">
+                <Card className="p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                  <p className="text-sm text-primary font-medium mb-2">Blog Article</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Property Dispute Resolution</h3>
+                  <p className="text-sm text-muted-foreground">Guide to resolving property matters during divorce</p>
+                </Card>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="/blog">
+                <Button variant="outline" size="lg">
+                  View All Articles
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
-        <section className="py-16 bg-primary text-primary-foreground">
+        <section className="py-10 lg:py-16 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
               Need a Divorce Lawyer in Rohtak?
