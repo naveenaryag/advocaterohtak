@@ -401,6 +401,58 @@ A: FIR copy (criminal), marriage certificate (divorce), property documents (civi
     res.json(ardManifest);
   });
 
+  // WebMCP Tools Manifest
+  app.get("/.well-known/mcp.json", (req, res) => {
+    const mcpManifest = {
+      "name": "Advocate Naveen Arya - Legal Services",
+      "description": "Legal consultation services by Advocate Naveen Arya in Rohtak, Haryana",
+      "version": "1.0.0",
+      "tools": [
+        {
+          "name": "contact-lawyer",
+          "description": "Submit a legal consultation request to Advocate Naveen Arya. Use this to inquire about criminal defense, divorce, property disputes, bail matters, cheque bounce cases, or any legal services in Rohtak, Haryana.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Full name of the person seeking legal consultation"
+              },
+              "email": {
+                "type": "string",
+                "format": "email",
+                "description": "Email address for follow-up communication"
+              },
+              "phone": {
+                "type": "string",
+                "description": "Phone number with country code (e.g., +91 90501 11113)"
+              },
+              "subject": {
+                "type": "string",
+                "description": "Brief subject of inquiry (e.g., 'Bail Application', 'Divorce Case', 'Property Dispute', 'Criminal Defense', 'Cheque Bounce')"
+              },
+              "message": {
+                "type": "string",
+                "description": "Detailed description of the legal matter or question"
+              }
+            },
+            "required": ["name", "email", "phone", "subject", "message"]
+          },
+          "formUrl": "https://advocaterohtak.com/contact",
+          "formSelector": "[data-mcp-tool='contact-lawyer']"
+        }
+      ],
+      "contact": {
+        "phone": "+919050111113",
+        "email": "naveen@advocaterohtak.com",
+        "whatsapp": "https://wa.me/919050111113"
+      }
+    };
+
+    res.header("Content-Type", "application/json");
+    res.json(mcpManifest);
+  });
+
   const httpServer = createServer(app);
 
   return httpServer;

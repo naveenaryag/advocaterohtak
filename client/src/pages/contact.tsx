@@ -167,7 +167,13 @@ export default function Contact() {
               <div>
                 <h2 className="font-serif text-3xl font-bold text-foreground mb-6">Send Us a Message</h2>
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6" data-testid="form-contact">
+                  <form
+                    onSubmit={form.handleSubmit(onSubmit)}
+                    className="space-y-6"
+                    data-testid="form-contact"
+                    data-mcp-tool="contact-lawyer"
+                    data-mcp-description="Submit a legal consultation request to Advocate Naveen Arya in Rohtak. Use this form to inquire about criminal defense, divorce, property disputes, bail matters, or any legal services."
+                  >
                     <FormField
                       control={form.control}
                       name="name"
@@ -175,7 +181,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Full Name *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Enter your full name" {...field} disabled={contactMutation.isPending} data-testid="input-name" />
+                            <Input placeholder="Enter your full name" {...field} disabled={contactMutation.isPending} data-testid="input-name" data-mcp-param="name" data-mcp-param-description="Full name of the person seeking legal consultation" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -189,7 +195,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Email Address *</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="your.email@example.com" {...field} disabled={contactMutation.isPending} data-testid="input-email" />
+                            <Input type="email" placeholder="your.email@example.com" {...field} disabled={contactMutation.isPending} data-testid="input-email" data-mcp-param="email" data-mcp-param-description="Email address for follow-up communication" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -203,7 +209,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="+91 90501 11113" {...field} disabled={contactMutation.isPending} data-testid="input-phone" />
+                            <Input type="tel" placeholder="+91 90501 11113" {...field} disabled={contactMutation.isPending} data-testid="input-phone" data-mcp-param="phone" data-mcp-param-description="Phone number with country code for direct contact" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -217,7 +223,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Subject *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Brief subject of your inquiry" {...field} disabled={contactMutation.isPending} data-testid="input-subject" />
+                            <Input placeholder="Brief subject of your inquiry" {...field} disabled={contactMutation.isPending} data-testid="input-subject" data-mcp-param="subject" data-mcp-param-description="Brief subject like 'Bail Application', 'Divorce Case', 'Property Dispute', 'Criminal Defense'" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -231,7 +237,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Message *</FormLabel>
                           <FormControl>
-                            <Textarea rows={6} placeholder="Describe your legal matter in detail..." {...field} disabled={contactMutation.isPending} data-testid="textarea-message" />
+                            <Textarea rows={6} placeholder="Describe your legal matter in detail..." {...field} disabled={contactMutation.isPending} data-testid="textarea-message" data-mcp-param="message" data-mcp-param-description="Detailed description of the legal matter or question" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
