@@ -159,7 +159,7 @@ export default function MatrimonialCases() {
                     Confidential Consultation
                   </Button>
                 </a>
-                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
+                <a href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20help%20with%20a%20matrimonial%20matter." target="_blank" rel="noopener noreferrer" data-testid="button-hero-whatsapp">
                   <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
                     <MessageCircle className="h-5 w-5" />
                     WhatsApp Us

@@ -166,7 +166,7 @@ export default function CriminalLawyerRohtak() {
                       Call Now: 90501 11113
                     </Button>
                   </a>
-                  <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20a%20criminal%20lawyer%20in%20Rohtak." target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
                       <MessageCircle className="h-5 w-5" />
                       WhatsApp 24/7
@@ -603,7 +603,7 @@ export default function CriminalLawyerRohtak() {
                   Call: 90501 11113
                 </Button>
               </a>
-              <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20a%20criminal%20lawyer%20in%20Rohtak." target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   variant="outline"

@@ -7,7 +7,7 @@ export function WhatsAppWidget() {
   const widgetRef = useRef<HTMLDivElement>(null);
   
   const phoneNumber = '919050111113';
-  const message = encodeURIComponent('Hello, I need legal consultation. Can you help me?');
+  const message = encodeURIComponent('Hi, I need legal help.');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
   const callUrl = `tel:+919050111113`;
 

@@ -164,7 +164,7 @@ export default function DivorceLawyerRohtak() {
                       Call Now: 90501 11113
                     </Button>
                   </a>
-                  <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20help%20with%20a%20divorce%20matter." target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
                       <MessageCircle className="h-5 w-5" />
                       WhatsApp (Confidential)
@@ -578,7 +578,7 @@ export default function DivorceLawyerRohtak() {
                   Call: 90501 11113
                 </Button>
               </a>
-              <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20help%20with%20a%20divorce%20matter." target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   variant="outline"

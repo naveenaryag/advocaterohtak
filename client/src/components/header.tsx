@@ -105,7 +105,7 @@ export function Header() {
                       </Button>
                     </a>
                     <a
-                      href="https://wa.me/919050111113"
+                      href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20legal%20help."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block mt-2"

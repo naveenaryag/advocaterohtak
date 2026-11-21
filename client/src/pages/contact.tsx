@@ -155,7 +155,7 @@ export default function Contact() {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
                 <a
-                  href="https://wa.me/919050111113"
+                  href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20legal%20help."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline font-medium"
@@ -322,7 +322,7 @@ export default function Contact() {
                     Call Now
                   </Button>
                 </a>
-                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer" data-testid="button-quick-whatsapp">
+                <a href="https://wa.me/919050111113?text=Hi%2C%20I%20need%20legal%20help." target="_blank" rel="noopener noreferrer" data-testid="button-quick-whatsapp">
                   <Button variant="outline" className="gap-2">
                     <MessageCircle className="h-4 w-4" />
                     WhatsApp
