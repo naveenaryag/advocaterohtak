@@ -7,6 +7,12 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import criminalLawyerImg from '@assets/criminal-lawyer_1763319067660.jpg';
+import bailRightsImg from '@assets/stock_images/bail-rights-criminal-lawyer-rohtak.jpg';
+import anticipatoryBailImg from '@assets/stock_images/anticipatory-bail-lawyer-rohtak.jpg';
+import rohtakCourtImg from '@assets/rohtak-court_1763319002240.jpg';
+
 export default function CriminalLawyerRohtak() {
   const schema = {
     '@context': 'https://schema.org',
@@ -102,55 +108,74 @@ export default function CriminalLawyerRohtak() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <Shield className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-primary">85% Bail Success Rate</span>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="text-center lg:text-left order-2 lg:order-1">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                  <Shield className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-medium text-primary">85% Bail Success Rate</span>
+                </div>
+
+                <h1 className="font-serif text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+                  Criminal Lawyer in Rohtak
+                </h1>
+
+                <p className="text-xl text-muted-foreground mb-4">
+                  Expert criminal defense by Advocate Naveen Arya. Specializing in bail, anticipatory bail, criminal trials, and NDPS cases in Rohtak District Courts.
+                </p>
+
+                <p className="text-lg text-muted-foreground mb-8">
+                  SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                  <a href="tel:+919050111113">
+                    <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
+                      <Phone className="h-5 w-5" />
+                      Call Now: 90501 11113
+                    </Button>
+                  </a>
+                  <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
+                      <MessageCircle className="h-5 w-5" />
+                      WhatsApp 24/7
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">12+</p>
+                    <p className="text-sm text-muted-foreground">Years Experience</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">85%</p>
+                    <p className="text-sm text-muted-foreground">Bail Success</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">300+</p>
+                    <p className="text-sm text-muted-foreground">Acquittals</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">24/7</p>
+                    <p className="text-sm text-muted-foreground">Emergency Bail</p>
+                  </div>
+                </div>
               </div>
 
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-                Criminal Lawyer in Rohtak
-              </h1>
-
-              <p className="text-xl text-muted-foreground mb-4">
-                Expert criminal defense by Advocate Naveen Arya. Specializing in bail, anticipatory bail, criminal trials, and NDPS cases in Rohtak District Courts.
-              </p>
-
-              <p className="text-lg text-muted-foreground mb-8">
-                SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <a href="tel:+919050111113">
-                  <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
-                    <Phone className="h-5 w-5" />
-                    Call Now: 90501 11113
-                  </Button>
-                </a>
-                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
-                    <MessageCircle className="h-5 w-5" />
-                    WhatsApp 24/7
-                  </Button>
-                </a>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">12+</p>
-                  <p className="text-sm text-muted-foreground">Years Experience</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">85%</p>
-                  <p className="text-sm text-muted-foreground">Bail Success</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">300+</p>
-                  <p className="text-sm text-muted-foreground">Acquittals</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">24/7</p>
-                  <p className="text-sm text-muted-foreground">Emergency Bail</p>
+              {/* Hero Image */}
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <img
+                    src={criminalLawyerImg}
+                    alt="Criminal Lawyer in Rohtak - Advocate Naveen Arya"
+                    className="rounded-2xl shadow-2xl w-full max-w-md mx-auto lg:max-w-none"
+                    width={600}
+                    height={400}
+                    loading="eager"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-lg shadow-lg hidden sm:block">
+                    <p className="font-semibold">24/7 Bail Assistance</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,46 +221,62 @@ export default function CriminalLawyerRohtak() {
               Active practice across multiple court levels ensuring comprehensive legal coverage.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  Rohtak Courts
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    District & Sessions Court, Rohtak - Criminal trials and bail
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    Additional Sessions Courts - Major criminal matters
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    Chief Judicial Magistrate Court - Bail and remand
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    JMIC Courts - Initial proceedings and evidence
-                  </li>
-                </ul>
+            <div className="grid lg:grid-cols-5 gap-8 items-center">
+              {/* Court Image */}
+              <div className="lg:col-span-2 order-2 lg:order-1">
+                <img
+                  src={rohtakCourtImg}
+                  alt="Rohtak District Court Complex"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-3">District Court Complex, Rohtak</p>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
-                  <Scale className="h-5 w-5 text-primary" />
-                  Higher Courts
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    Punjab & Haryana High Court - Anticipatory bail, quashing, appeals
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    Supreme Court of India - SLPs and criminal appeals (SCBA: A-01417)
-                  </li>
-                </ul>
+
+              {/* Court Lists */}
+              <div className="lg:col-span-3 order-1 lg:order-2 grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    Rohtak Courts
+                  </h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      District & Sessions Court, Rohtak - Criminal trials and bail
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      Additional Sessions Courts - Major criminal matters
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      Chief Judicial Magistrate Court - Bail and remand
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      JMIC Courts - Initial proceedings and evidence
+                    </li>
+                  </ul>
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-foreground flex items-center gap-2">
+                    <Scale className="h-5 w-5 text-primary" />
+                    Higher Courts
+                  </h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      Punjab & Haryana High Court - Anticipatory bail, quashing, appeals
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      Supreme Court of India - SLPs and criminal appeals (SCBA: A-01417)
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -309,6 +350,56 @@ export default function CriminalLawyerRohtak() {
                 <p className="text-muted-foreground mb-4">
                   <strong>Chamber Address:</strong> Chamber No. 600, District Court Complex, Rohtak, Haryana - 124001
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Know Your Bail Rights */}
+        <section className="py-16 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Know Your Rights in Criminal Cases
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Understanding your legal rights is crucial when facing criminal charges. Bail is a constitutional right, not a privilege.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Right to Bail:</strong> In bailable offenses, bail is a matter of right under Section 436 CrPC</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Anticipatory Bail:</strong> You can apply for pre-arrest protection under Section 438 CrPC</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Right to Legal Aid:</strong> Free legal representation is guaranteed under Article 39A</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Speedy Trial:</strong> Constitutional right to timely disposal of your case</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Get Legal Help Now
+                  </Button>
+                </a>
+              </div>
+              <div>
+                <img
+                  src={bailRightsImg}
+                  alt="Know Your Bail Rights - Criminal Lawyer Rohtak"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

@@ -7,6 +7,10 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import propertyDisputeImg from '@assets/stock_images/property-dispute-lawyer-rohtak.jpg';
+import rohtakCourtImg from '@assets/rohtak-court_1763319002240.jpg';
+
 export default function PropertyLawyerRohtak() {
   const schema = {
     '@context': 'https://schema.org',
@@ -102,55 +106,74 @@ export default function PropertyLawyerRohtak() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <Building className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Property & Land Law Expert</span>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="text-center lg:text-left order-2 lg:order-1">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                  <Building className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-medium text-primary">Property & Land Law Expert</span>
+                </div>
+
+                <h1 className="font-serif text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+                  Property Lawyer in Rohtak
+                </h1>
+
+                <p className="text-xl text-muted-foreground mb-4">
+                  Expert representation in property disputes, partition suits, land matters, and civil litigation by Advocate Naveen Arya. Protecting your property rights in Rohtak courts.
+                </p>
+
+                <p className="text-lg text-muted-foreground mb-8">
+                  SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                  <a href="tel:+919050111113">
+                    <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
+                      <Phone className="h-5 w-5" />
+                      Call Now: 90501 11113
+                    </Button>
+                  </a>
+                  <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
+                      <MessageCircle className="h-5 w-5" />
+                      WhatsApp for Consultation
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">12+</p>
+                    <p className="text-sm text-muted-foreground">Years Experience</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">200+</p>
+                    <p className="text-sm text-muted-foreground">Property Cases</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">Strong</p>
+                    <p className="text-sm text-muted-foreground">Injunctions</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">Fair</p>
+                    <p className="text-sm text-muted-foreground">Partitions</p>
+                  </div>
+                </div>
               </div>
 
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-                Property Lawyer in Rohtak
-              </h1>
-
-              <p className="text-xl text-muted-foreground mb-4">
-                Expert representation in property disputes, partition suits, land matters, and civil litigation by Advocate Naveen Arya. Protecting your property rights in Rohtak courts.
-              </p>
-
-              <p className="text-lg text-muted-foreground mb-8">
-                SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <a href="tel:+919050111113">
-                  <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
-                    <Phone className="h-5 w-5" />
-                    Call Now: 90501 11113
-                  </Button>
-                </a>
-                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
-                    <MessageCircle className="h-5 w-5" />
-                    WhatsApp for Consultation
-                  </Button>
-                </a>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">12+</p>
-                  <p className="text-sm text-muted-foreground">Years Experience</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">200+</p>
-                  <p className="text-sm text-muted-foreground">Property Cases</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">Strong</p>
-                  <p className="text-sm text-muted-foreground">Injunctions</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">Fair</p>
-                  <p className="text-sm text-muted-foreground">Partitions</p>
+              {/* Hero Image */}
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <img
+                    src={propertyDisputeImg}
+                    alt="Property Lawyer in Rohtak - Land Dispute Expert"
+                    className="rounded-2xl shadow-2xl w-full max-w-md mx-auto lg:max-w-none"
+                    width={600}
+                    height={400}
+                    loading="eager"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-lg shadow-lg hidden sm:block">
+                    <p className="font-semibold">Protect Your Property</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -317,6 +340,57 @@ export default function PropertyLawyerRohtak() {
                 <p className="text-muted-foreground">
                   <strong>Chamber:</strong> Chamber No. 600, District Court Complex, Rohtak, Haryana - 124001
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Protect Your Property Rights Section */}
+        <section className="py-16 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="order-2 lg:order-1">
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Protecting Your Property Rights in Rohtak Courts
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Property disputes require careful strategy. Whether it's ancestral property division, illegal possession, or title verification, we provide comprehensive legal protection.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Title Verification:</strong> Thorough examination of ownership documents and land records</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Injunction Relief:</strong> Quick action to prevent unauthorized construction or transfer</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Revenue Support:</strong> Mutation, fard, and tehsil office proceedings</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Settlement Negotiation:</strong> Avoid lengthy litigation through fair compromise</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Get Property Legal Help
+                  </Button>
+                </a>
+              </div>
+              <div className="order-1 lg:order-2">
+                <img
+                  src={rohtakCourtImg}
+                  alt="Rohtak District Court - Property Cases"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+                <p className="text-center text-sm text-muted-foreground mt-3">District Court Complex, Rohtak</p>
               </div>
             </div>
           </div>

@@ -7,6 +7,10 @@ import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
+// Images
+import divorceCourtImg from '@assets/stock_images/divorce-lawyer-rohtak-family-court.jpg';
+import advocateImg from '@assets/advocate-rohtak-1536x1024_1763358725717.jpg';
+
 export default function DivorceLawyerRohtak() {
   const schema = {
     '@context': 'https://schema.org',
@@ -102,55 +106,74 @@ export default function DivorceLawyerRohtak() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center bg-gradient-to-br from-primary/5 via-background to-accent/5">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <Heart className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Compassionate Family Law Practice</span>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="text-center lg:text-left order-2 lg:order-1">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                  <Heart className="h-4 w-4 text-primary" />
+                  <span className="text-sm font-medium text-primary">Compassionate Family Law Practice</span>
+                </div>
+
+                <h1 className="font-serif text-4xl sm:text-5xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+                  Divorce Lawyer in Rohtak
+                </h1>
+
+                <p className="text-xl text-muted-foreground mb-4">
+                  Expert guidance through divorce, custody, and maintenance matters by Advocate Naveen Arya. Sensitive handling of family disputes with focus on fair outcomes.
+                </p>
+
+                <p className="text-lg text-muted-foreground mb-8">
+                  SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
+                </p>
+
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                  <a href="tel:+919050111113">
+                    <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
+                      <Phone className="h-5 w-5" />
+                      Call Now: 90501 11113
+                    </Button>
+                  </a>
+                  <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
+                      <MessageCircle className="h-5 w-5" />
+                      WhatsApp (Confidential)
+                    </Button>
+                  </a>
+                </div>
+
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">12+</p>
+                    <p className="text-sm text-muted-foreground">Years Experience</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">500+</p>
+                    <p className="text-sm text-muted-foreground">Family Cases</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">100%</p>
+                    <p className="text-sm text-muted-foreground">Confidential</p>
+                  </div>
+                  <div className="text-center p-4 bg-card rounded-lg">
+                    <p className="text-2xl font-bold text-primary">Fair</p>
+                    <p className="text-sm text-muted-foreground">Settlements</p>
+                  </div>
+                </div>
               </div>
 
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-                Divorce Lawyer in Rohtak
-              </h1>
-
-              <p className="text-xl text-muted-foreground mb-4">
-                Expert guidance through divorce, custody, and maintenance matters by Advocate Naveen Arya. Sensitive handling of family disputes with focus on fair outcomes.
-              </p>
-
-              <p className="text-lg text-muted-foreground mb-8">
-                SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <a href="tel:+919050111113">
-                  <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
-                    <Phone className="h-5 w-5" />
-                    Call Now: 90501 11113
-                  </Button>
-                </a>
-                <a href="https://wa.me/919050111113" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
-                    <MessageCircle className="h-5 w-5" />
-                    WhatsApp (Confidential)
-                  </Button>
-                </a>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">12+</p>
-                  <p className="text-sm text-muted-foreground">Years Experience</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">500+</p>
-                  <p className="text-sm text-muted-foreground">Family Cases</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">100%</p>
-                  <p className="text-sm text-muted-foreground">Confidential</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg">
-                  <p className="text-2xl font-bold text-primary">Fair</p>
-                  <p className="text-sm text-muted-foreground">Settlements</p>
+              {/* Hero Image */}
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <img
+                    src={divorceCourtImg}
+                    alt="Divorce Lawyer in Rohtak - Family Court Expert"
+                    className="rounded-2xl shadow-2xl w-full max-w-md mx-auto lg:max-w-none"
+                    width={600}
+                    height={400}
+                    loading="eager"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-lg shadow-lg hidden sm:block">
+                    <p className="font-semibold">Confidential Consultations</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -302,6 +325,56 @@ export default function DivorceLawyerRohtak() {
                 <p className="text-muted-foreground mb-4">
                   <strong>Chamber:</strong> Chamber No. 600, District Court Complex, Rohtak, Haryana - 124001
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us Section with Image */}
+        <section className="py-16 bg-accent/5">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <img
+                  src={advocateImg}
+                  alt="Advocate Naveen Arya - Divorce Lawyer Rohtak"
+                  className="rounded-xl shadow-lg w-full"
+                  width={500}
+                  height={350}
+                  loading="lazy"
+                />
+              </div>
+              <div>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground mb-6">
+                  Sensitive Handling of Family Matters
+                </h2>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Divorce is never easy. We understand the emotional, financial, and social challenges you face. Our approach focuses on protecting your interests while seeking fair resolution.
+                </p>
+                <ul className="space-y-4 mb-6">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Complete Confidentiality:</strong> Your personal matters stay private. All consultations are strictly confidential.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Settlement Focus:</strong> We explore amicable solutions before litigation whenever possible.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Children First:</strong> In custody matters, we prioritize the child's best interests.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span><strong>Fair Maintenance:</strong> Expert calculation based on actual needs and paying capacity.</span>
+                  </li>
+                </ul>
+                <a href="tel:+919050111113">
+                  <Button size="lg" className="gap-2">
+                    <Phone className="h-5 w-5" />
+                    Schedule Confidential Consultation
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
