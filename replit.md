@@ -43,11 +43,10 @@ Preferred communication style: Simple, everyday language.
 - **Route-level Splitting**: Each page lazy-loaded as separate chunks (0.6-24 KB each) for optimal initial load time.
 - **Build Configuration**: esbuild minification, ES2017 target, sourcemaps disabled in production for maximum performance.
 - **Asset Optimization**: Deterministic hashing for cache busting, 4KB inline limit for small assets.
-- **Consent-Aware Analytics Loading**: Google Analytics (G-LW9VXZDE6X) and Google Ads (AW-17706480763) use intelligent loading strategy:
-  - **First-time visitors**: Load on user interaction (scroll/click/touch/key) OR 8 seconds after window.load (~10s total, after PageSpeed completes)
-  - **Repeat visitors**: Immediate load (localStorage consent flag)
-  - **Result**: Eliminates 263 KB from PageSpeed "unused JavaScript" while preserving 95%+ tracking accuracy
-  - **Guard flag**: Prevents duplicate script loading
+- **Analytics & Conversion Tracking**: Google Analytics (G-LW9VXZDE6X) and Google Ads (AW-18295519053) with click-conversion tracking:
+  - Standard gtag.js loading for consistent tracking
+  - Delegated event listener for phone (tel:) and WhatsApp link clicks
+  - Automatic conversion tracking without individual onclick handlers
 - **Responsive Image Optimization**: Hero image sizes attribute optimized to `(max-width: 768px) 100vw, (max-width: 1024px) 55vw, 600px` ensuring browser selects 640w variant (22.5 KB) instead of 960w (49 KB) for mobile/tablet displays up to 768px, saving 26.5 KB while maintaining image quality.
 - **Total Network Savings**: ~289.5 KB reduction in PageSpeed testing (263 KB analytics + 26.5 KB images).
 - **Expected Impact**: ~40% reduction in critical path latency, improved LCP score, better browser caching, parallel resource loading, reduced network congestion.

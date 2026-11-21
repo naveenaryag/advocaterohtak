@@ -6,6 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { SEO } from '@/components/seo';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import { InlineConsultationForm } from '@/components/inline-consultation-form';
 
 // Images
 import divorceCourtImg from '@assets/stock_images/divorce-lawyer-rohtak-family-court.jpg';
@@ -156,7 +157,7 @@ export default function DivorceLawyerRohtak() {
                   SCBA Registration: A-01417 | Punjab & Haryana High Court: P1700/2014
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-4">
                   <a href="tel:+919050111113">
                     <Button size="lg" className="w-full sm:w-auto gap-2 text-lg px-8">
                       <Phone className="h-5 w-5" />
@@ -170,6 +171,10 @@ export default function DivorceLawyerRohtak() {
                     </Button>
                   </a>
                 </div>
+                <p className="text-sm text-primary font-medium mb-8 flex items-center gap-2 justify-center lg:justify-start">
+                  <Clock className="h-4 w-4" />
+                  Response within 15 minutes • 100% Confidential consultation
+                </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                   <div className="text-center p-4 bg-card rounded-lg">
@@ -208,6 +213,17 @@ export default function DivorceLawyerRohtak() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Quick Consultation Form - Mobile Only */}
+        <section className="py-6 lg:py-10 bg-card lg:hidden">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <InlineConsultationForm
+              title="Get Free Divorce Consultation"
+              subtitle="100% Confidential • Response within 15 minutes"
+              source="Divorce Lawyer Rohtak"
+            />
           </div>
         </section>
 
@@ -548,8 +564,12 @@ export default function DivorceLawyerRohtak() {
             <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-4">
               Need a Divorce Lawyer in Rohtak?
             </h2>
-            <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
+            <p className="text-lg mb-4 opacity-90 max-w-2xl mx-auto">
               Confidential consultation. No judgment. Clear guidance on your options.
+            </p>
+            <p className="text-sm mb-6 opacity-80 flex items-center justify-center gap-2">
+              <Clock className="h-4 w-4" />
+              Response within 15 minutes • Free confidential consultation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:+919050111113">

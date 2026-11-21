@@ -14,6 +14,7 @@ import { insertContactInquirySchema } from '@shared/schema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import type { z } from 'zod';
+import { trackFormSubmit } from '@/lib/tracking';
 
 type ContactFormValues = z.infer<typeof insertContactInquirySchema>;
 
@@ -41,6 +42,8 @@ export default function Contact() {
         description: 'Thank you for contacting us. We will get back to you soon.',
       });
       form.reset();
+      // Track conversion for Google Ads
+      trackFormSubmit('Contact Page');
     },
     onError: (error: Error) => {
       let errorMessage = 'Failed to send message. Please try again or call directly.';

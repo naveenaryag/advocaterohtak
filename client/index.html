@@ -60,62 +60,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@400;500&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
     
-    <!-- Google Analytics & Ads - Performance-Optimized Loading -->
+    <!-- Google Analytics & Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LW9VXZDE6X"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LW9VXZDE6X');
-      gtag('config', 'AW-17706480763');
+      gtag('config', 'AW-18295519053');
+    </script>
 
-      var gtagRequested = false;
-      function loadGtag() {
-        if (gtagRequested) return;
-        gtagRequested = true;
-
-        try { localStorage.setItem('ga_consent', '1'); } catch(e) {}
-
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LW9VXZDE6X';
-        document.head.appendChild(script);
-      }
-
-      // Check if repeat visitor (load immediately after idle)
-      var hasConsent = false;
-      try { hasConsent = localStorage.getItem('ga_consent') === '1'; } catch(e) {}
-
-      if (hasConsent) {
-        // Use requestIdleCallback for repeat visitors to avoid blocking main thread
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(loadGtag, { timeout: 2000 });
-        } else {
-          setTimeout(loadGtag, 100);
+    <!-- Click-Conversion Tracking for Phone and WhatsApp -->
+    <script>
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href]');
+        if (!a || typeof gtag !== 'function') return;
+        var href = a.getAttribute('href') || '';
+        if (href.indexOf('tel:') === 0) {
+          gtag('event', 'conversion', { send_to: 'AW-18295519053/jee5CLu1xLwdEM3u_ZNE' });
+        } else if (/wa\.me|api\.whatsapp\.com|whatsapp:\/\//i.test(href)) {
+          gtag('event', 'conversion', { send_to: 'AW-18295519053/9HPuCIi4xLwdEM3u_ZNE' });
         }
-      } else {
-        // First-time visitor - load after user interaction or LCP
-        ['scroll', 'click', 'touchstart'].forEach(function(event) {
-          window.addEventListener(event, loadGtag, { once: true, passive: true });
-        });
-
-        // Load after Largest Contentful Paint (LCP) is done
-        if ('PerformanceObserver' in window) {
-          try {
-            var lcpObserver = new PerformanceObserver(function(list) {
-              lcpObserver.disconnect();
-              setTimeout(loadGtag, 100);
-            });
-            lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
-            // Fallback: load after 5 seconds if LCP not detected
-            setTimeout(function() { lcpObserver.disconnect(); loadGtag(); }, 5000);
-          } catch(e) {
-            setTimeout(loadGtag, 5000);
-          }
-        } else {
-          // Fallback for older browsers
-          window.addEventListener('load', function() { setTimeout(loadGtag, 3000); });
-        }
-      }
+      }, true);
     </script>
   </head>
   <body>
