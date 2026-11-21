@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { WhatsAppWidget } from "@/components/whatsapp-widget";
 import { MobileCallBar } from "@/components/mobile-call-bar";
+import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import Home from "@/pages/home";
 
 const CriminalLawyer = lazy(() => import("@/pages/criminal-lawyer"));
@@ -77,6 +78,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <WhatsAppWidget />
+        <ExitIntentPopup />
         <div className="pt-16 pb-20 lg:pb-0">
           <Router />
         </div>
