@@ -365,164 +365,33 @@ A: FIR copy (criminal), marriage certificate (divorce), property documents (civi
     const ardManifest = {
       "entries": [
         {
-          "identifier": "advocaterohtak-homepage",
+          "identifier": "urn:air:advocaterohtak.com:legal:services-overview",
           "displayName": "Advocate Naveen Arya - Legal Services",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com",
-          "description": "Expert legal representation in Rohtak, Haryana with 12+ years of experience in criminal law, civil litigation, and family matters. Supreme Court Bar Association member (A-01417).",
+          "type": "application/agent-skills+md",
+          "url": "https://advocaterohtak.com/llms.txt",
+          "description": "AI-readable overview of legal services offered by Advocate Naveen Arya in Rohtak, Haryana. Covers criminal defense, family law, property disputes, bail matters, and more.",
           "representativeQueries": [
             "lawyer in Rohtak",
             "advocate Rohtak Haryana",
             "best lawyer Rohtak",
-            "legal services Rohtak",
-            "Naveen Arya advocate"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-criminal-lawyer",
-          "displayName": "Criminal Lawyer Rohtak",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/criminal-lawyer-rohtak",
-          "description": "Expert criminal defense services including bail applications, criminal trials, NDPS cases, and quashing petitions in Rohtak courts.",
-          "representativeQueries": [
             "criminal lawyer Rohtak",
-            "criminal advocate Haryana",
-            "NDPS lawyer Rohtak",
-            "quashing petition lawyer",
-            "criminal defense attorney Rohtak"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-divorce-lawyer",
-          "displayName": "Divorce Lawyer Rohtak",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/divorce-lawyer-rohtak",
-          "description": "Family law services including divorce, child custody, maintenance, and domestic violence cases in Rohtak Family Court.",
-          "representativeQueries": [
             "divorce lawyer Rohtak",
-            "family court advocate Rohtak",
-            "child custody lawyer Haryana",
-            "mutual consent divorce Rohtak",
-            "matrimonial lawyer Rohtak"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-property-lawyer",
-          "displayName": "Property Lawyer Rohtak",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/property-lawyer-rohtak",
-          "description": "Property law services including property disputes, partition suits, possession recovery, and title verification.",
-          "representativeQueries": [
             "property lawyer Rohtak",
-            "land dispute advocate Haryana",
-            "partition suit lawyer",
-            "property dispute attorney Rohtak",
-            "real estate lawyer Rohtak"
+            "bail lawyer Haryana"
           ]
         },
         {
-          "identifier": "advocaterohtak-bail-matters",
-          "displayName": "Bail Matters",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/bail-matters",
-          "description": "85% success rate in bail applications - anticipatory, regular, and interim bail. 24/7 emergency bail services available.",
-          "representativeQueries": [
-            "bail lawyer Rohtak",
-            "anticipatory bail advocate",
-            "emergency bail Haryana",
-            "bail application lawyer",
-            "get bail in Rohtak"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-cheque-bounce",
-          "displayName": "Cheque Bounce Cases",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/cheque-bounce-cases",
-          "description": "Section 138 NI Act matters, legal notice drafting, complaint filing, and recovery suits.",
-          "representativeQueries": [
-            "cheque bounce lawyer Rohtak",
-            "Section 138 NI Act advocate",
-            "dishonour of cheque case",
-            "cheque bounce complaint lawyer",
-            "negotiable instruments act lawyer"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-matrimonial",
-          "displayName": "Matrimonial Cases",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/matrimonial-cases",
-          "description": "Marriage disputes, maintenance under Section 125 CrPC, DV Act cases, and 498A defense.",
-          "representativeQueries": [
-            "matrimonial lawyer Rohtak",
-            "498A defense lawyer",
-            "domestic violence case advocate",
-            "maintenance case lawyer",
-            "DV Act lawyer Haryana"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-civil-disputes",
-          "displayName": "Civil Disputes",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/civil-disputes",
-          "description": "Contract enforcement, recovery suits, injunctions, and declaratory suits in civil courts.",
-          "representativeQueries": [
-            "civil lawyer Rohtak",
-            "contract dispute advocate",
-            "recovery suit lawyer",
-            "injunction lawyer Haryana",
-            "civil litigation attorney"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-property-litigation",
-          "displayName": "Property Litigation",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/property-litigation",
-          "description": "Title disputes, partition suits, specific performance, and possession recovery matters.",
-          "representativeQueries": [
-            "property litigation lawyer Rohtak",
-            "title dispute advocate",
-            "specific performance lawyer",
-            "possession case attorney",
-            "property court case lawyer"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-llms-txt",
-          "displayName": "LLMs.txt - AI Summary",
-          "type": "text/markdown",
-          "url": "https://advocaterohtak.com/llms.txt",
-          "description": "AI-readable summary of legal services offered by Advocate Naveen Arya in Rohtak.",
-          "representativeQueries": [
-            "advocaterohtak llms.txt",
-            "AI readable legal services Rohtak"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-llms-full",
-          "displayName": "LLMs Full - Comprehensive Guide",
-          "type": "text/markdown",
+          "identifier": "urn:air:advocaterohtak.com:legal:services-comprehensive",
+          "displayName": "Advocate Naveen Arya - Comprehensive Legal Guide",
+          "type": "application/agent-skills+md",
           "url": "https://advocaterohtak.com/llms-full.txt",
-          "description": "Comprehensive AI-readable guide to all legal services, courts, and service areas.",
+          "description": "Comprehensive AI-readable guide to all legal services, practice areas, courts, service coverage, and FAQs for Advocate Naveen Arya's law practice in Rohtak.",
           "representativeQueries": [
-            "advocaterohtak full guide",
-            "complete legal services Rohtak"
-          ]
-        },
-        {
-          "identifier": "advocaterohtak-contact",
-          "displayName": "Contact Advocate Naveen Arya",
-          "type": "text/html",
-          "url": "https://advocaterohtak.com/contact",
-          "description": "Contact Advocate Naveen Arya - Chamber No. 600, District Court Complex, Rohtak. Phone: +91 90501 11113.",
-          "representativeQueries": [
-            "contact lawyer Rohtak",
-            "advocate Naveen Arya phone",
-            "book consultation Rohtak lawyer",
-            "legal consultation Rohtak"
+            "legal services Rohtak complete guide",
+            "Naveen Arya advocate services",
+            "Rohtak lawyer all services",
+            "Haryana advocate practice areas",
+            "bail cheque bounce matrimonial property lawyer"
           ]
         }
       ]
