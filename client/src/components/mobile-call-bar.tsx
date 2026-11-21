@@ -20,7 +20,7 @@ export function MobileCallBar() {
           <Button
             size="lg"
             variant="outline"
-            className="w-full gap-2 text-base font-semibold h-12 bg-green-600 hover:bg-green-700 text-white border-green-600 hover:border-green-700"
+            className="w-full gap-2 text-base font-semibold h-12 bg-green-700 hover:bg-green-800 text-white border-green-700 hover:border-green-800"
           >
             <MessageCircle className="h-5 w-5" />
             WhatsApp

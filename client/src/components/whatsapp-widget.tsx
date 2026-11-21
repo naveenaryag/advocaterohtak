@@ -70,7 +70,7 @@ export function WhatsAppWidget() {
             aria-label="Chat on WhatsApp"
             tabIndex={isOpen ? 0 : -1}
           >
-            <div className="h-10 w-10 rounded-full bg-[#25D366] flex items-center justify-center flex-shrink-0">
+            <div className="h-10 w-10 rounded-full bg-[#128C7E] flex items-center justify-center flex-shrink-0">
               <MessageCircle className="h-5 w-5 text-white" />
             </div>
             <div className="flex flex-col">
@@ -86,7 +86,7 @@ export function WhatsAppWidget() {
         <Button
           onClick={() => setIsOpen(!isOpen)}
           size="icon"
-          className={`h-14 w-14 rounded-full shadow-lg hover:shadow-xl transition-all bg-[#25D366] hover:bg-[#1fb855] text-white border-0 ${
+          className={`h-14 w-14 rounded-full shadow-lg hover:shadow-xl transition-all bg-[#128C7E] hover:bg-[#075E54] text-white border-0 ${
             !isOpen ? 'animate-bounce-subtle' : ''
           }`}
           aria-label="Toggle Contact Menu"
