@@ -5,9 +5,13 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { WhatsAppWidget } from "@/components/whatsapp-widget";
+import { MobileCallBar } from "@/components/mobile-call-bar";
 import Home from "@/pages/home";
 
 const CriminalLawyer = lazy(() => import("@/pages/criminal-lawyer"));
+const CriminalLawyerRohtak = lazy(() => import("@/pages/criminal-lawyer-rohtak"));
+const DivorceLawyerRohtak = lazy(() => import("@/pages/divorce-lawyer-rohtak"));
+const PropertyLawyerRohtak = lazy(() => import("@/pages/property-lawyer-rohtak"));
 const MatrimonialCases = lazy(() => import("@/pages/matrimonial-cases"));
 const ChequeBounce = lazy(() => import("@/pages/cheque-bounce-cases"));
 const CivilDisputes = lazy(() => import("@/pages/civil-disputes"));
@@ -36,6 +40,9 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/criminal-lawyer" component={CriminalLawyer} />
+        <Route path="/criminal-lawyer-rohtak" component={CriminalLawyerRohtak} />
+        <Route path="/divorce-lawyer-rohtak" component={DivorceLawyerRohtak} />
+        <Route path="/property-lawyer-rohtak" component={PropertyLawyerRohtak} />
         <Route path="/matrimonial-cases" component={MatrimonialCases} />
         <Route path="/cheque-bounce-cases" component={ChequeBounce} />
         <Route path="/civil-disputes" component={CivilDisputes} />
@@ -68,7 +75,10 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <WhatsAppWidget />
-        <Router />
+        <div className="pb-20 lg:pb-0">
+          <Router />
+        </div>
+        <MobileCallBar />
       </TooltipProvider>
     </QueryClientProvider>
   );

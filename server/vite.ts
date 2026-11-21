@@ -76,10 +76,38 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  // Serve static assets with aggressive caching (1 year)
+  // These files have content hashes in filenames, so they're safe to cache forever
+  app.use(
+    "/assets",
+    express.static(path.join(distPath, "assets"), {
+      maxAge: "1y",
+      immutable: true,
+      etag: true,
+      lastModified: true,
+    })
+  );
+
+  // Serve other static files with moderate caching (1 day)
+  // These include favicon, manifest, etc.
+  app.use(
+    express.static(distPath, {
+      maxAge: "1d",
+      etag: true,
+      lastModified: true,
+      setHeaders: (res, filePath) => {
+        // Don't cache HTML files - they should always be fresh
+        if (filePath.endsWith(".html")) {
+          res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        }
+      },
+    })
+  );
 
   // fall through to index.html if the file doesn't exist
   app.use("*", (_req, res) => {
+    // Set no-cache headers for SPA fallback
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     res.sendFile(path.resolve(distPath, "index.html"));
   });
 }

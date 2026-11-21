@@ -229,6 +229,7 @@ export default function Home() {
                       width="1280"
                       height="853"
                       loading="eager"
+                      fetchPriority="high"
                     />
                   </picture>
                 </div>
@@ -353,18 +354,24 @@ export default function Home() {
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
-                  <img 
-                    src={awardImage} 
-                    alt="Advocate Naveen Arya receiving legal excellence award from senior legal professionals in Rohtak" 
+                  <img
+                    src={awardImage}
+                    alt="Advocate Naveen Arya receiving legal excellence award from senior legal professionals in Rohtak"
                     className="rounded-md shadow-lg w-full h-48 object-cover"
+                    width="400"
+                    height="192"
                     loading="lazy"
+                    decoding="async"
                     data-testid="img-award-ceremony"
                   />
-                  <img 
-                    src={conferenceImage} 
-                    alt="Advocate Naveen Arya speaking at international legal conference as expert lawyer from Rohtak" 
+                  <img
+                    src={conferenceImage}
+                    alt="Advocate Naveen Arya speaking at international legal conference as expert lawyer from Rohtak"
                     className="rounded-md shadow-lg w-full h-48 object-cover"
+                    width="400"
+                    height="192"
                     loading="lazy"
+                    decoding="async"
                     data-testid="img-conference-speaker"
                   />
                 </div>
@@ -499,6 +506,7 @@ export default function Home() {
                     width="800"
                     height="600"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-6">
                     <p className="text-white text-lg font-semibold mb-2">Rohtak District Court Complex</p>

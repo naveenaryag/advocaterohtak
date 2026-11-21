@@ -31,12 +31,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   app.get("/sitemap.xml", (req, res) => {
-    const protocol = req.protocol;
-    const host = req.get('host');
-    const baseUrl = `${protocol}://${host}`;
+    // Always use https for production
+    const baseUrl = "https://advocaterohtak.com";
     const currentDate = new Date().toISOString().split('T')[0];
     const pages = [
       { url: "/", changefreq: "weekly", priority: "1.0", lastmod: currentDate },
+      // Landing pages for Google Ads
+      { url: "/criminal-lawyer-rohtak", changefreq: "weekly", priority: "1.0", lastmod: currentDate },
+      { url: "/divorce-lawyer-rohtak", changefreq: "weekly", priority: "1.0", lastmod: currentDate },
+      { url: "/property-lawyer-rohtak", changefreq: "weekly", priority: "1.0", lastmod: currentDate },
+      // Service pages
       { url: "/criminal-lawyer", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
       { url: "/supreme-court-advocate", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
       { url: "/matrimonial-cases", changefreq: "weekly", priority: "0.9", lastmod: currentDate },
@@ -78,9 +82,8 @@ ${pages
   });
 
   app.get("/robots.txt", (req, res) => {
-    const protocol = req.protocol;
-    const host = req.get('host');
-    const baseUrl = `${protocol}://${host}`;
+    // Always use https for production
+    const baseUrl = "https://advocaterohtak.com";
     const robots = `# robots.txt for AdvocateRohtak.com - Advocate Naveen Arya
 # Updated: November 17, 2025
 # Purpose: Full indexing by search engines and AI crawlers for maximum SEO + LLM visibility

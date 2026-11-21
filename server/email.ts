@@ -1,14 +1,26 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const GMAIL_USER = process.env.GMAIL_USER;
+const GMAIL_APP_PASSWORD = process.env.GMAIL_APP_PASSWORD;
+
+if (!GMAIL_USER || !GMAIL_APP_PASSWORD) {
+  console.error(
+    "[Email Error] Gmail credentials missing. Set GMAIL_USER + GMAIL_APP_PASSWORD in .env or PM2 env."
+  );
+}
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
+    user: GMAIL_USER,
+    pass: GMAIL_APP_PASSWORD,
   },
 });
 
-interface ContactEmailData {
+export interface ContactEmailData {
   name: string;
   email: string;
   phone: string;
@@ -124,16 +136,22 @@ ${message}
 
 ---
 Please respond directly to the client at: ${email}
-  `;
+`;
 
   const mailOptions = {
-    from: `"AdvocateRohtak Contact Form" <${process.env.GMAIL_USER}>`,
-    to: ['naveenarya@gmail.com', 'naveen@advocaterohtak.com'],
+    from: `"AdvocateRohtak Contact Form" <${GMAIL_USER}>`,
+    to: ["naveenarya@gmail.com", "naveen@advocaterohtak.com"],
     replyTo: email,
     subject: `New Contact Inquiry: ${subject}`,
     text: textContent,
     html: htmlContent,
   };
 
-  await transporter.sendMail(mailOptions);
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log("[Email Sent] Contact inquiry delivered successfully.");
+  } catch (error) {
+    console.error("[Email Sending Error]:", error);
+    throw error; // Let API return success=true to user but log server error
+  }
 }

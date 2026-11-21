@@ -27,58 +27,94 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#8B7355" />
+
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- Critical CSS for above-the-fold content - prevents layout shifts -->
+    <style>
+      /* Critical styles for initial render */
+      *,*::before,*::after{box-sizing:border-box}
+      body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+      #root{min-height:100vh}
+      /* Prevent layout shift from fonts */
+      .font-serif{font-family:'Playfair Display',Georgia,serif}
+      /* Header skeleton to prevent CLS */
+      header{min-height:72px}
+      /* Hero section minimum height */
+      [data-testid="section-hero"]{min-height:85vh}
+      /* Prevent image CLS with aspect ratios */
+      img{max-width:100%;height:auto}
+      /* Button base styles to prevent CLS */
+      button{font-family:inherit}
+      /* Primary color variables */
+      :root{--primary:#8B7355;--background:#ffffff}
+    </style>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" as="style">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+    <!-- Only load essential font weights (400, 600) initially for faster FCP -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'">
+    <!-- Load additional weights after page load -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@400;500&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"></noscript>
     
-    <!-- Google Analytics & Ads - Consent-Aware Optimized Loading -->
+    <!-- Google Analytics & Ads - Performance-Optimized Loading -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-LW9VXZDE6X');
       gtag('config', 'AW-17706480763');
-      
+
       var gtagRequested = false;
       function loadGtag() {
         if (gtagRequested) return;
         gtagRequested = true;
-        
-        // Store consent for future visits (immediate load next time)
-        try {
-          localStorage.setItem('ga_consent', '1');
-        } catch(e) {}
-        
+
+        try { localStorage.setItem('ga_consent', '1'); } catch(e) {}
+
         var script = document.createElement('script');
         script.async = true;
         script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LW9VXZDE6X';
         document.head.appendChild(script);
       }
-      
-      // Check consent - if exists, load immediately (repeat visitors)
+
+      // Check if repeat visitor (load immediately after idle)
       var hasConsent = false;
-      try {
-        hasConsent = localStorage.getItem('ga_consent') === '1';
-      } catch(e) {}
-      
+      try { hasConsent = localStorage.getItem('ga_consent') === '1'; } catch(e) {}
+
       if (hasConsent) {
-        // Repeat visitor - load immediately
-        loadGtag();
+        // Use requestIdleCallback for repeat visitors to avoid blocking main thread
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGtag, { timeout: 2000 });
+        } else {
+          setTimeout(loadGtag, 100);
+        }
       } else {
-        // First-time visitor - use optimized loading
-        
-        // Fast load on user interaction
-        ['scroll', 'click', 'touchstart', 'mousemove', 'keydown'].forEach(function(event) {
+        // First-time visitor - load after user interaction or LCP
+        ['scroll', 'click', 'touchstart'].forEach(function(event) {
           window.addEventListener(event, loadGtag, { once: true, passive: true });
         });
-        
-        // Deterministic 8-second delay after page load (safely avoids PageSpeed ~5-10s window)
-        window.addEventListener('load', function() {
-          setTimeout(loadGtag, 8000);
-        });
+
+        // Load after Largest Contentful Paint (LCP) is done
+        if ('PerformanceObserver' in window) {
+          try {
+            var lcpObserver = new PerformanceObserver(function(list) {
+              lcpObserver.disconnect();
+              setTimeout(loadGtag, 100);
+            });
+            lcpObserver.observe({ type: 'largest-contentful-paint', buffered: true });
+            // Fallback: load after 5 seconds if LCP not detected
+            setTimeout(function() { lcpObserver.disconnect(); loadGtag(); }, 5000);
+          } catch(e) {
+            setTimeout(loadGtag, 5000);
+          }
+        } else {
+          // Fallback for older browsers
+          window.addEventListener('load', function() { setTimeout(loadGtag, 3000); });
+        }
       }
     </script>
   </head>

@@ -156,7 +156,10 @@ export default function CriminalLawyer() {
                   src={criminalImage}
                   alt="Best criminal lawyer in Rohtak - Professional legal representation and defense services"
                   className="w-full rounded-2xl shadow-2xl"
-                  loading="lazy"
+                  width="600"
+                  height="400"
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
             </div>
