@@ -49,7 +49,7 @@ export function Footer() {
                 data-testid="link-instagram"
                 aria-label="Instagram"
               >
-                <SiInstagram className="h-5 w-5 text-muted-foreground" />
+                <SiInstagram className="h-5 w-5 text-muted-foreground" aria-hidden="true" />
               </a>
               <a
                 href="https://www.google.com/maps/place/Advocate+Naveen+Arya/@28.8935102,76.5914257,17z/data=!3m1!4b1!4m6!3m5!1s0x390d85a7e4fa23ed:0xa4af0adba6e2ec69!8m2!3d28.8935102!4d76.5940006!16s%2Fg%2F11b779dh2m"
