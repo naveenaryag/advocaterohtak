@@ -36,36 +36,11 @@ export default defineConfig({
     minify: "esbuild",
     sourcemap: false,
 
-    // 🔧 Split vendor chunks for better caching and faster initial load
+    // 🔧 Simple vendor splitting - all node_modules in one chunk
     rollupOptions: {
       output: {
         manualChunks(id: string) {
           if (id.includes("node_modules")) {
-            // React core - loaded on every page
-            if (id.includes("react") || id.includes("react-dom") || id.includes("scheduler")) {
-              return "react-vendor";
-            }
-            // UI components - Radix primitives
-            if (id.includes("@radix-ui")) {
-              return "ui-vendor";
-            }
-            // Animation library - only needed for some pages
-            if (id.includes("framer-motion")) {
-              return "animation-vendor";
-            }
-            // Form handling
-            if (id.includes("react-hook-form") || id.includes("@hookform") || id.includes("zod")) {
-              return "form-vendor";
-            }
-            // Data fetching
-            if (id.includes("@tanstack")) {
-              return "query-vendor";
-            }
-            // Icons - lucide
-            if (id.includes("lucide-react")) {
-              return "icons-vendor";
-            }
-            // Everything else from node_modules
             return "vendor";
           }
         },
