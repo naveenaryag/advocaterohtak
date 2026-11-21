@@ -181,7 +181,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Full Name *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Enter your full name" {...field} disabled={contactMutation.isPending} data-testid="input-name" data-mcp-param="name" data-mcp-param-description="Full name of the person seeking legal consultation" data-mcp-required="true" />
+                            <Input placeholder="Enter your full name" {...field} disabled={contactMutation.isPending} autoComplete="name" data-testid="input-name" data-mcp-param="name" data-mcp-param-description="Full name of the person seeking legal consultation" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -195,7 +195,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Email Address *</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="your.email@example.com" {...field} disabled={contactMutation.isPending} data-testid="input-email" data-mcp-param="email" data-mcp-param-description="Email address for follow-up communication" data-mcp-required="true" />
+                            <Input type="email" placeholder="your.email@example.com" {...field} disabled={contactMutation.isPending} autoComplete="email" data-testid="input-email" data-mcp-param="email" data-mcp-param-description="Email address for follow-up communication" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -209,7 +209,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Phone Number *</FormLabel>
                           <FormControl>
-                            <Input type="tel" placeholder="+91 90501 11113" {...field} disabled={contactMutation.isPending} data-testid="input-phone" data-mcp-param="phone" data-mcp-param-description="Phone number with country code for direct contact" data-mcp-required="true" />
+                            <Input type="tel" placeholder="+91 90501 11113" {...field} disabled={contactMutation.isPending} autoComplete="tel" data-testid="input-phone" data-mcp-param="phone" data-mcp-param-description="Phone number with country code for direct contact" data-mcp-required="true" />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
