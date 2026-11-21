@@ -363,127 +363,80 @@ A: FIR copy (criminal), marriage certificate (divorce), property documents (civi
   // ARD (Agentic Resource Discovery) Manifest
   app.get("/.well-known/ard.json", (req, res) => {
     const ardManifest = {
-      "$schema": "https://specs.agentic.so/ard/v0.1/schema.json",
-      "version": "0.1",
-      "name": "Advocate Naveen Arya - Legal Services",
-      "description": "Expert legal representation in Rohtak, Haryana with 12+ years of experience in criminal law, civil litigation, and family matters.",
-      "url": "https://advocaterohtak.com",
-      "logo": "https://advocaterohtak.com/favicon.svg",
-      "contact": {
-        "email": "naveen@advocaterohtak.com",
-        "phone": "+919050111113",
-        "url": "https://advocaterohtak.com/contact"
-      },
-      "location": {
-        "address": "Chamber No. 600, District Court Complex, Rohtak, Haryana - 124001",
-        "city": "Rohtak",
-        "region": "Haryana",
-        "country": "IN",
-        "postalCode": "124001",
-        "coordinates": {
-          "latitude": 28.8935102,
-          "longitude": 76.5940006
-        }
-      },
-      "services": [
+      "entries": [
         {
-          "name": "Criminal Defense",
-          "description": "Bail applications, criminal trials, NDPS cases, quashing petitions",
-          "url": "https://advocaterohtak.com/criminal-lawyer-rohtak"
+          "title": "Advocate Naveen Arya - Legal Services",
+          "url": "https://advocaterohtak.com",
+          "description": "Expert legal representation in Rohtak, Haryana with 12+ years of experience in criminal law, civil litigation, and family matters. Supreme Court Bar Association member (A-01417).",
+          "category": "legal-services"
         },
         {
-          "name": "Divorce & Family Law",
-          "description": "Divorce, child custody, maintenance, domestic violence cases",
-          "url": "https://advocaterohtak.com/divorce-lawyer-rohtak"
+          "title": "Criminal Lawyer Rohtak",
+          "url": "https://advocaterohtak.com/criminal-lawyer-rohtak",
+          "description": "Expert criminal defense services including bail applications, criminal trials, NDPS cases, and quashing petitions in Rohtak courts.",
+          "category": "criminal-law"
         },
         {
-          "name": "Property Law",
-          "description": "Property disputes, partition suits, possession recovery",
-          "url": "https://advocaterohtak.com/property-lawyer-rohtak"
+          "title": "Divorce Lawyer Rohtak",
+          "url": "https://advocaterohtak.com/divorce-lawyer-rohtak",
+          "description": "Family law services including divorce, child custody, maintenance, and domestic violence cases in Rohtak Family Court.",
+          "category": "family-law"
         },
         {
-          "name": "Bail Matters",
-          "description": "Anticipatory, regular, and interim bail applications",
-          "url": "https://advocaterohtak.com/bail-matters"
+          "title": "Property Lawyer Rohtak",
+          "url": "https://advocaterohtak.com/property-lawyer-rohtak",
+          "description": "Property law services including property disputes, partition suits, possession recovery, and title verification.",
+          "category": "property-law"
         },
         {
-          "name": "Cheque Bounce Cases",
-          "description": "Section 138 NI Act matters and recovery suits",
-          "url": "https://advocaterohtak.com/cheque-bounce-cases"
+          "title": "Bail Matters",
+          "url": "https://advocaterohtak.com/bail-matters",
+          "description": "85% success rate in bail applications - anticipatory, regular, and interim bail. 24/7 emergency bail services available.",
+          "category": "criminal-law"
         },
         {
-          "name": "Matrimonial Cases",
-          "description": "Marriage disputes, maintenance, DV Act cases",
-          "url": "https://advocaterohtak.com/matrimonial-cases"
+          "title": "Cheque Bounce Cases",
+          "url": "https://advocaterohtak.com/cheque-bounce-cases",
+          "description": "Section 138 NI Act matters, legal notice drafting, complaint filing, and recovery suits.",
+          "category": "financial-law"
         },
         {
-          "name": "Civil Disputes",
-          "description": "Contract disputes, recovery suits, injunctions",
-          "url": "https://advocaterohtak.com/civil-disputes"
+          "title": "Matrimonial Cases",
+          "url": "https://advocaterohtak.com/matrimonial-cases",
+          "description": "Marriage disputes, maintenance under Section 125 CrPC, DV Act cases, and 498A defense.",
+          "category": "family-law"
         },
         {
-          "name": "Property Litigation",
-          "description": "Title disputes, partition, specific performance",
-          "url": "https://advocaterohtak.com/property-litigation"
-        }
-      ],
-      "resources": [
+          "title": "Civil Disputes",
+          "url": "https://advocaterohtak.com/civil-disputes",
+          "description": "Contract enforcement, recovery suits, injunctions, and declaratory suits in civil courts.",
+          "category": "civil-law"
+        },
         {
-          "type": "llms.txt",
+          "title": "Property Litigation",
+          "url": "https://advocaterohtak.com/property-litigation",
+          "description": "Title disputes, partition suits, specific performance, and possession recovery matters.",
+          "category": "property-law"
+        },
+        {
+          "title": "LLMs.txt - AI Summary",
           "url": "https://advocaterohtak.com/llms.txt",
-          "description": "AI-readable summary of legal services"
+          "description": "AI-readable summary of legal services offered by Advocate Naveen Arya in Rohtak.",
+          "category": "ai-discovery"
         },
         {
-          "type": "llms.txt",
+          "title": "LLMs Full - Comprehensive Guide",
           "url": "https://advocaterohtak.com/llms-full.txt",
-          "description": "Comprehensive AI-readable legal services guide"
+          "description": "Comprehensive AI-readable guide to all legal services, courts, and service areas.",
+          "category": "ai-discovery"
         },
         {
-          "type": "sitemap",
-          "url": "https://advocaterohtak.com/sitemap.xml"
-        },
-        {
-          "type": "robots.txt",
-          "url": "https://advocaterohtak.com/robots.txt"
+          "title": "Contact",
+          "url": "https://advocaterohtak.com/contact",
+          "description": "Contact Advocate Naveen Arya - Chamber No. 600, District Court Complex, Rohtak. Phone: +91 90501 11113.",
+          "category": "contact"
         }
-      ],
-      "credentials": [
-        {
-          "type": "bar_registration",
-          "issuer": "Supreme Court Bar Association",
-          "id": "A-01417"
-        },
-        {
-          "type": "certificate_of_practice",
-          "issuer": "Punjab & Haryana High Court",
-          "id": "P1700/2014"
-        }
-      ],
-      "courts": [
-        "District & Sessions Court, Rohtak",
-        "Family Court, Rohtak",
-        "Punjab & Haryana High Court, Chandigarh",
-        "Supreme Court of India, New Delhi"
-      ],
-      "serviceAreas": [
-        "Rohtak",
-        "Jhajjar",
-        "Sonipat",
-        "Bhiwani",
-        "Delhi NCR",
-        "Gurugram",
-        "Panipat"
-      ],
-      "stats": {
-        "experience": "12+ years",
-        "bailSuccessRate": "85%",
-        "clientsServed": "1000+",
-        "criminalAcquittals": "300+"
-      },
-      "availability": {
-        "hours": "Monday-Saturday, 10:00 AM - 6:00 PM",
-        "emergency": "24/7 for bail emergencies"
-      }
+      ]
     };
 
     res.header("Content-Type", "application/json");
