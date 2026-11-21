@@ -22,8 +22,12 @@ export async function sendTelegramNotification(data: TelegramLeadData): Promise<
 
   const { name, phone, email, subject, message } = data;
 
-  // Format message using HTML - phone number without spaces for auto-detection
-  const cleanPhone = phone.replace(/[^\d+]/g, '');
+  // Format phone - add +91 if no country code, remove spaces for auto-detection
+  let cleanPhone = phone.replace(/[^\d+]/g, '');
+  if (!cleanPhone.startsWith('+')) {
+    // Remove leading 0 if present and add +91 for Indian numbers
+    cleanPhone = '+91' + cleanPhone.replace(/^0+/, '');
+  }
   const telegramMessage = `
 🔔 <b>NEW LEAD</b>
 
