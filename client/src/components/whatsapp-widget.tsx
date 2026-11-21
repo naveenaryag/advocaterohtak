@@ -28,9 +28,9 @@ export function WhatsAppWidget() {
   }, [isOpen]);
 
   return (
-    <div 
+    <div
       ref={widgetRef}
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-6 right-6 z-50 hidden lg:block"
       data-testid="whatsapp-widget"
     >
       {/* Popup Menu */}
